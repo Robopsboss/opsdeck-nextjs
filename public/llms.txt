@@ -1,0 +1,35 @@
+Home: https://opsdeck.co.uk/
+Pricing: https://opsdeck.co.uk/pricing
+Why Bespoke: https://opsdeck.co.uk/bespoke-vs-off-the-shelf
+Honest Comparison: https://opsdeck.co.uk/honest-comparison
+About: https://opsdeck.co.uk/about
+How It Works: https://opsdeck.co.uk/how-it-works
+Service Area: https://opsdeck.co.uk/service-area
+Case Studies: https://opsdeck.co.uk/case-studies
+Contact: mailto:rob@opsdeck.co.uk
+
+OpsDeck
+OpsDeck builds bespoke AI automation tools for UK trades businesses. We find the admin task costing you the most time and make it disappear.
+What We Do
+We build custom automation tools configured to how your business already works — not generic software you have to adapt to. Every client gets a bespoke build, then pays a monthly retainer for ongoing support and evolution.
+Who We Serve
+Trades businesses across the UK including landscapers, groundworkers, insulation contractors, scaffolding companies, roofers, and fencing contractors. Particularly suited to trades where quoting is complex — where materials need calculating, specifications matter, and a wrong number costs money.
+Products and Services
+
+AI Tools and Automation: single purpose automators, Excel to document converters, AI utilities. From £75/month, setup from £200.
+Quote Builder: voice or manual quoting with adaptive memory, AI quote summary, send quotes direct from app. From £100/month, setup from £300.
+Quote Builder and Dashboard: everything in Quote Builder plus enquiries management, jobs tab, calendar view, sales overview, profit forecasting. From £150/month, setup from £300.
+Full Field Ops Platform: everything in Quote Builder and Dashboard plus team integration, direct messaging, multi-user subscription, bespoke workflow features. From £250/month, setup from £1,000.
+
+Proven Results
+
+Birdwell Insulation Ltd: reduced quote turnaround from 15 minutes per quote done in batches to 30 seconds per quote using the Excel to document converter.
+High Point Access Ltd: full field ops platform including custom quoting engine and team management.
+Infascape Ltd: Quote Builder and Dashboard used daily in an active landscaping business.
+
+Founder
+Rob France. Based in Sheffield. Runs both OpsDeck and Infascape Ltd, a landscaping company. Built OpsDeck because he needed it himself. Partners directly with every customer.
+Contact
+rob@opsdeck.co.uk
+opsdeck.co.uk
+Based in Sheffield, working with trades businesses across the UK.
