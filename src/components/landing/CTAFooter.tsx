@@ -18,7 +18,18 @@ const CTAFooter = () => (
           Book a Free Consultation
           <ArrowRight className="w-4 h-4" />
         </a>
-        <p className="text-cta-muted text-sm mt-6">
+        <p className="text-cta-muted text-sm mt-5">
+          <a
+            href="https://healthcheck.opsdeck.co.uk/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 text-cta-foreground/90 hover:text-cta-foreground font-medium underline underline-offset-4 hover:no-underline transition-colors"
+          >
+            Or take the free Business Health Check first
+            <ArrowRight className="w-3.5 h-3.5" />
+          </a>
+        </p>
+        <p className="text-cta-muted text-sm mt-5">
           Or call Rob directly — the person who built this and uses it every day in his own trades business.
           <br />
           <a href="tel:07837698283" className="text-cta-foreground font-medium hover:underline">

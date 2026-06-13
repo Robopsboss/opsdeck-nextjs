@@ -13,6 +13,14 @@ const SiteFooter = () => (
           <p className="text-white/70">ICO Registration No. ZC126490</p>
         </div>
         <nav className="flex flex-col sm:flex-row flex-wrap gap-x-6 gap-y-2">
+          <a
+            href="https://healthcheck.opsdeck.co.uk/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white/80 hover:text-white transition-colors"
+          >
+            Free Business Health Check
+          </a>
           <Link
             href="/faq"
             className="text-white/80 hover:text-white transition-colors"

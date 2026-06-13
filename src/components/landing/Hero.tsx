@@ -20,20 +20,31 @@ const Hero = () => (
       </h1>
 
       <p className="text-lg md:text-xl text-hero-muted font-medium mb-4 max-w-2xl leading-relaxed">
-        From quoting and invoicing to job scheduling and team admin — built around how your business actually works, not how a generic tool thinks it should.
+        From bespoke automation tools to done-for-you websites, compliance, and sales systems — built around how your trades business actually works, not how a generic tool thinks it should.
       </p>
 
       <p className="text-base text-hero-muted/70 mb-10 max-w-2xl leading-relaxed">
         Stop spending evenings on admin. Stop copy-pasting quotes. Stop wrestling with software that wasn&apos;t built for your trade. OpsDeck partners with you to build a custom tool that does the heavy lifting — so you can focus on the work.
       </p>
 
-      <a
-        href="mailto:rob@opsdeck.co.uk"
-        className="inline-flex items-center gap-2 bg-background text-foreground font-semibold px-8 py-4 rounded-lg hover:bg-background/90 transition-colors text-base"
-      >
-        Book a Free Consultation
-        <ArrowRight className="w-4 h-4" />
-      </a>
+      <div className="flex flex-col items-start gap-4">
+        <a
+          href="mailto:rob@opsdeck.co.uk"
+          className="inline-flex items-center gap-2 bg-background text-foreground font-semibold px-8 py-4 rounded-lg hover:bg-background/90 transition-colors text-base"
+        >
+          Book a Free Consultation
+          <ArrowRight className="w-4 h-4" />
+        </a>
+        <a
+          href="https://healthcheck.opsdeck.co.uk/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-1.5 text-sm text-hero-muted hover:text-hero-foreground transition-colors"
+        >
+          Not sure where to start? Take the free Business Health Check
+          <ArrowRight className="w-3.5 h-3.5" />
+        </a>
+      </div>
     </div>
   </section>
 );

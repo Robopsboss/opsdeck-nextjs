@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Navbar from "@/components/landing/Navbar";
 import Hero from "@/components/landing/Hero";
 import SocialProof from "@/components/landing/SocialProof";
-import WhatWeBuild from "@/components/landing/WhatWeBuild";
+import ThreeWaysToStart from "@/components/landing/ThreeWaysToStart";
 import RealResults from "@/components/landing/RealResults";
 import HowItWorks from "@/components/landing/HowItWorks";
 import WhoItsFor from "@/components/landing/WhoItsFor";
@@ -64,7 +64,7 @@ export default function Home() {
         <Navbar />
         <Hero />
         <SocialProof />
-        <WhatWeBuild />
+        <ThreeWaysToStart />
         <RealResults />
         <HowItWorks />
         <WhoItsFor />

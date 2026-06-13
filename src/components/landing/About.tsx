@@ -1,5 +1,6 @@
+import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, User } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 const About = () => (
   <section className="bg-section-alt">
@@ -20,9 +21,13 @@ const About = () => (
             <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
-        <div className="w-48 h-48 md:w-56 md:h-56 rounded-xl bg-secondary border border-border flex items-center justify-center flex-shrink-0">
-          <User className="w-16 h-16 text-muted-foreground/40" />
-        </div>
+        <Image
+          src="/rob-france.jpg"
+          alt="Rob France, Founder of OpsDeck"
+          width={224}
+          height={224}
+          className="w-48 h-48 md:w-56 md:h-56 rounded-xl border border-border object-cover flex-shrink-0"
+        />
       </div>
     </div>
   </section>
