@@ -1,35 +1,67 @@
-Home: https://opsdeck.co.uk/
-Pricing: https://opsdeck.co.uk/pricing
-Why Bespoke: https://opsdeck.co.uk/bespoke-vs-off-the-shelf
-Honest Comparison: https://opsdeck.co.uk/honest-comparison
-About: https://opsdeck.co.uk/about
-How It Works: https://opsdeck.co.uk/how-it-works
-Service Area: https://opsdeck.co.uk/service-area
-Case Studies: https://opsdeck.co.uk/case-studies
-Contact: mailto:rob@opsdeck.co.uk
+# OpsDeck
 
-OpsDeck
-OpsDeck builds bespoke AI automation tools for UK trades businesses. We find the admin task costing you the most time and make it disappear.
-What We Do
-We build custom automation tools configured to how your business already works — not generic software you have to adapt to. Every client gets a bespoke build, then pays a monthly retainer for ongoing support and evolution.
-Who We Serve
-Trades businesses across the UK including landscapers, groundworkers, insulation contractors, scaffolding companies, roofers, and fencing contractors. Particularly suited to trades where quoting is complex — where materials need calculating, specifications matter, and a wrong number costs money.
-Products and Services
+> Bespoke AI platform builds and fixed-price done-for-you services for UK trades businesses. One flagship platform product (Platform Build, from £75/month) plus fourteen fixed-price service products covering web, AEO/SEO, reviews, sales, marketing, and commercial compliance (from £97 to £750).
 
-AI Tools and Automation: single purpose automators, Excel to document converters, AI utilities. From £75/month, setup from £200.
-Quote Builder: voice or manual quoting with adaptive memory, AI quote summary, send quotes direct from app. From £100/month, setup from £300.
-Quote Builder and Dashboard: everything in Quote Builder plus enquiries management, jobs tab, calendar view, sales overview, profit forecasting. From £150/month, setup from £300.
-Full Field Ops Platform: everything in Quote Builder and Dashboard plus team integration, direct messaging, multi-user subscription, bespoke workflow features. From £250/month, setup from £1,000.
+OpsDeck builds bespoke AI automation tools for UK trades businesses. We find the admin task costing you the most time and make it disappear. Every client gets a bespoke build configured to how their business already works, then pays a monthly retainer for ongoing support and evolution — or buys one of the fixed-price service products below for a specific job.
 
-Proven Results
+## Top-level pages
 
-Birdwell Insulation Ltd: reduced quote turnaround from 15 minutes per quote done in batches to 30 seconds per quote using the Excel to document converter.
-High Point Access Ltd: full field ops platform including custom quoting engine and team management.
-Infascape Ltd: Quote Builder and Dashboard used daily in an active landscaping business.
+- [Home](https://opsdeck.co.uk/): overview, what we build, who it's for
+- [Pricing](https://opsdeck.co.uk/pricing): platform tiers, payment structure, 12-month cost comparison
+- [How It Works](https://opsdeck.co.uk/how-it-works): consultation, scope, build, demo, go-live, ongoing
+- [Why Bespoke](https://opsdeck.co.uk/bespoke-vs-off-the-shelf): why bespoke beats off-the-shelf for complex trades
+- [Honest Comparison](https://opsdeck.co.uk/honest-comparison): how OpsDeck compares to Tradify, Jobber, Powered Now
+- [Case Studies](https://opsdeck.co.uk/case-studies/birdwell): Birdwell Insulation — 15 minutes per quote to 30 seconds
+- [About](https://opsdeck.co.uk/about): founder, story, principles
+- [Service Area](https://opsdeck.co.uk/service-area): Sheffield-based, UK-wide
 
-Founder
+## Platform Build (flagship product)
+
+- [Platform Build](https://opsdeck.co.uk/platform-build): bespoke AI platform built around how your business actually works — quoting, dashboard, team management, automated invoicing and payment reminders. Eliminates the admin that runs through the owner. Four tiers, monthly subscription begins from go-live:
+  - AI Tools and Automation — £75/month, setup from £200. Single-purpose automation, one specific task eliminated. The starting point.
+  - Quote Builder — £100/month, setup from £300. Voice or manual quoting with adaptive memory.
+  - Quote Builder + Dashboard — £150/month, setup from £300. Quoting plus full business dashboard: enquiries, jobs, calendar, sales, profit forecasting.
+  - Full Operations Platform — £250/month, setup from £1,000. Everything plus team integration, operative management, multi-user access, fully custom workflow.
+
+## Services — Get Found & Win Work
+
+- [Website Build](https://opsdeck.co.uk/website-build): from £750, delivered in 10–15 working days. Professionally built, AEO-ready Next.js website written for your business from scratch. Fixed quote before we start.
+- [GBP Setup & Optimisation](https://opsdeck.co.uk/gbp-setup): £297, delivered in 5 working days. Fully set up and optimised Google Business Profile — every field, every category, direct review link, NAP consistency, handover guide.
+- [AEO Page Build — 9 Pages](https://opsdeck.co.uk/aeo-page-build): £397, delivered in 7 working days. Nine AEO-optimised pages written for your business with ready-to-paste schema markup. Structured so AI tools (ChatGPT, Google AI Overviews, Perplexity) can find, read, and recommend you.
+- [Google Review System](https://opsdeck.co.uk/google-review-system): £147, delivered in 3 working days. Done-for-you review request system — direct review link, message templates in your voice, follow-up sequence, negative response template, one-page system guide.
+- [LinkedIn Profile Optimisation](https://opsdeck.co.uk/linkedin-optimisation): £147, delivered in 5 working days. Complete LinkedIn profile rewrite — headline, about section, current experience, plus a first-week action guide.
+- [Website Optimisation Pack](https://opsdeck.co.uk/website-optimisation): £397, delivered in 5 working days. Full 15-point audit, needle-mover identification, and content rewrite for your existing site — no rebuild required.
+
+## Services — Strategy & Sales
+
+- [Priority Action Call](https://opsdeck.co.uk/priority-action-call): £97, 30-minute call booked within 3 working days of payment. Rob reviews your Business Health Check results before the call and identifies your single highest-priority area with a specific next-step recommendation.
+- [Sales Process Document](https://opsdeck.co.uk/sales-process): £597, delivered in 7 working days. Bespoke sales process built around how your business actually sells — first response scripts (phone and email), five-stage follow-up sequence, objection handling guide, consultation structure. 60-minute consultation and 30-day check-in call included.
+- [6 Month Marketing Strategy](https://opsdeck.co.uk/marketing-strategy): £597, delivered in 7 working days. Complete six-month marketing plan — target market definition, 16-week content calendar, post templates in your voice, test-and-measure framework. 45-minute consultation and 3-month check-in call included.
+
+## Services — Compliance & Commercial
+
+- [Commercial Readiness Pack](https://opsdeck.co.uk/commercial-readiness): £497 (bundle saving £94 vs buying individually), delivered in 5 working days. RAMS & Method Statement, Compliance Document Pack, and Company Profile Pack — three trade-specific documents from a single intake. Everything needed for a commercial submission.
+- [RAMS & Method Statement Pack](https://opsdeck.co.uk/rams-method-statement): £247, delivered in 5 working days. Trade-specific risk assessment and method statement — your actual hazards, controls, and sequence of works. PDF ready to submit, Word editable per project.
+- [Compliance Document Pack](https://opsdeck.co.uk/compliance-pack): £197, delivered in 5 working days. Trade-specific H&S policy, COSHH assessment template, and three toolbox talk templates (Working at Height, Manual Handling, Hand & Power Tools) with operative sign-off sheets.
+- [Company Profile Pack](https://opsdeck.co.uk/company-profile): £147, delivered in 5 working days. Two-page professional capability statement — About Us, credentials and accreditations, two or three recent project case studies. PDF and Word.
+- [Terms & Conditions Template](https://opsdeck.co.uk/tcs-template): £97, delivered in 3 working days. Trade-specific T&Cs covering payment terms, variations, cancellation, and defects liability. Word and PDF.
+
+## Who We Serve
+
+Trades businesses across the UK including landscapers, groundworkers, insulation contractors, scaffolding companies, roofers, and fencing contractors. Particularly suited to trades where quoting is complex — where materials need calculating, specifications matter, and a wrong number costs money — and to businesses managing operatives across multiple sites.
+
+## Proven Results
+
+- Birdwell Insulation Ltd: reduced quote turnaround from 15 minutes per quote done in batches to 30 seconds per quote using a bespoke Excel-to-document converter.
+- High Point Access Ltd: full field ops platform including custom quoting engine and operative management via WhatsApp job dispatch.
+- Infascape Ltd: Quote Builder and Dashboard used daily in an active landscaping business.
+
+## Founder
+
 Rob France. Based in Sheffield. Runs both OpsDeck and Infascape Ltd, a landscaping company. Built OpsDeck because he needed it himself. Partners directly with every customer.
-Contact
-rob@opsdeck.co.uk
-opsdeck.co.uk
-Based in Sheffield, working with trades businesses across the UK.
+
+## Contact
+
+- Email: rob@opsdeck.co.uk
+- Web: https://opsdeck.co.uk
+- Based in Sheffield, working with trades businesses across the UK
