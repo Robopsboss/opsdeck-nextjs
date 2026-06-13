@@ -22,6 +22,12 @@ const SiteFooter = () => (
             Free Business Health Check
           </a>
           <Link
+            href="/blog"
+            className="text-white/80 hover:text-white transition-colors"
+          >
+            Blog
+          </Link>
+          <Link
             href="/faq"
             className="text-white/80 hover:text-white transition-colors"
           >

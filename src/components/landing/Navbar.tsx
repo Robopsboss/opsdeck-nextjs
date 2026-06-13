@@ -8,6 +8,7 @@ import { ChevronDown, ChevronRight, Menu, X } from "lucide-react";
 const LEAVE_DELAY_MS = 250;
 
 const learnLinks = [
+  { label: "Blog", href: "/blog" },
   { label: "How It Works", href: "/how-it-works" },
   { label: "Why Bespoke", href: "/bespoke-vs-off-the-shelf" },
   { label: "Honest Comparison", href: "/honest-comparison" },

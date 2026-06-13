@@ -6,6 +6,8 @@ const routes: MetadataRoute.Sitemap = [
   { url: "/", changeFrequency: "weekly", priority: 1.0 },
   { url: "/pricing", changeFrequency: "weekly", priority: 0.9 },
   { url: "/faq", changeFrequency: "weekly", priority: 0.9 },
+  { url: "/blog", changeFrequency: "monthly", priority: 0.8 },
+  { url: "/blog/why-every-quoting-tool-failed", changeFrequency: "monthly", priority: 0.7 },
   { url: "/platform-build", changeFrequency: "monthly", priority: 0.9 },
   { url: "/website-build", changeFrequency: "monthly", priority: 0.8 },
   { url: "/gbp-setup", changeFrequency: "monthly", priority: 0.8 },
