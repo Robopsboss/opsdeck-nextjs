@@ -49,7 +49,7 @@ const tiers = [
       "Everything in Tier 2 plus enquiries management, jobs tab, calendar view, sales overview, and profit forecasting.",
   },
   {
-    name: "Full Field Ops Platform",
+    name: "Full Operations Platform",
     monthly: "£250/month",
     setup: "From £1,000",
     features:
@@ -161,7 +161,7 @@ const jsonLd = {
         { "@type": "Offer", name: "AI Tools and Automation", price: "75", priceCurrency: "GBP", priceSpecification: { "@type": "UnitPriceSpecification", price: "75", priceCurrency: "GBP", unitText: "MONTH" } },
         { "@type": "Offer", name: "Quote Builder", price: "100", priceCurrency: "GBP", priceSpecification: { "@type": "UnitPriceSpecification", price: "100", priceCurrency: "GBP", unitText: "MONTH" } },
         { "@type": "Offer", name: "Quote Builder and Dashboard", price: "150", priceCurrency: "GBP", priceSpecification: { "@type": "UnitPriceSpecification", price: "150", priceCurrency: "GBP", unitText: "MONTH" } },
-        { "@type": "Offer", name: "Full Field Ops Platform", price: "250", priceCurrency: "GBP", priceSpecification: { "@type": "UnitPriceSpecification", price: "250", priceCurrency: "GBP", unitText: "MONTH" } },
+        { "@type": "Offer", name: "Full Operations Platform", price: "250", priceCurrency: "GBP", priceSpecification: { "@type": "UnitPriceSpecification", price: "250", priceCurrency: "GBP", unitText: "MONTH" } },
       ],
     },
     {

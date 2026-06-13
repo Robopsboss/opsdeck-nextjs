@@ -6,7 +6,7 @@ import SiteFooter from "@/components/landing/SiteFooter";
 
 const pageTitle = "OpsDeck — Real Results for Trades Businesses";
 const pageDescription =
-  "See how trades businesses like Birdwell Insulation Ltd and High Point Access Ltd save hours every week with OpsDeck.";
+  "See how trades businesses like Birdwell Insulation Ltd and Hi-Point Access Ltd save hours every week with OpsDeck.";
 
 export const metadata: Metadata = {
   title: pageTitle,

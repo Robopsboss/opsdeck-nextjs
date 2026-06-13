@@ -80,7 +80,7 @@ const bespokeRight = [
 
 const proofs = [
   {
-    client: "High Point Access Ltd — Scaffolding",
+    client: "Hi-Point Access Ltd — Scaffolding",
     problem:
       "Managing operatives, jobs, quotes and scheduling across separate tools. Operatives briefed by phone. Completion notes chased manually. Nothing joined up.",
     result:
@@ -276,7 +276,7 @@ export default function BespokeVsOffTheShelfPage() {
         <section className="bg-background">
           <div className="container mx-auto px-6 py-16 md:py-24 max-w-4xl">
             <p className="text-xs font-bold tracking-widest text-primary uppercase mb-3">
-              Full Field Ops Platform
+              Full Operations Platform
             </p>
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
               Your operatives arrive briefed. Completion notes file themselves.
@@ -286,7 +286,7 @@ export default function BespokeVsOffTheShelfPage() {
                 If you&apos;re managing a team of operatives across multiple sites — scaffolders, groundworkers, fencing crews — the morning briefing alone is a significant time drain. Phone calls, WhatsApp messages, printed job sheets. Someone always has the wrong address. Someone always forgets to send photos back.
               </p>
               <p>
-                The OpsDeck field ops platform removes all of that. Here&apos;s how a typical morning works for a client like High Point Access Ltd:
+                The OpsDeck field ops platform removes all of that. Here&apos;s how a typical morning works for a client like Hi-Point Access Ltd:
               </p>
             </div>
 

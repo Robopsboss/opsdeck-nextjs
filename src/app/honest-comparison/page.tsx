@@ -71,7 +71,7 @@ const proofs = [
       "Drag and drop the Excel file, branded professional quote in 30 seconds. Same day turnaround on every enquiry.",
   },
   {
-    client: "High Point Access Ltd — Scaffolding",
+    client: "Hi-Point Access Ltd — Scaffolding",
     before:
       "Using separate tools for pipeline, scheduling, and communication. Nothing joined up. Operatives briefed by phone. Completion notes chased manually.",
     result:
