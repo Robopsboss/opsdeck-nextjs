@@ -97,6 +97,13 @@ export default function AboutPage() {
               <p className="text-hero-muted text-sm">Founder, OpsDeck Ltd</p>
               <p className="text-hero-muted text-sm">Owner, Infascape Ltd — Sheffield landscaping and surfacing</p>
               <p className="text-hero-muted/70 text-xs mt-0.5">Sheffield, South Yorkshire</p>
+              <Link
+                href="/author/rob-france"
+                className="inline-flex items-center gap-1.5 text-hero-foreground hover:text-hero-foreground/80 text-sm font-semibold underline underline-offset-4 mt-2 transition-colors"
+              >
+                More about Rob
+                <ArrowRight className="w-3.5 h-3.5" />
+              </Link>
             </div>
           </div>
         </div>
