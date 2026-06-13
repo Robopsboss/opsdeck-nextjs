@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://opsdeck.co.uk"),
   title: "OpsDeck — Admin Automation for Trades",
   description: "Bespoke automation tools for UK trades businesses. From £75/month.",
-  authors: [{ name: "Infascape Ltd" }],
+  authors: [{ name: "OpsDeck" }],
   openGraph: {
     type: "website",
     title: "OpsDeck — I Find The Admin Task Costing You The Most Time And Make It Disappear",
