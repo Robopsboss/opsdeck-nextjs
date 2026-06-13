@@ -13,6 +13,7 @@ import {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
+  "@id": "https://opsdeck.co.uk/#localbusiness",
   "name": "OpsDeck Ltd",
   "url": "https://opsdeck.co.uk",
   "telephone": "07837698283",

@@ -30,6 +30,7 @@ export const metadata: Metadata = {
 const organizationJsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
+  "@id": "https://opsdeck.co.uk/#organization",
   name: "OpsDeck",
   url: "https://opsdeck.co.uk",
   logo: "https://opsdeck.co.uk/favicon.ico",
