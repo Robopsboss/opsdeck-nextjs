@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import Navbar from "@/components/landing/Navbar";
 import SiteFooter from "@/components/landing/SiteFooter";
@@ -47,6 +48,7 @@ const tiers = [
     setup: "From £300",
     features:
       "Everything in Tier 2 plus enquiries management, jobs tab, calendar view, sales overview, and profit forecasting.",
+    popular: true,
   },
   {
     name: "Full Operations Platform",
@@ -54,7 +56,39 @@ const tiers = [
     setup: "From £1,000",
     features:
       "Everything in Tier 3 plus team and operative integration, WhatsApp job dispatch, multi-user access, and a fully bespoke build configured to your exact trade and workflow.",
-    popular: true,
+    forTeams: true,
+  },
+];
+
+const serviceGroups = [
+  {
+    name: "Get Found & Win Work",
+    services: [
+      { name: "Website Build", href: "/website-build", price: "From £750", delivery: "10–15 working days" },
+      { name: "GBP Setup & Optimisation", href: "/gbp-setup", price: "£297", delivery: "5 working days" },
+      { name: "AEO Page Build — 9 Pages", href: "/aeo-page-build", price: "£397", delivery: "7 working days" },
+      { name: "Google Review System", href: "/google-review-system", price: "£147", delivery: "3 working days" },
+      { name: "LinkedIn Profile Optimisation", href: "/linkedin-optimisation", price: "£147", delivery: "5 working days" },
+      { name: "Website Optimisation Pack", href: "/website-optimisation", price: "£397", delivery: "5 working days" },
+    ],
+  },
+  {
+    name: "Strategy & Sales",
+    services: [
+      { name: "Priority Action Call", href: "/priority-action-call", price: "£97", delivery: "Booked within 3 working days" },
+      { name: "Sales Process Document", href: "/sales-process", price: "£597", delivery: "7 working days" },
+      { name: "6 Month Marketing Strategy", href: "/marketing-strategy", price: "£597", delivery: "7 working days" },
+    ],
+  },
+  {
+    name: "Compliance & Commercial",
+    services: [
+      { name: "Commercial Readiness Pack", href: "/commercial-readiness", note: "bundle, saves £94", price: "£497", delivery: "5 working days" },
+      { name: "RAMS & Method Statement Pack", href: "/rams-method-statement", price: "£247", delivery: "5 working days" },
+      { name: "Compliance Document Pack", href: "/compliance-pack", price: "£197", delivery: "5 working days" },
+      { name: "Company Profile Pack", href: "/company-profile", price: "£147", delivery: "5 working days" },
+      { name: "Terms & Conditions Template", href: "/tcs-template", price: "£97", delivery: "3 working days" },
+    ],
   },
 ];
 
@@ -106,6 +140,10 @@ const faqs = [
   {
     q: "How much does OpsDeck cost?",
     a: "Monthly subscriptions range from £75 to £250 per month depending on your tier. One-off setup fees range from £200 to £1,000 or more depending on complexity. All costs are agreed in writing before any payment is committed.",
+  },
+  {
+    q: "Do you offer one-off services as well as the platform?",
+    a: "Yes. OpsDeck delivers done-for-you services at fixed prices from £97 to £750 — websites, Google Business Profile setup, AEO pages, review systems, compliance documents, and sales and marketing strategy. Every price is published above and every service has its own page. No quotes needed except the Website Build, which is fixed-quoted before work starts.",
   },
   {
     q: "Is the setup fee a one-off cost?",
@@ -168,6 +206,7 @@ const jsonLd = {
       "@type": "FAQPage",
       mainEntity: [
         { "@type": "Question", name: "How much does OpsDeck cost?", acceptedAnswer: { "@type": "Answer", text: "OpsDeck monthly subscriptions range from £75 to £250 per month. One-off setup fees range from £200 to £1,000 or more depending on complexity. All costs are agreed in writing before any payment is committed." } },
+        { "@type": "Question", name: "Do you offer one-off services as well as the platform?", acceptedAnswer: { "@type": "Answer", text: "Yes. OpsDeck delivers done-for-you services at fixed prices from £97 to £750 — websites, Google Business Profile setup, AEO pages, review systems, compliance documents, and sales and marketing strategy. Every price is published above and every service has its own page. No quotes needed except the Website Build, which is fixed-quoted before work starts." } },
         { "@type": "Question", name: "Does OpsDeck charge per user?", acceptedAnswer: { "@type": "Answer", text: "No. OpsDeck pricing is per organisation not per seat. Your team can grow without the monthly fee automatically increasing." } },
         { "@type": "Question", name: "Are there annual contracts?", acceptedAnswer: { "@type": "Answer", text: "No. OpsDeck subscriptions are rolling monthly with 30 days notice. No annual lock-ins and no early exit fees." } },
       ],
@@ -213,7 +252,7 @@ export default function PricingPage() {
             </h1>
             <div className="bg-card/10 border-l-4 border-accent rounded-r-lg p-6 mb-8 backdrop-blur-sm">
               <p className="text-hero-foreground text-base md:text-lg leading-relaxed">
-                Monthly subscriptions from <strong>£75 to £250 per month</strong>. One-off setup fees from <strong>£200 to £1,000 or more</strong> depending on complexity. All costs are agreed in writing before you pay anything — no surprises, no hidden escalations.
+                Monthly platform subscriptions from <strong>£75 to £250 per month</strong>, with one-off setup fees from <strong>£200 to £1,000 or more</strong> depending on complexity. Done-for-you services — websites, Google setup, compliance documents, sales and marketing strategy — from <strong>£97 to £750</strong> as one-off fixed prices. All costs are agreed in writing before you pay anything — no surprises, no hidden escalations.
               </p>
             </div>
             <p className="text-hero-muted text-base md:text-lg leading-relaxed max-w-3xl">
@@ -302,6 +341,11 @@ export default function PricingPage() {
                       Most Popular
                     </span>
                   )}
+                  {tier.forTeams && (
+                    <span className="absolute top-4 right-4 bg-tag-bg text-tag-fg text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded">
+                      For Teams
+                    </span>
+                  )}
                   <h3 className={`font-bold text-lg mb-3 ${tier.popular ? "" : "text-foreground"}`}>
                     {tier.name}
                   </h3>
@@ -336,6 +380,60 @@ export default function PricingPage() {
             </div>
             <p className="text-sm text-muted-foreground italic leading-relaxed mt-8 max-w-3xl">
               Setup fees are quoted individually after your free consultation. The figures shown are starting points — your exact price is always agreed before any work begins.
+            </p>
+          </div>
+        </section>
+
+        {/* Done-For-You Services */}
+        <section className="bg-section-alt">
+          <div className="container mx-auto px-6 py-16 md:py-24 max-w-5xl">
+            <h2 className="text-3xl md:text-4xl font-black text-foreground mb-4 text-center">
+              Done-For-You Services — Fixed Prices
+            </h2>
+            <p className="text-muted-foreground text-center max-w-3xl mx-auto mb-12 leading-relaxed">
+              Alongside the platform, OpsDeck delivers one-off services at fixed prices. Every price below is the full price — no quotes needed, no upsells. Click any service for the full breakdown.
+            </p>
+            <div className="space-y-10 md:space-y-12">
+              {serviceGroups.map((group) => (
+                <div key={group.name}>
+                  <h3 className="text-xs font-bold tracking-widest text-primary uppercase mb-4">
+                    {group.name}
+                  </h3>
+                  <div className="bg-card rounded-2xl border border-border overflow-hidden">
+                    <ul className="divide-y divide-border">
+                      {group.services.map((service) => (
+                        <li
+                          key={service.href}
+                          className="p-4 md:px-6 md:py-4 flex flex-col md:grid md:grid-cols-[2fr_auto_auto] md:gap-8 md:items-center gap-1"
+                        >
+                          <div>
+                            <Link
+                              href={service.href}
+                              className="text-foreground font-semibold hover:text-primary transition-colors"
+                            >
+                              {service.name}
+                            </Link>
+                            {"note" in service && service.note && (
+                              <span className="text-xs text-muted-foreground ml-2">
+                                — {service.note}
+                              </span>
+                            )}
+                          </div>
+                          <span className="text-foreground font-bold whitespace-nowrap md:text-right">
+                            {service.price}
+                          </span>
+                          <span className="text-muted-foreground text-sm whitespace-nowrap md:text-right">
+                            {service.delivery}
+                          </span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <p className="text-sm text-muted-foreground text-center max-w-3xl mx-auto mt-10 leading-relaxed">
+              Every service has its own page with exactly what you get, how it works, and how it compares. Free Business Health Check available at healthcheck.opsdeck.co.uk if you&apos;re not sure where to start.
             </p>
           </div>
         </section>
