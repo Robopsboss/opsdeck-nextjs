@@ -228,7 +228,7 @@ const Navbar = () => {
             </div>
           </div>
 
-          {/* Learn dropdown */}
+          {/* Learn dropdown — panel always rendered for SEO; CSS toggles visibility */}
           <div
             ref={learnRef}
             className="relative"
@@ -239,6 +239,7 @@ const Navbar = () => {
               onClick={() => setLearnOpen((o) => !o)}
               className={`${linkClasses} inline-flex items-center gap-1`}
               aria-expanded={learnOpen}
+              aria-controls="learn-dropdown"
             >
               Learn
               <ChevronDown
@@ -247,20 +248,28 @@ const Navbar = () => {
                 }`}
               />
             </button>
-            {learnOpen && (
-              <div className="absolute top-full left-0 mt-1 w-56 rounded-lg border border-border bg-card shadow-lg py-2 z-50">
-                {learnLinks.map((link) => (
-                  <Link
-                    key={link.href}
-                    href={link.href}
-                    className="block px-4 py-2 text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
-                    onClick={() => setLearnOpen(false)}
-                  >
-                    {link.label}
-                  </Link>
-                ))}
-              </div>
-            )}
+            <div
+              id="learn-dropdown"
+              role="menu"
+              aria-hidden={!learnOpen}
+              className={`absolute top-full left-0 mt-1 w-56 rounded-lg border border-border bg-card shadow-lg py-2 z-50 transition-opacity duration-150 ${
+                learnOpen
+                  ? "opacity-100 visible pointer-events-auto"
+                  : "opacity-0 invisible pointer-events-none"
+              }`}
+            >
+              {learnLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  role="menuitem"
+                  className="block px-4 py-2 text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+                  onClick={() => setLearnOpen(false)}
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </div>
           </div>
 
           <Link href="/about" className={linkClasses}>
@@ -396,7 +405,12 @@ const Navbar = () => {
                 }`}
               />
             </button>
-            {mobileLearnOpen && (
+            <div
+              aria-hidden={!mobileLearnOpen}
+              className={`overflow-hidden transition-all duration-200 ${
+                mobileLearnOpen ? "max-h-96" : "max-h-0"
+              }`}
+            >
               <div className="pl-4 flex flex-col gap-1 border-l border-border ml-1 mb-1">
                 {learnLinks.map((link) => (
                   <Link
@@ -409,7 +423,7 @@ const Navbar = () => {
                   </Link>
                 ))}
               </div>
-            )}
+            </div>
 
             <Link
               href="/about"
