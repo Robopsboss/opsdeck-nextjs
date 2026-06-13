@@ -53,7 +53,7 @@ Trades businesses across the UK including landscapers, groundworkers, insulation
 ## Proven Results
 
 - Birdwell Insulation Ltd: reduced quote turnaround from 15 minutes per quote done in batches to 30 seconds per quote using a bespoke Excel-to-document converter.
-- High Point Access Ltd: full field ops platform including custom quoting engine and operative management via WhatsApp job dispatch.
+- Hi-Point Access Ltd: Full Operations Platform including custom quoting engine and operative management via WhatsApp job dispatch.
 - Infascape Ltd: Quote Builder and Dashboard used daily in an active landscaping business.
 
 ## Founder
