@@ -31,6 +31,7 @@ The following pages already have correct inline JSON-LD. Build on it, never repl
 - `/how-it-works` — FAQPage — `src/app/how-it-works/page.tsx`
 - `/bespoke-vs-off-the-shelf` — FAQPage — `src/app/bespoke-vs-off-the-shelf/page.tsx`
 - `/honest-comparison` — FAQPage — `src/app/honest-comparison/page.tsx`
+- `/author/rob-france` — Person (id `https://opsdeck.co.uk/author/rob-france#person`, references `#organization` via `worksFor.@id`) — `src/app/author/rob-france/page.tsx`
 
 ## 5. `mailto:` links
 

@@ -24,6 +24,7 @@ const routes: MetadataRoute.Sitemap = [
   { url: "/bespoke-vs-off-the-shelf", changeFrequency: "monthly", priority: 0.8 },
   { url: "/honest-comparison", changeFrequency: "monthly", priority: 0.8 },
   { url: "/about", changeFrequency: "monthly", priority: 0.8 },
+  { url: "/author/rob-france", changeFrequency: "monthly", priority: 0.7 },
   { url: "/how-it-works", changeFrequency: "monthly", priority: 0.8 },
   { url: "/service-area", changeFrequency: "monthly", priority: 0.8 },
   { url: "/case-studies/birdwell", changeFrequency: "monthly", priority: 0.8 },
