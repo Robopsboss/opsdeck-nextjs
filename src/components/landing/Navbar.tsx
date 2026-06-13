@@ -146,6 +146,9 @@ const Navbar = () => {
           <Link href="/pricing" className={linkClasses}>
             Pricing
           </Link>
+          <Link href="/faq" className={linkClasses}>
+            FAQ
+          </Link>
 
           {/* Services mega-menu — panel always rendered for SEO; CSS toggles visibility.
               Panel positioning context is the navbar container (relative), not this wrapper,
@@ -296,6 +299,13 @@ const Navbar = () => {
               onClick={() => setMobileOpen(false)}
             >
               Pricing
+            </Link>
+            <Link
+              href="/faq"
+              className="py-2 text-base font-medium text-foreground"
+              onClick={() => setMobileOpen(false)}
+            >
+              FAQ
             </Link>
 
             {/* Mobile Services accordion */}

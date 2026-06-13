@@ -14,6 +14,12 @@ const SiteFooter = () => (
         </div>
         <nav className="flex flex-col sm:flex-row flex-wrap gap-x-6 gap-y-2">
           <Link
+            href="/faq"
+            className="text-white/80 hover:text-white transition-colors"
+          >
+            FAQ
+          </Link>
+          <Link
             href="/service-area"
             className="text-white/80 hover:text-white transition-colors"
           >
