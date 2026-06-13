@@ -40,6 +40,12 @@ const SiteFooter = () => (
             Service Area
           </Link>
           <Link
+            href="/policy-ethics"
+            className="text-white/80 hover:text-white transition-colors"
+          >
+            Policy &amp; Ethics
+          </Link>
+          <Link
             href="/privacy-policy"
             className="text-white/80 hover:text-white transition-colors"
           >

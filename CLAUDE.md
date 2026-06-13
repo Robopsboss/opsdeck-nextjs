@@ -33,6 +33,7 @@ The following pages already have correct inline JSON-LD. Build on it, never repl
 - `/honest-comparison` — FAQPage — `src/app/honest-comparison/page.tsx`
 - `/author/rob-france` — Person (id `https://opsdeck.co.uk/author/rob-france#person`, references `#organization` via `worksFor.@id`) — `src/app/author/rob-france/page.tsx`
 - Blog posts under `/blog/*` — BlogPosting (references `#person` via `author.@id`, `#organization` via `publisher.@id`) — first post at `src/app/blog/why-every-quoting-tool-failed/page.tsx`
+- `/policy-ethics` — WebPage (id `#webpage`, references `#organization` via `about.@id` and `publisher.@id`) + FAQPage — `src/app/policy-ethics/page.tsx`
 
 ## 5. `mailto:` links
 

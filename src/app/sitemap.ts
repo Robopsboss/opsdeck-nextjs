@@ -30,6 +30,7 @@ const routes: MetadataRoute.Sitemap = [
   { url: "/how-it-works", changeFrequency: "monthly", priority: 0.8 },
   { url: "/service-area", changeFrequency: "monthly", priority: 0.8 },
   { url: "/case-studies/birdwell", changeFrequency: "monthly", priority: 0.8 },
+  { url: "/policy-ethics", changeFrequency: "monthly", priority: 0.5 },
   { url: "/privacy-policy", changeFrequency: "yearly", priority: 0.3 },
   { url: "/terms-of-service", changeFrequency: "yearly", priority: 0.3 },
 ];
