@@ -248,7 +248,7 @@ export default function FaqPage() {
         <Navbar />
 
         {/* Hero */}
-        <section className="bg-hero text-hero-foreground">
+        <section className="bg-hero-dark text-hero-foreground">
           <div className="container mx-auto px-6 py-16 md:py-20 max-w-4xl">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-black leading-[1.1] mb-6">
               Frequently Asked Questions
@@ -298,23 +298,23 @@ export default function FaqPage() {
         </section>
 
         {/* Closing CTA */}
-        <section className="bg-cta text-cta-foreground">
+        <section className="bg-hero-dark text-hero-foreground">
           <div className="container mx-auto px-6 py-16 md:py-24 max-w-3xl text-center">
             <h2 className="text-2xl md:text-3xl font-bold mb-4">
               Still have questions?
             </h2>
-            <p className="text-cta-muted text-base md:text-lg leading-relaxed max-w-2xl mx-auto">
+            <p className="text-hero-muted text-base md:text-lg leading-relaxed max-w-2xl mx-auto">
               Email{" "}
               <a
                 href="mailto:rob@opsdeck.co.uk"
-                className="text-cta-foreground font-medium underline hover:no-underline"
+                className="text-hero-foreground font-medium underline hover:no-underline"
               >
                 rob@opsdeck.co.uk
               </a>
               {" "}or call{" "}
               <a
                 href="tel:07837698283"
-                className="text-cta-foreground font-medium underline hover:no-underline"
+                className="text-hero-foreground font-medium underline hover:no-underline"
               >
                 07837 698 283
               </a>
