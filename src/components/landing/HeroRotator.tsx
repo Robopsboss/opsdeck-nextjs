@@ -11,16 +11,20 @@ import { useEffect, useState } from "react";
 const SCREENS = [
   { src: "/hero-ops-agent.png", alt: "" },
   {
+    src: "/hero-sales-dashboard.png",
+    alt: "OpsDeck sales dashboard, tracking enquiries and won work",
+  },
+  {
+    src: "/hero-jobs.png",
+    alt: "OpsDeck job management, scheduling and tracking jobs across the team",
+  },
+  {
     src: "/hero-profit.png",
     alt: "OpsDeck profit analysis, showing margins and forecasting across jobs",
   },
-  {
-    src: "/hero-voice-quote.png",
-    alt: "OpsDeck voice quoting, turning a spoken job description into a priced quote",
-  },
 ];
 
-const HOLD_MS = 3500;
+const HOLD_MS = 3000;
 
 const HeroRotator = () => {
   const [active, setActive] = useState(0);
