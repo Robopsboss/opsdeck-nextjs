@@ -61,6 +61,7 @@ const config: Config = {
   			},
   			hero: {
   				DEFAULT: 'hsl(var(--hero-bg))',
+  				dark: 'hsl(var(--hero-dark-bg))',
   				foreground: 'hsl(var(--hero-fg))',
   				muted: 'hsl(var(--hero-muted))'
   			},
