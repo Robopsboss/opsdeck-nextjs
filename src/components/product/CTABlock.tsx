@@ -25,10 +25,10 @@ const CTABlock = ({
   phone,
   note,
 }: CTABlockProps) => (
-  <section className="bg-cta text-cta-foreground">
+  <section className="bg-hero-dark text-hero-foreground">
     <div className="container mx-auto px-6 py-20 md:py-28 max-w-3xl text-center">
       <h2 className="text-3xl md:text-4xl font-bold mb-6">{title}</h2>
-      <p className="text-cta-muted text-lg leading-relaxed mb-10 max-w-2xl mx-auto">
+      <p className="text-hero-muted text-lg leading-relaxed mb-10 max-w-2xl mx-auto">
         {body}
       </p>
       <a
@@ -39,13 +39,13 @@ const CTABlock = ({
         <ArrowRight className="w-4 h-4" />
       </a>
       {(phone || note) && (
-        <p className="text-cta-muted text-sm mt-6">
+        <p className="text-hero-muted text-sm mt-6">
           {note}
           {note && phone && <br />}
           {phone && (
             <a
               href={`tel:${phone.tel}`}
-              className="text-cta-foreground font-medium hover:underline"
+              className="text-hero-foreground font-medium hover:underline"
             >
               {phone.label}
             </a>
