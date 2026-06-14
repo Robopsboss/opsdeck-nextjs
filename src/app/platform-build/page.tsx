@@ -223,7 +223,7 @@ export default function PlatformBuildPage() {
         <ProductHero
           eyebrow="Platform Build"
           title="You Are the System. That Is the Problem."
-          lead="A bespoke AI platform built around how your business actually works — eliminating the admin that runs through you and only you."
+          lead="A bespoke AI platform that becomes the deck you run your whole operation from — quotes, jobs, team and invoicing in one place, built around how your business actually works, not how a generic tool thinks it should."
           sub="From £75/month. Setup from £200. Consultation first."
           ctaHref={MAILTO}
           ctaVariant="amber"
