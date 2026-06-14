@@ -214,7 +214,7 @@ const jsonLd = {
   ],
 };
 
-const pageTitle = "How Much Does Business Automation Software Cost? | OpsDeck Pricing";
+const pageTitle = "How Much Does OpsDeck Cost? Honest Pricing for Trades Businesses";
 const pageDescription =
   "OpsDeck monthly subscriptions from £75 to £250 per month. Setup fees from £200 to £1,000. All costs agreed in writing before you pay anything. Honest pricing for trades businesses.";
 
@@ -242,7 +242,7 @@ export default function PricingPage() {
         <Navbar />
 
         {/* Hero */}
-        <section className="bg-hero text-hero-foreground">
+        <section className="bg-hero-dark text-hero-foreground">
           <div className="container mx-auto px-6 py-16 md:py-20 max-w-4xl">
             <p className="text-sm font-semibold uppercase tracking-widest text-accent mb-3">
               Pricing
@@ -544,12 +544,12 @@ export default function PricingPage() {
         </section>
 
         {/* Closing CTA */}
-        <section className="bg-cta text-cta-foreground">
+        <section className="bg-hero-dark text-hero-foreground">
           <div className="container mx-auto px-6 py-20 md:py-28 max-w-3xl text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Book your free 30-minute consultation
             </h2>
-            <p className="text-cta-muted text-lg leading-relaxed mb-10 max-w-2xl mx-auto">
+            <p className="text-hero-muted text-lg leading-relaxed mb-10 max-w-2xl mx-auto">
               No hard sell. We will look at your business, identify the admin task costing you the most time, and give you a clear written scope before any cost is committed.
             </p>
             <a
@@ -559,7 +559,7 @@ export default function PricingPage() {
               Book a free consultation
               <ArrowRight className="w-4 h-4" />
             </a>
-            <p className="text-cta-muted text-sm mt-6">
+            <p className="text-hero-muted text-sm mt-6">
               Free. No obligation. Scope agreed before you pay anything.
             </p>
           </div>
