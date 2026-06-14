@@ -10,10 +10,10 @@ import About from "@/components/landing/About";
 import CTAFooter from "@/components/landing/CTAFooter";
 
 const pageDescription =
-  "Bespoke automation tools for UK trades businesses. Quoting, invoicing, job scheduling built around how you work. From £75/month.";
+  "OpsDeck helps UK trades businesses run their whole operation from one place — quoting, jobs, team and invoicing, plus done-for-you websites, compliance and sales services. Built by a tradesman.";
 
 export const metadata: Metadata = {
-  title: "OpsDeck — Admin Automation for Trades",
+  title: "OpsDeck — Run Your Whole Operation From One Place",
   description: pageDescription,
   alternates: {
     canonical: "/",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://opsdeck.co.uk/",
-    title: "OpsDeck — Admin Automation for Trades",
+    title: "OpsDeck — Run Your Whole Operation From One Place",
     description: pageDescription,
     images: ["/og-image.png"],
   },
