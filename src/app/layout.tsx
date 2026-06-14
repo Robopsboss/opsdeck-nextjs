@@ -12,14 +12,15 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://opsdeck.co.uk"),
-  title: "OpsDeck — Admin Automation for Trades",
-  description: "Bespoke automation tools for UK trades businesses. From £75/month.",
+  title: "OpsDeck — Run Your Whole Operation From One Place",
+  description:
+    "OpsDeck helps UK trades businesses run their whole operation from one place — quoting, jobs, team and invoicing, plus done-for-you websites, compliance and sales services. Built by a tradesman.",
   authors: [{ name: "OpsDeck" }],
   openGraph: {
     type: "website",
-    title: "OpsDeck — I Find The Admin Task Costing You The Most Time And Make It Disappear",
+    title: "OpsDeck — Run Your Whole Operation From One Place",
     description:
-      "OpsDeck builds bespoke automation tools for UK trades businesses. From quoting and invoicing to job scheduling and team admin — built around how your business actually works. From £75/month.",
+      "OpsDeck helps UK trades businesses run their whole operation from one place — quoting, jobs, team and invoicing, plus done-for-you websites, compliance and sales services. Built by a tradesman.",
     images: ["/og-image.png"],
   },
   twitter: {

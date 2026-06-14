@@ -182,7 +182,7 @@ export default function AboutPage() {
               Then I added the ability to send quotes directly from the app. Then analytics. Then profit analysis. Then a calendar view. Then job management. Then a full dashboard. One problem at a time, one solution at a time, until I had something that ran my entire business.
             </p>
             <p>
-              I was talking to other tradesmen about it and kept seeing the same thing — paper on walls, massive calendars, three separate apps that didn&apos;t talk to each other, business owners still doing everything the way it was done twenty years ago. I realised what I&apos;d built wasn&apos;t just useful for me. It was what everyone around me needed.
+              I was talking to other tradesmen about it and kept seeing the same thing — paper on walls, massive calendars, three separate apps that didn&apos;t talk to each other, business owners still doing everything the way it was done twenty years ago. And Infascape was never a one-man band. I&apos;m running gangs and operatives on site, so what I&apos;d built had to handle a whole operation with a team — briefing crews, coordinating jobs, keeping the work moving — not just one person&apos;s admin. I realised what I&apos;d built wasn&apos;t just useful for me. It was what everyone around me needed.
             </p>
           </div>
 
@@ -225,6 +225,9 @@ export default function AboutPage() {
             </p>
             <p>
               That is why the businesses I build for get something that actually works — not a generic tool adapted to fit them, but a platform built around how they already operate.
+            </p>
+            <p>
+              And OpsDeck is built for trades businesses running teams and operations — gangs on site, operatives to brief, jobs to coordinate — not just sole operators managing their own diary.
             </p>
           </div>
 
