@@ -68,7 +68,7 @@ export default function AboutPage() {
       <Navbar />
 
       {/* Hero */}
-      <section className="bg-hero text-hero-foreground">
+      <section className="bg-hero-dark text-hero-foreground">
         <div className="container mx-auto px-6 py-16 md:py-20 max-w-4xl">
           <Link
             href="/"
@@ -255,12 +255,12 @@ export default function AboutPage() {
       </section>
 
       {/* Closing CTA */}
-      <section className="bg-cta text-cta-foreground">
+      <section className="bg-hero-dark text-hero-foreground">
         <div className="container mx-auto px-6 py-20 md:py-28 max-w-3xl text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Want to know if OpsDeck is right for your business?
           </h2>
-          <p className="text-cta-muted text-lg leading-relaxed mb-10 max-w-2xl mx-auto">
+          <p className="text-hero-muted text-lg leading-relaxed mb-10 max-w-2xl mx-auto">
             Book a free 30-minute consultation. I&apos;ll come to you, understand how your business runs, and tell you honestly what I can automate — and what it will cost.
           </p>
           <a
