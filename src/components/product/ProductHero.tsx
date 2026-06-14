@@ -24,7 +24,7 @@ const ProductHero = ({
   ctaHref = "mailto:rob@opsdeck.co.uk",
   ctaVariant = "white",
 }: ProductHeroProps) => (
-  <section className="bg-hero text-hero-foreground">
+  <section className="bg-hero-dark text-hero-foreground">
     <div className="container mx-auto px-6 py-20 md:py-28 max-w-4xl">
       {eyebrow && (
         <p className="text-sm font-semibold uppercase tracking-widest text-accent mb-4">
