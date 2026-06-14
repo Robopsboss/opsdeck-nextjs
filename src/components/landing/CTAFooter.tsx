@@ -3,13 +3,13 @@ import SiteFooter from "@/components/landing/SiteFooter";
 
 const CTAFooter = () => (
   <>
-    <section className="bg-cta text-cta-foreground">
+    <section className="bg-hero-dark text-hero-foreground">
       <div className="container mx-auto px-6 py-20 md:py-28 max-w-3xl text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-6">
           Ready to save hours every week?
         </h2>
-        <p className="text-cta-muted text-lg leading-relaxed mb-10 max-w-2xl mx-auto">
-          Book a free 30-minute consultation. We&apos;ll look at your current quoting process and show you exactly what we can automate for your business. No commitment. No jargon. Just a straight conversation about whether we can help.
+        <p className="text-hero-muted text-lg leading-relaxed mb-10 max-w-2xl mx-auto">
+          Book a free 30-minute consultation. We&apos;ll look at how your operation runs and show you exactly what we can automate for your business. No commitment. No jargon. Just a straight conversation about whether we can help.
         </p>
         <a
           href="mailto:rob@opsdeck.co.uk"
@@ -18,21 +18,21 @@ const CTAFooter = () => (
           Book a Free Consultation
           <ArrowRight className="w-4 h-4" />
         </a>
-        <p className="text-cta-muted text-sm mt-5">
+        <p className="text-hero-muted text-sm mt-5">
           <a
             href="https://healthcheck.opsdeck.co.uk/"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 text-cta-foreground/90 hover:text-cta-foreground font-medium underline underline-offset-4 hover:no-underline transition-colors"
+            className="inline-flex items-center gap-1.5 text-hero-foreground/90 hover:text-hero-foreground font-medium underline underline-offset-4 hover:no-underline transition-colors"
           >
             Or take the free Business Health Check first
             <ArrowRight className="w-3.5 h-3.5" />
           </a>
         </p>
-        <p className="text-cta-muted text-sm mt-5">
+        <p className="text-hero-muted text-sm mt-5">
           Or call Rob directly — the person who built this and uses it every day in his own trades business.
           <br />
-          <a href="tel:07837698283" className="text-cta-foreground font-medium hover:underline">
+          <a href="tel:07837698283" className="text-hero-foreground font-medium hover:underline">
             07837 698 283
           </a>
         </p>
