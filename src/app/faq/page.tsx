@@ -128,6 +128,10 @@ const sections: FaqSection[] = [
         a: "The Website Build (from £750) is a complete new site, written and built from scratch on Next.js, AEO-ready from day one. The Website Optimisation Pack (£397) keeps your existing site and fixes the content — a 15-point audit, identification of the three highest-impact changes, and a rewrite of your homepage, pricing, and service page copy. If your site's bones are fine but it isn't generating enquiries, optimise. If there's no site or it's beyond saving, build.",
       },
       {
+        q: "Do you maintain the website after it's built?",
+        a: "Yes — an optional Website Quarterly Maintenance Package is available from £75 per quarter: four health checks a year covering analytics, indexing, speed, links, forms, and contact accuracy, with minor fixes included. It's set up at go-live and is completely optional.",
+      },
+      {
         q: "What is the Commercial Readiness Pack?",
         a: "A bundle of the three documents principal contractors and commercial clients ask for: the RAMS & Method Statement Pack, the Compliance Document Pack, and the Company Profile Pack. Bought separately they cost £591; the bundle is £497 — and all three are built from a single intake form, so you answer everything once. Full details on the [Commercial Readiness Pack page](/commercial-readiness).",
       },

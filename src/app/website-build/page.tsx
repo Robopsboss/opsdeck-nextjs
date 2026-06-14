@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ArrowRight } from "lucide-react";
 import Navbar from "@/components/landing/Navbar";
 import SiteFooter from "@/components/landing/SiteFooter";
 import ProductHero from "@/components/product/ProductHero";
@@ -10,6 +11,7 @@ import ComparisonTable from "@/components/product/ComparisonTable";
 import CTABlock from "@/components/product/CTABlock";
 
 const MAILTO = `mailto:rob@opsdeck.co.uk?subject=${encodeURIComponent("Website Build")}`;
+const MAINTENANCE_MAILTO = `mailto:rob@opsdeck.co.uk?subject=${encodeURIComponent("Website Maintenance")}`;
 const CTA_LABEL = "Book a Free Scoping Call";
 
 const pageTitle = "Website Build | OpsDeck";
@@ -133,6 +135,30 @@ export default function WebsiteBuildPage() {
         <HowItWorksSteps title="How It Works" steps={steps} />
 
         <ComparisonTable title="What Makes This Different" rows={comparisonRows} />
+
+        {/* Optional after-sale add-on */}
+        <section className="bg-section-alt">
+          <div className="container mx-auto px-6 py-16 md:py-24 max-w-4xl">
+            <div className="bg-card border border-border rounded-2xl p-8 md:p-10">
+              <p className="text-xs font-bold uppercase tracking-widest text-primary mb-3">
+                Optional add-on
+              </p>
+              <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4 leading-tight">
+                After your site is built — optional quarterly maintenance
+              </h2>
+              <p className="text-muted-foreground leading-relaxed">
+                Once your website is live, you can keep it performing with the Website Quarterly Maintenance Package — £75 per quarter. Four structured health checks a year covering analytics, Google indexing, page speed, broken links, contact details, forms, SSL, and more. Minor fixes (broken links, updated phone numbers, typos, swapped images, meta updates) are included in the £75 — completed the same week as the check. Anything larger is quoted separately before any work begins. Optional, rolling, 30 days&apos; notice to cancel. Details confirmed at go-live.
+              </p>
+              <a
+                href={MAINTENANCE_MAILTO}
+                className="inline-flex items-center gap-1.5 text-primary font-semibold hover:underline mt-5"
+              >
+                Ask about maintenance
+                <ArrowRight className="w-4 h-4" />
+              </a>
+            </div>
+          </div>
+        </section>
 
         <CTABlock
           title="Ready to Stop Being Invisible?"
