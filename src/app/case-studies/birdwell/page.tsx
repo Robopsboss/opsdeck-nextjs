@@ -26,14 +26,14 @@ export default function CaseStudyBirdwellPage() {
       <Navbar />
 
       {/* Hero */}
-      <section className="bg-hero text-hero-foreground">
+      <section className="bg-hero-dark text-hero-foreground">
         <div className="container mx-auto px-6 py-20 md:py-28 max-w-4xl">
           <Link
-            href="/"
+            href="/case-studies"
             className="inline-flex items-center gap-2 text-hero-muted hover:text-hero-foreground transition-colors text-sm mb-8"
           >
             <ArrowLeft className="w-4 h-4" />
-            Back to Home
+            Back to Case Studies
           </Link>
           <p className="text-sm font-semibold uppercase tracking-widest text-accent mb-4">
             Case Study
@@ -70,20 +70,22 @@ export default function CaseStudyBirdwellPage() {
               The admin bottleneck is gone. The pile no longer exists. And Birdwell are winning more work because professional, detailed quotes are landing in customers&apos; inboxes the same day — not days later when the admin pile gets cleared.
             </p>
           </div>
+        </div>
+      </section>
 
-          {/* CTA */}
-          <div className="mt-16 pt-12 border-t border-border text-center">
-            <h2 className="text-2xl font-bold text-foreground mb-4">
-              Want results like this for your business?
-            </h2>
-            <a
-              href="mailto:rob@opsdeck.co.uk"
-              className="inline-flex items-center gap-2 bg-primary text-primary-foreground font-semibold px-8 py-4 rounded-lg hover:bg-primary/90 transition-colors text-base"
-            >
-              Book a Free Partnership Discovery Call
-              <ArrowRight className="w-4 h-4" />
-            </a>
-          </div>
+      {/* Closing CTA */}
+      <section className="bg-hero-dark text-hero-foreground">
+        <div className="container mx-auto px-6 py-20 md:py-28 max-w-3xl text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            Want results like this for your business?
+          </h2>
+          <a
+            href="mailto:rob@opsdeck.co.uk"
+            className="inline-flex items-center gap-2 bg-background text-foreground font-semibold px-8 py-4 rounded-lg hover:bg-background/90 transition-colors text-base"
+          >
+            Book a Free Partnership Discovery Call
+            <ArrowRight className="w-4 h-4" />
+          </a>
         </div>
       </section>
 
