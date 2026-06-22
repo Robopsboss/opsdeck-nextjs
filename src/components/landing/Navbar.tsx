@@ -12,7 +12,7 @@ const learnLinks = [
   { label: "How It Works", href: "/how-it-works" },
   { label: "Why Bespoke", href: "/bespoke-vs-off-the-shelf" },
   { label: "Honest Comparison", href: "/honest-comparison" },
-  { label: "Case Studies", href: "/case-studies/birdwell" },
+  { label: "Case Studies", href: "/case-studies" },
 ];
 
 const servicesFeatured = {
