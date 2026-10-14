@@ -21,7 +21,8 @@ OpsDeck builds bespoke AI automation tools for UK trades businesses. We find the
   - AI Tools and Automation — £75/month, setup from £200. Single-purpose automation, one specific task eliminated. The starting point.
   - Quote Builder — £100/month, setup from £300. Voice or manual quoting with adaptive memory.
   - Quote Builder + Dashboard — £150/month, setup from £300. Quoting plus full business dashboard: enquiries, jobs, calendar, sales, profit forecasting.
-  - Full Operations Platform — £250/month, setup from £1,000. Everything plus team integration, operative management, multi-user access, fully custom workflow.
+  - Full Operations Platform — from £250/month, build fee from £1,500 (fixed after a scoping call). Everything plus team integration, operative management, unlimited users, fully custom workflow. Monthly fee banded by number of field operatives: 1–10 £250, 11–20 £325, 21–30 £400, 31–40 £475, 41–50 £550, 50+ from £550 scoped on call.
+  - Unlimited users included on every tier.
 
 ## Services — Get Found & Win Work
 

@@ -61,7 +61,6 @@ const chargedSeparately = [
   "New job types or automations",
   "New document templates",
   "New integrations",
-  "Additional user seats — £49 per month",
   "On-site training beyond initial onboarding",
 ];
 

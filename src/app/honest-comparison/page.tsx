@@ -86,7 +86,7 @@ const faqs = [
   },
   {
     q: "Is OpsDeck more expensive?",
-    a: "The monthly subscription starts from £75/month — comparable to or cheaper than Tradify and Jobber. The difference is the upfront build cost, from £200 for a single tool to £1,000 for a full field ops platform. That build cost covers configuring the platform to your exact business. Generic tools have no equivalent because they are not built around you.",
+    a: "The monthly subscription starts from £75/month — comparable to or cheaper than Tradify and Jobber. The difference is the upfront build cost, from £200 for a single tool to £1,500 for a full field ops platform. That build cost covers configuring the platform to your exact business. Generic tools have no equivalent because they are not built around you.",
   },
   {
     q: "Can't I just customise Tradify to fit my business?",

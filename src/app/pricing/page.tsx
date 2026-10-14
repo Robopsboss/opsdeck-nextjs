@@ -15,7 +15,7 @@ const priceUp = [
   "Number of different job types needing separate logic",
   "Number of integrations with external tools required",
   "Bespoke engine logic — custom productivity rates, area calculations, material configs",
-  "Number of user seats above standard allowance",
+  "Number of field operatives on the Full Operations Platform — published bands below",
   "Size and operational complexity of the business",
 ];
 
@@ -52,12 +52,21 @@ const tiers = [
   },
   {
     name: "Full Operations Platform",
-    monthly: "£250/month",
-    setup: "From £1,000",
+    monthly: "From £250/month",
+    setup: "From £1,500",
     features:
-      "Everything in Tier 3 plus team and operative integration, WhatsApp job dispatch, multi-user access, and a fully bespoke build configured to your exact trade and workflow.",
+      "Everything in Tier 3 plus team and operative integration, WhatsApp job dispatch, unlimited users, and a fully bespoke build configured to your exact trade and workflow. Monthly fee set by number of operatives — see bands below.",
     forTeams: true,
   },
+];
+
+const operativeBands = [
+  { operatives: "1–10", monthly: "£250" },
+  { operatives: "11–20", monthly: "£325" },
+  { operatives: "21–30", monthly: "£400" },
+  { operatives: "31–40", monthly: "£475" },
+  { operatives: "41–50", monthly: "£550" },
+  { operatives: "50+", monthly: "From £550, scoped on call" },
 ];
 
 const serviceGroups = [
@@ -116,7 +125,7 @@ const stages = [
 const hidden = [
   {
     title: "Per-user pricing that escalates",
-    body: "Most generic tools charge per seat. Three users today, eight users next year. Your monthly cost nearly triples. OpsDeck pricing is per organisation not per seat.",
+    body: "Most generic tools charge per seat. Three users today, eight users next year. Your monthly cost nearly triples. Every OpsDeck tier includes unlimited users. On the Full Operations Platform the monthly fee moves only with your number of field operatives, in published £75 steps — office staff, managers and admin never add to the bill.",
   },
   {
     title: "Annual contracts and exit fees",
@@ -139,7 +148,7 @@ const hidden = [
 const faqs = [
   {
     q: "How much does OpsDeck cost?",
-    a: "Monthly subscriptions range from £75 to £250 per month depending on your tier. One-off setup fees range from £200 to £1,000 or more depending on complexity. All costs are agreed in writing before any payment is committed.",
+    a: "Monthly subscriptions range from £75 to £550 per month depending on your tier and, for the Full Operations Platform, your number of field operatives. One-off setup fees range from £200 to £1,500 or more depending on complexity. All costs are agreed in writing before any payment is committed.",
   },
   {
     q: "Do you offer one-off services as well as the platform?",
@@ -155,7 +164,7 @@ const faqs = [
   },
   {
     q: "Does the price change as my team grows?",
-    a: "For most team sizes no — pricing is per organisation not per seat. For very large teams this is discussed at scope stage and reflected in the initial quote rather than appearing as a hidden escalation later.",
+    a: "Users never cost extra — every tier includes unlimited users. On the Full Operations Platform the monthly fee is banded by field operatives: £250 for 1–10, £325 for 11–20, £400 for 21–30, £475 for 31–40 and £550 for 41–50. Above 50 operatives it is scoped on a call. The bands are published here so there is no hidden escalation later.",
   },
   {
     q: "Can I upgrade my tier later?",
@@ -199,15 +208,28 @@ const jsonLd = {
         { "@type": "Offer", name: "AI Tools and Automation", price: "75", priceCurrency: "GBP", priceSpecification: { "@type": "UnitPriceSpecification", price: "75", priceCurrency: "GBP", unitText: "MONTH" } },
         { "@type": "Offer", name: "Quote Builder", price: "100", priceCurrency: "GBP", priceSpecification: { "@type": "UnitPriceSpecification", price: "100", priceCurrency: "GBP", unitText: "MONTH" } },
         { "@type": "Offer", name: "Quote Builder and Dashboard", price: "150", priceCurrency: "GBP", priceSpecification: { "@type": "UnitPriceSpecification", price: "150", priceCurrency: "GBP", unitText: "MONTH" } },
-        { "@type": "Offer", name: "Full Operations Platform", price: "250", priceCurrency: "GBP", priceSpecification: { "@type": "UnitPriceSpecification", price: "250", priceCurrency: "GBP", unitText: "MONTH" } },
+        {
+          "@type": "Offer",
+          name: "Full Operations Platform",
+          description: "Unlimited users. Monthly fee banded by number of field operatives. Build fee from £1,500, fixed after a scoping call.",
+          price: "250",
+          priceCurrency: "GBP",
+          priceSpecification: [
+            { "@type": "UnitPriceSpecification", price: "250", priceCurrency: "GBP", unitText: "MONTH", eligibleQuantity: { "@type": "QuantitativeValue", minValue: 1, maxValue: 10, unitText: "operatives" } },
+            { "@type": "UnitPriceSpecification", price: "325", priceCurrency: "GBP", unitText: "MONTH", eligibleQuantity: { "@type": "QuantitativeValue", minValue: 11, maxValue: 20, unitText: "operatives" } },
+            { "@type": "UnitPriceSpecification", price: "400", priceCurrency: "GBP", unitText: "MONTH", eligibleQuantity: { "@type": "QuantitativeValue", minValue: 21, maxValue: 30, unitText: "operatives" } },
+            { "@type": "UnitPriceSpecification", price: "475", priceCurrency: "GBP", unitText: "MONTH", eligibleQuantity: { "@type": "QuantitativeValue", minValue: 31, maxValue: 40, unitText: "operatives" } },
+            { "@type": "UnitPriceSpecification", price: "550", priceCurrency: "GBP", unitText: "MONTH", eligibleQuantity: { "@type": "QuantitativeValue", minValue: 41, maxValue: 50, unitText: "operatives" } },
+          ],
+        },
       ],
     },
     {
       "@type": "FAQPage",
       mainEntity: [
-        { "@type": "Question", name: "How much does OpsDeck cost?", acceptedAnswer: { "@type": "Answer", text: "OpsDeck monthly subscriptions range from £75 to £250 per month. One-off setup fees range from £200 to £1,000 or more depending on complexity. All costs are agreed in writing before any payment is committed." } },
+        { "@type": "Question", name: "How much does OpsDeck cost?", acceptedAnswer: { "@type": "Answer", text: "OpsDeck monthly subscriptions range from £75 to £550 per month. One-off setup fees range from £200 to £1,500 or more depending on complexity. All costs are agreed in writing before any payment is committed." } },
         { "@type": "Question", name: "Do you offer one-off services as well as the platform?", acceptedAnswer: { "@type": "Answer", text: "Yes. OpsDeck delivers done-for-you services at fixed prices from £97 to £750 — websites, Google Business Profile setup, AEO pages, review systems, compliance documents, and sales and marketing strategy. Every price is published above and every service has its own page. No quotes needed except the Website Build, which is fixed-quoted before work starts." } },
-        { "@type": "Question", name: "Does OpsDeck charge per user?", acceptedAnswer: { "@type": "Answer", text: "No. OpsDeck pricing is per organisation not per seat. Your team can grow without the monthly fee automatically increasing." } },
+        { "@type": "Question", name: "Does OpsDeck charge per user?", acceptedAnswer: { "@type": "Answer", text: "No. Every OpsDeck tier includes unlimited users. The Full Operations Platform is priced in published bands by number of field operatives, from £250 per month for 1–10 operatives to £550 per month for 41–50." } },
         { "@type": "Question", name: "Are there annual contracts?", acceptedAnswer: { "@type": "Answer", text: "No. OpsDeck subscriptions are rolling monthly with 30 days notice. No annual lock-ins and no early exit fees." } },
       ],
     },
@@ -216,7 +238,7 @@ const jsonLd = {
 
 const pageTitle = "How Much Does OpsDeck Cost? Honest Pricing for Trades Businesses";
 const pageDescription =
-  "OpsDeck monthly subscriptions from £75 to £250 per month. Setup fees from £200 to £1,000. All costs agreed in writing before you pay anything. Honest pricing for trades businesses.";
+  "OpsDeck monthly subscriptions from £75 to £550 per month, unlimited users. Setup fees from £200 to £1,500. All costs agreed in writing before you pay anything. Honest pricing for trades businesses.";
 
 export const metadata: Metadata = {
   title: pageTitle,
@@ -226,7 +248,7 @@ export const metadata: Metadata = {
     url: "https://opsdeck.co.uk/pricing",
     title: pageTitle,
     description:
-      "OpsDeck monthly subscriptions from £75 to £250 per month. Setup fees from £200 to £1,000. All costs agreed in writing before you pay anything.",
+      "OpsDeck monthly subscriptions from £75 to £550 per month, unlimited users. Setup fees from £200 to £1,500. All costs agreed in writing before you pay anything.",
     images: ["/og-image.png"],
   },
 };
@@ -252,7 +274,7 @@ export default function PricingPage() {
             </h1>
             <div className="bg-card/10 border-l-4 border-accent rounded-r-lg p-6 mb-8 backdrop-blur-sm">
               <p className="text-hero-foreground text-base md:text-lg leading-relaxed">
-                Monthly platform subscriptions from <strong>£75 to £250 per month</strong>, with one-off setup fees from <strong>£200 to £1,000 or more</strong> depending on complexity. Done-for-you services — websites, Google setup, compliance documents, sales and marketing strategy — from <strong>£97 to £750</strong> as one-off fixed prices. All costs are agreed in writing before you pay anything — no surprises, no hidden escalations.
+                Monthly platform subscriptions from <strong>£75 to £550 per month</strong> with unlimited users, plus one-off setup fees from <strong>£200 to £1,500 or more</strong> depending on complexity. Done-for-you services — websites, Google setup, compliance documents, sales and marketing strategy — from <strong>£97 to £750</strong> as one-off fixed prices. All costs are agreed in writing before you pay anything — no surprises, no hidden escalations.
               </p>
             </div>
             <p className="text-hero-muted text-base md:text-lg leading-relaxed max-w-3xl">
@@ -378,6 +400,42 @@ export default function PricingPage() {
                 </div>
               ))}
             </div>
+
+            {/* Full Operations Platform — operative bands */}
+            <div className="mt-16 max-w-3xl mx-auto">
+              <h3 className="text-2xl md:text-3xl font-black text-foreground mb-3 text-center">
+                Full Operations Platform — priced by operatives
+              </h3>
+              <p className="text-muted-foreground text-center mb-8 leading-relaxed">
+                Unlimited users included. The monthly fee is set by the number of field operatives on the platform — office staff, managers and admin are always free.
+              </p>
+              <div className="bg-card rounded-2xl border border-border overflow-hidden">
+                <table className="w-full text-left">
+                  <thead className="bg-section-alt">
+                    <tr>
+                      <th scope="col" className="px-6 py-3 text-xs font-bold uppercase tracking-widest text-muted-foreground">
+                        Operatives
+                      </th>
+                      <th scope="col" className="px-6 py-3 text-xs font-bold uppercase tracking-widest text-muted-foreground text-right">
+                        Monthly
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-border">
+                    {operativeBands.map((band) => (
+                      <tr key={band.operatives}>
+                        <td className="px-6 py-4 text-foreground font-semibold">{band.operatives}</td>
+                        <td className="px-6 py-4 text-foreground font-bold text-right">{band.monthly}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+              <p className="text-foreground font-semibold text-center mt-6">
+                Build fee from £1,500, fixed after a scoping call.
+              </p>
+            </div>
+
             <p className="text-sm text-muted-foreground italic leading-relaxed mt-8 max-w-3xl">
               Setup fees are quoted individually after your free consultation. The figures shown are starting points — your exact price is always agreed before any work begins.
             </p>
@@ -473,7 +531,7 @@ export default function PricingPage() {
               </div>
             </div>
             <p className="text-center text-foreground font-semibold mt-8">
-              Same rough cost at 3 users. Nearly triple the cost at 8 users. OpsDeck pricing does not escalate with headcount.
+              Same rough cost at 3 users. Nearly triple the cost at 8 users. Every OpsDeck tier includes unlimited users — no per-seat escalation.
             </p>
           </div>
         </section>

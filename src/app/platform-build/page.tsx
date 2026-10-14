@@ -94,10 +94,10 @@ const tiers = [
   },
   {
     name: "Full Operations Platform",
-    monthly: "£250/month",
-    setup: "£1,000",
+    monthly: "From £250/month",
+    setup: "£1,500",
     description:
-      "Everything above plus team integration, operative management, multi-user access, fully custom workflow.",
+      "Everything above plus team integration, operative management, unlimited users, fully custom workflow. Monthly fee banded by operatives — £250 for 1–10 up to £550 for 41–50.",
     forTeams: true,
   },
 ];
@@ -203,7 +203,7 @@ const jsonLd = {
         price: "250",
         priceCurrency: "GBP",
         description:
-          "Everything plus team integration, operative management, multi-user access, fully custom workflow. £250/month, setup from £1,000.",
+          "Everything plus team integration, operative management, unlimited users, fully custom workflow. From £250/month for 1–10 operatives up to £550/month for 41–50; build fee from £1,500, fixed after a scoping call.",
       },
     ],
   },

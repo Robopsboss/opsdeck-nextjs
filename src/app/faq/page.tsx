@@ -60,11 +60,11 @@ const sections: FaqSection[] = [
     entries: [
       {
         q: "How much does the OpsDeck platform cost?",
-        a: "Monthly subscriptions run from £75 to £250 per month depending on tier, with one-off setup fees from £200 to £1,000 or more depending on complexity. All costs are agreed in writing before you pay anything. Full breakdown on the [pricing page](/pricing).",
+        a: "Monthly subscriptions run from £75 to £550 per month depending on tier and team size, with one-off setup fees from £200 to £1,500 or more depending on complexity. All costs are agreed in writing before you pay anything. Full breakdown on the [pricing page](/pricing).",
       },
       {
         q: "What are the platform tiers?",
-        a: "Four tiers: AI Tools & Automation (£75/month — single-purpose automation), Quote Builder (£100/month — voice or manual quoting with adaptive price memory), Quote Builder + Dashboard (£150/month — quoting plus full business dashboard, the most popular tier), and Full Operations Platform (£250/month — everything plus team integration, operative management, and multi-user access). The right tier is confirmed during a free consultation, not before it.",
+        a: "Four tiers: AI Tools & Automation (£75/month — single-purpose automation), Quote Builder (£100/month — voice or manual quoting with adaptive price memory), Quote Builder + Dashboard (£150/month — quoting plus full business dashboard, the most popular tier), and Full Operations Platform (from £250/month — everything plus team integration, operative management, and unlimited users, with the monthly fee banded by number of operatives). The right tier is confirmed during a free consultation, not before it.",
       },
       {
         q: "How does the build process work?",
@@ -84,7 +84,7 @@ const sections: FaqSection[] = [
       },
       {
         q: "Does the price change as my team grows?",
-        a: "No. OpsDeck pricing is per organisation, not per seat. Generic tools charge per user, so three users today becomes triple the bill at eight users. Your OpsDeck price stays the same as your team grows.",
+        a: "Users never cost extra — every OpsDeck tier includes unlimited users. Generic tools charge per user, so three users today becomes triple the bill at eight users. On the Full Operations Platform the monthly fee is banded by field operatives in published steps: £250 for 1–10, £325 for 11–20, £400 for 21–30, £475 for 31–40 and £550 for 41–50, with 50+ scoped on a call. Office staff, managers and admin never add to the bill.",
       },
       {
         q: "What's included in the monthly subscription?",
@@ -154,7 +154,7 @@ const sections: FaqSection[] = [
       },
       {
         q: "Why should I trust a small company over an established software provider?",
-        a: "Because the established providers sell you their process; OpsDeck builds around yours. Tradify and Jobber are good products for simple, repeatable jobs — OpsDeck says so openly on its [pricing page](/pricing). But they're built for the average trade, priced per seat, and can't be customised without developer day rates. OpsDeck is built by a tradesman who uses it daily in his own business, every build is bespoke, pricing is per organisation, and you deal directly with the person who built it. Read how that worked for [Birdwell Insulation](/case-studies/birdwell).",
+        a: "Because the established providers sell you their process; OpsDeck builds around yours. Tradify and Jobber are good products for simple, repeatable jobs — OpsDeck says so openly on its [pricing page](/pricing). But they're built for the average trade, priced per seat, and can't be customised without developer day rates. OpsDeck is built by a tradesman who uses it daily in his own business, every build is bespoke, every tier includes unlimited users, and you deal directly with the person who built it. Read how that worked for [Birdwell Insulation](/case-studies/birdwell).",
       },
       {
         q: "Can I see it working before I commit?",

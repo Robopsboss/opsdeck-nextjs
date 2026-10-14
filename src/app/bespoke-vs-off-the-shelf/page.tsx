@@ -98,7 +98,7 @@ const proofs = [
 const faqs = [
   {
     q: "Is OpsDeck more expensive than Jobber?",
-    a: "Monthly subscriptions start from £75/month — comparable to or cheaper than most off-the-shelf tools. The difference is the build cost upfront, which covers configuring the platform to your business. From £200 for a single tool, from £1,000 for a full field ops platform.",
+    a: "Monthly subscriptions start from £75/month — comparable to or cheaper than most off-the-shelf tools. The difference is the build cost upfront, which covers configuring the platform to your business. From £200 for a single tool, from £1,500 for a full field ops platform.",
   },
   {
     q: "Do my operatives need to download an app?",
