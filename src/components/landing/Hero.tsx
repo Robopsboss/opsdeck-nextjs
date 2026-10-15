@@ -18,7 +18,7 @@ const Hero = () => (
         </div>
 
         <p className="text-xs md:text-sm font-bold tracking-widest uppercase text-hero-muted mb-4">
-          For scaffolding and field ops teams
+          For trades firms with operatives out in the field
         </p>
 
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-black leading-[1.1] mb-6">

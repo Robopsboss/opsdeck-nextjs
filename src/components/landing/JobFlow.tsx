@@ -15,7 +15,7 @@ const JobFlow = () => (
   <section className="bg-hero-dark text-hero-foreground">
     <div className="container mx-auto px-6 py-20 md:py-28 max-w-7xl">
       <h2 className="text-3xl md:text-4xl font-bold mb-12 leading-tight">
-        From enquiry to dismantle — it all works together.
+        From enquiry to job completion — it all works together.
       </h2>
       <ol className="flex flex-col lg:flex-row lg:items-stretch gap-2 lg:gap-1">
         {steps.map((step, i) => (

@@ -12,9 +12,9 @@ import About from "@/components/landing/About";
 import CTAFooter from "@/components/landing/CTAFooter";
 
 const pageTitle =
-  "OpsDeck — Field Operations Software for Scaffolding & Trades Firms";
+  "OpsDeck — Field Operations Software for Trades Firms";
 const pageDescription =
-  "OpsDeck runs your whole field operation from one place — jobs, crews, vehicles, handovers, hire weeks and invoicing, live on every phone. Built in Sheffield for scaffolding and trades firms.";
+  "OpsDeck runs your whole field operation from one place — jobs, crews, vehicles, site sign-offs and invoicing, live on every phone. Built in Sheffield for trades firms with operatives out in the field.";
 
 export const metadata: Metadata = {
   title: pageTitle,

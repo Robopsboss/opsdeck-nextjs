@@ -1,4 +1,4 @@
-const trades = ["Scaffolding", "Groundworks", "Roofing", "Insulation", "Fencing", "Landscaping"];
+const trades = ["Scaffolding", "Tarmac & Surfacing", "Groundworks", "Roofing", "Insulation", "Fencing", "Landscaping"];
 
 const WhoItsFor = () => (
   <section className="bg-hero-dark text-hero-foreground">

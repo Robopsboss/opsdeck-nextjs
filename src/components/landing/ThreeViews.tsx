@@ -4,12 +4,12 @@ const views = [
   {
     icon: Monitor,
     title: "The office",
-    body: "Every job, stage and crew in one view. Holidays, vehicles and allocations in the same place. Hires running over flagged before they cost you. Council compliance pack downloads in one click.",
+    body: "Every job, stage and crew in one view. Holidays, vehicles and allocations in the same place. Finished jobs flagged to invoice the moment they're done. Compliance packs download in one click.",
   },
   {
     icon: ClipboardCheck,
     title: "The foreman",
-    body: "Opens a link and sees today's work. Handovers filled in and signed on site, digitally. Notes and completion marked from the scaffold.",
+    body: "Opens a link and sees today's work. Handovers filled in and signed on site, digitally. Notes and completion marked from site.",
   },
   {
     icon: HardHat,

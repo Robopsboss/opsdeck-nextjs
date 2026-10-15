@@ -17,7 +17,7 @@ type Door = {
 const doors: Door[] = [
   {
     title: "Field Ops Platform",
-    body: "Jobs, crews, vehicles, handovers, hire weeks and invoicing in one place — built around how your operation already runs. From £250/month, unlimited users.",
+    body: "Jobs, crews, vehicles, site sign-offs and invoicing in one place — built around how your operation already runs. From £250/month, unlimited users.",
     cta: "Explore Platform Build",
     href: "/platform-build",
     icon: Cog,

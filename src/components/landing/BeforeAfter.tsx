@@ -1,10 +1,10 @@
 import { Check, X } from "lucide-react";
 
 const rows = [
-  { before: "Printed job packs and paper filing", after: "One job file, enquiry to dismantle" },
+  { before: "Printed job packs and paper filing", after: "One job file, enquiry to completion" },
   { before: "WhatsApp photo hunts", after: "Photos saved to the right job from site" },
   { before: "Paper handover sheets", after: "Filled in and signed digitally on site" },
-  { before: "Hire tracking in a spreadsheet", after: "Overruns flagged automatically" },
+  { before: "Ringing round to find out what's done", after: "Live job status on every screen, from every phone" },
   { before: "Paper sign-off sheets", after: "Timestamped PPE checks and time logs" },
   {
     before: "Toolbox talks and RAMS chased round WhatsApp",
