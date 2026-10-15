@@ -16,15 +16,18 @@ const steps = [
   {
     num: "03",
     icon: Zap,
-    title: "You save hours every week",
-    body: "Your tool is live. This isn't a one-off build — it's an ongoing partnership. Quotes that used to take 30 minutes now take under a minute. Admin that used to eat your evenings is gone.",
+    title: "Your whole operation goes live",
+    body: "The office stops chasing, the lads stop printing, and you can see the whole operation from your phone. And it's an ongoing partnership — we keep building as your business grows.",
   },
 ];
 
 const HowItWorks = () => (
-  <section className="bg-section-alt">
+  <section className="bg-background">
     <div className="container mx-auto px-6 py-20 md:py-28 max-w-6xl">
-      <h2 className="text-3xl md:text-4xl font-bold mb-16">How It Works</h2>
+      <h2 className="text-3xl md:text-4xl font-bold mb-4">How It Works</h2>
+      <p className="text-muted-foreground text-lg mb-16">
+        We find the admin task costing you the most time — and make it disappear.
+      </p>
       <div className="grid md:grid-cols-3 gap-10">
         {steps.map((step) => (
           <div key={step.num} className="relative">

@@ -2,18 +2,22 @@ import type { Metadata } from "next";
 import Navbar from "@/components/landing/Navbar";
 import Hero from "@/components/landing/Hero";
 import SocialProof from "@/components/landing/SocialProof";
+import ThreeViews from "@/components/landing/ThreeViews";
+import JobFlow from "@/components/landing/JobFlow";
+import BeforeAfter from "@/components/landing/BeforeAfter";
 import ThreeWaysToStart from "@/components/landing/ThreeWaysToStart";
-import RealResults from "@/components/landing/RealResults";
 import HowItWorks from "@/components/landing/HowItWorks";
 import WhoItsFor from "@/components/landing/WhoItsFor";
 import About from "@/components/landing/About";
 import CTAFooter from "@/components/landing/CTAFooter";
 
+const pageTitle =
+  "OpsDeck — Field Operations Software for Scaffolding & Trades Firms";
 const pageDescription =
-  "OpsDeck helps UK trades businesses run their whole operation from one place — quoting, jobs, team and invoicing, plus done-for-you websites, compliance and sales services. Built by a tradesman.";
+  "OpsDeck runs your whole field operation from one place — jobs, crews, vehicles, handovers, hire weeks and invoicing, live on every phone. Built in Sheffield for scaffolding and trades firms.";
 
 export const metadata: Metadata = {
-  title: "OpsDeck — Run Your Whole Operation From One Place",
+  title: pageTitle,
   description: pageDescription,
   alternates: {
     canonical: "/",
@@ -21,7 +25,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://opsdeck.co.uk/",
-    title: "OpsDeck — Run Your Whole Operation From One Place",
+    title: pageTitle,
+    description: pageDescription,
+    images: ["/og-image.png"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@OpsDeck",
+    title: pageTitle,
     description: pageDescription,
     images: ["/og-image.png"],
   },
@@ -64,8 +75,10 @@ export default function Home() {
         <Navbar />
         <Hero />
         <SocialProof />
+        <ThreeViews />
+        <JobFlow />
+        <BeforeAfter />
         <ThreeWaysToStart />
-        <RealResults />
         <HowItWorks />
         <WhoItsFor />
         <About />

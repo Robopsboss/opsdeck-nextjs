@@ -6,21 +6,21 @@ import { useEffect, useState } from "react";
 // Index 0 mirrors the static first frame that the parent server-renders
 // underneath this overlay (so it's in the HTML without JS / for crawlers).
 // This client overlay layers the JS-only crossfade on top and cycles through
-// all three frames. Frame 0's alt is left empty here because the server-
+// all four frames. Frame 0's alt is left empty here because the server-
 // rendered base already carries the descriptive alt text.
 const SCREENS = [
-  { src: "/hero-ops-agent.png", alt: "" },
+  { src: "/hero-fieldops-1.png", alt: "" },
   {
-    src: "/hero-sales-dashboard.png",
-    alt: "OpsDeck sales dashboard, tracking enquiries and won work",
+    src: "/hero-fieldops-2.png",
+    alt: "Scaffold job list tracking every job from booked to dismantled, with hire weeks and overruns flagged",
   },
   {
-    src: "/hero-jobs.png",
-    alt: "OpsDeck job management, scheduling and tracking jobs across the team",
+    src: "/hero-fieldops-3.png",
+    alt: "Invoice screen flagging scaffold jobs ready to invoice and hires that ran over, with full invoice history",
   },
   {
-    src: "/hero-profit.png",
-    alt: "OpsDeck profit analysis, showing margins and forecasting across jobs",
+    src: "/hero-fieldops-4.png",
+    alt: "OpsDeck scaffolding dashboard: today's vehicle runs, hires ending soon, hires running over, permits and handovers",
   },
 ];
 

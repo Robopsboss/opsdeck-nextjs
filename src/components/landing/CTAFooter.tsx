@@ -9,13 +9,13 @@ const CTAFooter = () => (
           Ready to save hours every week?
         </h2>
         <p className="text-hero-muted text-lg leading-relaxed mb-10 max-w-2xl mx-auto">
-          Book a free 30-minute consultation. We&apos;ll look at how your operation runs and show you exactly what we can automate for your business. No commitment. No jargon. Just a straight conversation about whether we can help.
+          Book a free 20-minute walkthrough. We&apos;ll look at how your operation runs and show you exactly what OpsDeck would take off your plate. No commitment. No jargon. Just a straight conversation about whether we can help.
         </p>
         <a
-          href="mailto:rob@opsdeck.co.uk"
+          href="mailto:rob@opsdeck.co.uk?subject=20-minute%20OpsDeck%20walkthrough"
           className="inline-flex items-center gap-2 bg-background text-foreground font-semibold px-8 py-4 rounded-lg hover:bg-background/90 transition-colors text-base"
         >
-          Book a Free Consultation
+          Book a free 20-minute walkthrough
           <ArrowRight className="w-4 h-4" />
         </a>
         <p className="text-hero-muted text-sm mt-5">

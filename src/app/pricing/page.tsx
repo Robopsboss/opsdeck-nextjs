@@ -48,7 +48,6 @@ const tiers = [
     setup: "From £300",
     features:
       "Everything in Tier 2 plus enquiries management, jobs tab, calendar view, sales overview, and profit forecasting.",
-    popular: true,
   },
   {
     name: "Full Operations Platform",
@@ -56,7 +55,7 @@ const tiers = [
     setup: "From £1,500",
     features:
       "Everything in Tier 3 plus team and operative integration, WhatsApp job dispatch, unlimited users, and a fully bespoke build configured to your exact trade and workflow. Monthly fee set by number of operatives — see bands below.",
-    forTeams: true,
+    popular: true,
   },
 ];
 
@@ -361,11 +360,6 @@ export default function PricingPage() {
                   {tier.popular && (
                     <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-accent text-accent-foreground text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full">
                       Most Popular
-                    </span>
-                  )}
-                  {tier.forTeams && (
-                    <span className="absolute top-4 right-4 bg-tag-bg text-tag-fg text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded">
-                      For Teams
                     </span>
                   )}
                   <h3 className={`font-bold text-lg mb-3 ${tier.popular ? "" : "text-foreground"}`}>

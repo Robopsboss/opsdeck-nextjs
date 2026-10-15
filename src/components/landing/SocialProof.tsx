@@ -5,21 +5,17 @@ const SocialProof = () => (
   <section className="bg-section-alt border-y border-border">
     <div className="container mx-auto px-6 py-16 md:py-24 max-w-3xl text-center">
       <blockquote className="text-2xl md:text-3xl lg:text-4xl font-black text-foreground leading-tight mb-6">
-        &ldquo;Our quotes used to sit in a pile waiting to be typed up. Now they go out the same day.&rdquo;
+        &ldquo;The paper&apos;s gone. The spreadsheet&apos;s gone. The WhatsApp photo hunt is gone.&rdquo;
       </blockquote>
       <p className="text-muted-foreground font-medium mb-10">
-        — Birdwell Insulation Ltd, Sheffield
-      </p>
-
-      <p className="text-muted-foreground text-lg leading-relaxed max-w-2xl mx-auto mb-8">
-        Birdwell Insulation&apos;s contracts managers were pricing jobs in Excel, then waiting for admin to manually type each quote into a professional document. 15 minutes per quote, done in batches. Now they drag and drop the Excel file into OpsDeck. A branded, professional quote is ready in 30 seconds. Enquiry in, quote out — same day.
+        Hi-Point Access — Sheffield scaffolding
       </p>
 
       <Link
-        href="/case-studies/birdwell"
+        href="/case-studies/hi-point"
         className="inline-flex items-center gap-2 text-primary font-semibold hover:underline transition-colors"
       >
-        Read the full case study
+        Read the case study
         <ArrowRight className="w-4 h-4" />
       </Link>
     </div>

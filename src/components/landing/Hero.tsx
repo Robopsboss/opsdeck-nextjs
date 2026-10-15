@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Phone } from "lucide-react";
 import HeroRotator from "./HeroRotator";
 
 const Hero = () => (
@@ -17,30 +17,32 @@ const Hero = () => (
           <span className="text-xl font-bold">OpsDeck</span>
         </div>
 
+        <p className="text-xs md:text-sm font-bold tracking-widest uppercase text-hero-muted mb-4">
+          For scaffolding and field ops teams
+        </p>
+
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-black leading-[1.1] mb-6">
-          We find the admin task costing you the most time — and make it disappear.
+          Run the whole operation from your phone — without hiring another ops manager.
         </h1>
 
         <p className="text-lg md:text-xl text-hero-muted font-medium mb-10 max-w-2xl mx-auto leading-relaxed">
-          Then we go further — OpsDeck becomes the deck you run your business from. Quotes, jobs, team and invoicing in one place, with an ops agent that flags what needs doing before it costs you.
+          Enquiry in, quote out, job created, handover signed on site. No more spreadsheets for one thing, diaries for another and forms everywhere else — the whole operation runs digitally, live on every phone. Running Hi-Point Access&apos;s scaffolding operation in Sheffield today.
         </p>
 
         <div className="flex flex-col items-center gap-4">
           <a
-            href="mailto:rob@opsdeck.co.uk"
+            href="mailto:rob@opsdeck.co.uk?subject=20-minute%20OpsDeck%20walkthrough"
             className="inline-flex items-center gap-2 bg-background text-foreground font-semibold px-8 py-4 rounded-lg hover:bg-background/90 transition-colors text-base"
           >
-            Book a Free Consultation
+            Book a free 20-minute walkthrough
             <ArrowRight className="w-4 h-4" />
           </a>
           <a
-            href="https://healthcheck.opsdeck.co.uk/"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="tel:07837698283"
             className="inline-flex items-center gap-1.5 text-sm text-hero-muted hover:text-hero-foreground transition-colors"
           >
-            Not sure where to start? Take the free Business Health Check
-            <ArrowRight className="w-3.5 h-3.5" />
+            <Phone className="w-3.5 h-3.5" />
+            Or call Rob: 07837 698 283
           </a>
         </div>
       </div>
@@ -60,8 +62,8 @@ const Hero = () => (
           <div className="relative aspect-[1476/856]">
             {/* First frame — server-rendered, present without JS (crawlable) */}
             <Image
-              src="/hero-ops-agent.png"
-              alt="The OpsDeck ops-agent dashboard, flagging jobs, quotes and invoicing that need attention"
+              src="/hero-fieldops-1.png"
+              alt="Weekly scaffold calendar showing erects, dismantles and alterations allocated to each vehicle"
               fill
               sizes="(min-width: 1152px) 1104px, 100vw"
               priority
