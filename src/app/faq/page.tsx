@@ -68,7 +68,7 @@ const sections: FaqSection[] = [
       },
       {
         q: "How do operatives use it on site?",
-        a: "Operatives receive a link on their phone with today's work. Before they can open a job they complete the PPE check and sign the declaration. On site they add photos and notes, mark the job complete and fill in and sign the handover, which is emailed to the customer automatically.",
+        a: "The office sends each operative their job link by WhatsApp — the app they already use every day — so there's nothing to install and no training needed. The link opens only that operative's job, so they never see office information they shouldn't. Before they can open the job they complete the PPE check and sign the declaration. On site they add photos and notes, mark the job complete and fill in and sign the handover, which is emailed to the customer automatically.",
       },
       {
         q: "How does the PPE check work?",
@@ -76,7 +76,7 @@ const sections: FaqSection[] = [
       },
       {
         q: "Does it replace our WhatsApp groups?",
-        a: "Yes. Job details, site photos, notes, toolbox talks and messages to staff all run through OpsDeck, so nothing lives in group chats. Photos land on the right job instead of being matched up by hand, and every toolbox talk, RAMS or method statement sent out has a signed declaration on record.",
+        a: "Yes. WhatsApp is only used by the office to send each operative their job link, because every operative already has it. Everything else — job details, site photos, notes, handovers, toolbox talks and messages to staff — runs through OpsDeck, so nothing lives in group chats. Photos land on the right job instead of being matched up by hand, and every toolbox talk, RAMS or method statement sent out has a signed declaration on record.",
       },
       {
         q: "How does the office know when a job is live or finished?",

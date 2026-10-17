@@ -14,7 +14,7 @@ const views = [
   {
     icon: HardHat,
     title: "The lads",
-    body: "Job details land on their phone. They can't open the job until PPE checks and the declaration are signed — timestamped, every time. Site photos go straight onto the right job, and time logs record themselves.",
+    body: "Their job link arrives on WhatsApp — nothing to install, no training, and they only see their own job. They can't open the job until PPE checks and the declaration are signed — timestamped, every time. Site photos go straight onto the right job, and time logs record themselves.",
   },
 ];
 

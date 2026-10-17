@@ -49,7 +49,7 @@ const features = [
   },
   {
     feature: "Job details sent to every operative's phone",
-    outcome: "Operatives open a link and see today's work — address, job details and what needs doing",
+    outcome: "The office sends each operative a job link by WhatsApp — nothing to install, no training, and they only see their own job",
   },
   {
     feature: "PPE checks and declarations before work starts",

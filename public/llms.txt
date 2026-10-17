@@ -25,7 +25,7 @@ OpsDeck lets the owner and office of a trades firm oversee every job from a phon
   - Council and framework jobs created alongside private work, with documents attached to the job file
   - Job file from enquiry to completion, moving through clear stages
   - Surveys allocated to staff; jobs allocated to operatives and vehicles
-  - Job details sent to operatives' phones as a link
+  - Job link sent to each operative by WhatsApp — no app to install, no training, and operatives only see their own job, not office data
   - PPE check and signed declaration required before the job opens — timestamped
   - Handover filled in and signed on site, emailed to the customer automatically
   - Site photos and notes sent straight to the right job in the office

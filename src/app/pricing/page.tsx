@@ -54,7 +54,7 @@ const tiers = [
     monthly: "From £250/month",
     setup: "From £1,500",
     features:
-      "Everything in Tier 3 plus team and operative integration, WhatsApp job dispatch, unlimited users, and a fully bespoke build configured to your exact trade and workflow. Monthly fee set by number of operatives — see bands below.",
+      "Everything in Tier 3 plus team and operative integration, job links sent to operatives by WhatsApp (no app to install, no training), unlimited users, and a fully bespoke build configured to your exact trade and workflow. Monthly fee set by number of operatives — see bands below.",
     popular: true,
   },
 ];
