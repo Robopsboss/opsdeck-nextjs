@@ -10,101 +10,147 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
+const CHECKED = "October 2026";
+
+const criteria = [
+  {
+    label: "Who adapts to who",
+    generic: "Your team adapts to the software's job stages, forms and screens",
+    opsdeck: "Built around the way your operation already runs — your stages, your paperwork, your trade",
+  },
+  {
+    label: "How operatives get their work",
+    generic: "Typically each field worker has a login on the vendor's mobile app",
+    opsdeck: "Job link sent by WhatsApp — nothing to install, no training, and they only see their own job",
+  },
+  {
+    label: "How it's priced",
+    generic: "Per user, or a price you only get after a sales call",
+    opsdeck: "Published bands by number of field operatives — £250/month for 1–10. Unlimited users",
+  },
+  {
+    label: "Contract",
+    generic: "Varies — some bill annually or ask for a 12-month commitment",
+    opsdeck: "Rolling monthly, 30 days' notice, no exit fees",
+  },
+  {
+    label: "Trade-specific steps",
+    generic: "Configured within the options the product already has",
+    opsdeck: "Built in — e.g. PPE lock before a job opens, hire-week tracking for scaffolders, council compliance packs",
+  },
+  {
+    label: "Who you deal with",
+    generic: "The vendor's sales, onboarding and support teams",
+    opsdeck: "Rob France — the person who builds and maintains your platform",
+  },
+  {
+    label: "Size and track record",
+    generic: "Established vendors with large customer bases and ready-made integrations",
+    opsdeck: "A small Sheffield company. Live at Hi-Point Access. Fewer off-the-shelf integrations",
+  },
+];
+
 const tools = [
   {
-    name: "Tradify",
-    description: "Job management for trades. Highly rated in the UK.",
-    good: "Tradify is genuinely good at what it does — tracking jobs from enquiry to invoice, scheduling, and syncing with accounting. For an electrician or plumber doing straightforward jobs with standard pricing, it works well and the price is reasonable.",
-    short: "Quoting is manual. You enter your materials and it saves them — but there is no automation. Every quote still requires you to manually key in the job. No productivity rates, no area calculations, no logic that works the quote out for you. For complex trades, you end up back in a spreadsheet for the hard part anyway.",
-  },
-  {
     name: "Jobber",
-    description: "Built for high-volume field service teams.",
-    good: "Jobber excels at customer communication and scheduling — client self-service portals, automated follow-ups, and real-time job tracking. For businesses doing a high volume of quick, repeatable jobs it is a strong choice.",
-    short: "It is built around a standard job type. If your quoting involves complex material calculations, site measurements feeding into pricing logic, or trade-specific productivity rates — Jobber does not accommodate that. You are forced to work around it rather than with it.",
+    pricing:
+      "Published plans tiered by number of users, with extra users charged on top. Advertised in US dollars on its main pricing page — check Jobber's UK site for GBP.",
+    fit: "Service businesses running a high volume of quick, repeatable jobs that want strong customer booking, reminders and a client portal out of the box.",
+    watch: "You work the Jobber way. Every team member who needs access is a user, so the bill grows with the team.",
   },
   {
-    name: "Powered Now",
-    description: "The UK's self-described number one job management software for trades.",
-    good: "Powered Now is mobile-first and popular with smaller trades businesses in the UK. Good for day-to-day organisation, quote and invoice management, and drag-and-drop scheduling.",
-    short: "Like Tradify, it is built for the average trade. The quoting tool works for simple jobs. For trades where the quote itself is the complicated part — where materials need calculating by area, depth, or volume — the tool runs out of capability and you are back doing the complex bit manually.",
+    name: "Joblogic",
+    pricing:
+      "Per user, billed annually. Independent UK comparisons list it from around £45 per user per month.",
+    fit: "UK service and maintenance contractors with a team of engineers and planned, repeat contract work.",
+    watch: "Annual billing, and per-user pricing that rises with every engineer and office user you add.",
   },
-];
-
-const genericSteps = [
-  "Open new quote",
-  "Manually select each material",
-  "Manually enter quantities",
-  "Check your spreadsheet for rates",
-  "Calculate totals",
-  "Format and send",
-];
-
-const opsDeckSteps = [
-  "Enter site measurements",
-  "Platform calculates materials",
-  "Margins and rates applied automatically",
-  "Review and send",
+  {
+    name: "BigChange",
+    pricing:
+      "Not published. The pricing page asks you to request pricing; fleet, dashcam and fuel card options are listed as extras.",
+    fit: "Larger mobile workforces where vehicles and fleet tracking are a big part of the operation.",
+    watch: "You only see a price after a demo. Ask for the full first-year cost, including setup and extras, in writing.",
+  },
+  {
+    name: "simPRO",
+    pricing: "Not published — quote only after a sales call.",
+    fit: "Larger, contract-heavy firms that want project, stock and service management in one established system.",
+    watch: "Ask for the total first-year cost including setup and training before you commit.",
+  },
+  {
+    name: "Commusoft",
+    pricing: "Not published — quote only. Independent UK comparisons report a 12-month contract.",
+    fit: "Established service firms with ten or more staff that want a full off-the-shelf job management system.",
+    watch: "Twelve-month commitment and per-user costs as you grow. Get the full first-year figure in writing.",
+  },
 ];
 
 const stickWith = [
-  "Standard pricing, no complex calculations",
-  "Small number of job types",
-  "No team to manage in the field",
-  "High volume of quick repeatable jobs",
+  "You want something you can sign up to and use tomorrow",
+  "Your process already matches the standard way these tools work",
+  "You rely on a large library of ready-made integrations",
+  "You'd rather buy from a large, established vendor",
 ];
 
 const chooseOpsDeck = [
-  "Quoting involves area, volume, or material calculations",
-  "You have tried generic tools and gone back to Excel",
-  "You manage operatives across multiple sites",
-  "Admin is still eating your evenings",
-  "You need the platform built around your trade",
+  "Your process works — it just lives in spreadsheets, diaries and WhatsApp",
+  "Your lads won't use another app, and you don't want them seeing office data",
+  "Your team is growing and per-user bills keep climbing",
+  "Your trade has steps generic tools don't handle well — PPE sign-off, hire weeks, council packs",
+  "You're about to hire another ops manager just to keep track of the work",
 ];
 
 const proofs = [
   {
-    client: "Birdwell Insulation Ltd — Sheffield",
+    client: "Hi-Point Access Ltd — Sheffield scaffolding",
     before:
-      "Previously using Excel for pricing and manual document creation for every quote. 15 minutes per quote done in batches. Generic tools could not replicate their quoting logic.",
+      "Council jobs arrived as stacks of paper. Site photos came in over WhatsApp with no fixed home. Handover sheets were printed and signed on paper. The job tracker lived in a spreadsheet and a diary.",
     result:
-      "Drag and drop the Excel file, branded professional quote in 30 seconds. Same day turnaround on every enquiry.",
+      "One job file from enquiry to completion. Operatives get their job link by WhatsApp, photos land on the right job, handovers are signed digitally on site, and the council compliance pack downloads in one click.",
+    href: "/case-studies/hi-point",
   },
   {
-    client: "Hi-Point Access Ltd — Scaffolding",
+    client: "Birdwell Insulation Ltd — Sheffield",
     before:
-      "Using separate tools for pipeline, scheduling, and communication. Nothing joined up. Operatives briefed by phone. Completion notes chased manually.",
+      "Contracts managers priced in Excel, then waited for admin to type each quote up. 15 minutes per quote, done in batches.",
     result:
-      "One platform. Operatives receive a WhatsApp job sheet every morning. Photos and completion notes upload directly into the job file from site.",
+      "Drag and drop the Excel file — a branded quote in 30 seconds, built around the pricing spreadsheet they already used.",
+    href: "/case-studies/birdwell",
   },
 ];
 
 const faqs = [
   {
-    q: "Are you saying Tradify and Jobber are bad products?",
-    a: "No — they are good products for the businesses they are built for. The honest answer is that they are built for the average trade. If your business is more complex than average — in its quoting, its job types, or its field operations — they run out of capability. That is not a criticism, it is just the reality of what off-the-shelf software can and cannot do.",
+    q: "Is OpsDeck an alternative to Jobber, Joblogic or BigChange?",
+    a: "Yes, for trades firms with operatives in the field. The difference is the approach: Jobber, Joblogic, BigChange, simPRO and Commusoft are off-the-shelf platforms, so your team adapts to how the software works. OpsDeck is built around how your operation already runs, so your team keeps working the way they do now — just without the paper, spreadsheets and WhatsApp groups.",
   },
   {
-    q: "Is OpsDeck more expensive?",
-    a: "The monthly subscription starts from £75/month — comparable to or cheaper than Tradify and Jobber. The difference is the upfront build cost, from £200 for a single tool to £1,500 for a full field ops platform. That build cost covers configuring the platform to your exact business. Generic tools have no equivalent because they are not built around you.",
+    q: "Do we have to change how we work?",
+    a: "No. The build starts with a one-hour walkthrough of how your operation runs today — your job stages, your paperwork, how the lads get briefed and how the office tracks it. The platform is then built to match that. You don't reorganise the business to fit the software.",
   },
   {
-    q: "Can't I just customise Tradify to fit my business?",
-    a: "To a point. You can add your materials, set your rates, and configure job types. What you cannot do is add the intelligence — the productivity rates, the area calculations, the logic that works the quote out automatically. That layer does not exist in generic tools. It has to be built.",
+    q: "Do my operatives need to download an app?",
+    a: "No. The office sends each operative their job link by WhatsApp, which they already use. There's nothing to install and no training, and the link only opens that operative's job, so they never see information the office doesn't want them to.",
   },
   {
-    q: "What trades does OpsDeck work for?",
-    a: "Groundworks, landscaping, surfacing, insulation, scaffolding, roofing, fencing — any trade where the quote involves material calculations and the jobs are complex. Also works for service businesses with a team in the field that need operatives briefed and completion notes filed automatically.",
+    q: "Is OpsDeck cheaper than Jobber or Joblogic?",
+    a: "It depends on your headcount. For a very small team, an off-the-shelf tool can cost less per month. OpsDeck has a build fee from £1,500, then a monthly fee banded by field operatives with unlimited users — £250/month for 1–10 operatives up to £550 for 41–50 — so office staff, managers and admin never add to the bill. Compare the full first-year cost for your actual team, including setup and training, before deciding.",
   },
   {
-    q: "How do I know if it is right for my business?",
-    a: "Book a free consultation. We will look at your current process honestly and tell you whether bespoke automation is justified — or whether a generic tool would serve you just as well for less money. We would rather tell you the truth upfront than sell you something you do not need.",
+    q: "What's the risk of going with a smaller provider?",
+    a: "Fair question. OpsDeck limits it in three ways: you test a working demo before go-live and the final payment is only due at launch; the subscription is rolling monthly with 30 days' notice and no exit fees; and your data can be exported in full at any time.",
+  },
+  {
+    q: "How do I know which is right for my business?",
+    a: "Book a free consultation. We'll look at how your operation runs and tell you honestly whether a bespoke platform is justified — or whether an off-the-shelf tool would serve you just as well for less.",
   },
 ];
 
-const pageTitle = "Tradify, Jobber, Powered Now vs OpsDeck — An Honest Comparison";
+const pageTitle =
+  "Jobber, Joblogic, BigChange, simPRO & Commusoft vs OpsDeck — An Honest Comparison";
 const pageDescription =
-  "Tradify and Jobber are good tools. But they do half the job for complex trades businesses. Here is an honest comparison — including when you should choose them over us.";
+  "An honest comparison of field service platforms for UK trades firms — Jobber, Joblogic, BigChange, simPRO and Commusoft vs OpsDeck. Off-the-shelf tools make you adapt to them; OpsDeck is built around how your operation already works. Including when you should choose them over us.";
 
 export const metadata: Metadata = {
   title: pageTitle,
@@ -152,10 +198,10 @@ export default function HonestComparisonPage() {
               Honest Comparison
             </p>
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-black leading-[1.1] mb-6">
-              Tradify, Jobber, Powered Now — good tools that do half the job
+              Jobber, Joblogic, BigChange, simPRO, Commusoft — or OpsDeck?
             </h1>
             <p className="text-hero-muted text-base md:text-lg leading-relaxed max-w-2xl">
-              This page is not a hit piece. Tradify is a solid product. Jobber is well built. Powered Now works for thousands of trades businesses. But there is a specific type of trades business for which none of them are enough — and if you have found your way here, you probably already know which type you are.
+              These are good, established platforms, and for plenty of firms they&apos;re the right answer. This page isn&apos;t a hit piece. The real difference is simple: with an off-the-shelf platform, your business adapts to the software. With OpsDeck, the software is built around the system that already works for you.
             </p>
           </div>
         </section>
@@ -165,38 +211,51 @@ export default function HonestComparisonPage() {
           <div className="container mx-auto px-6 pt-16 md:pt-20 max-w-4xl">
             <div className="bg-section-alt border-l-4 border-primary rounded-r-xl p-6 md:p-8">
               <p className="text-foreground text-base md:text-lg leading-relaxed italic mb-4">
-                &ldquo;Before I built OpsDeck I was using separate tools that each did one thing. They were fine in isolation but none of them talked to each other and none of them did the complex part — the quoting. I needed something that did the entire job that my business specifically needed to function at its highest level. So I built it.&rdquo;
+                &ldquo;Most firms already have a way of running jobs that works. It just lives in spreadsheets, diaries and WhatsApp. They shouldn&apos;t have to adapt to me — I build around the systems they already use.&rdquo;
               </p>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                <span className="font-semibold text-foreground">Rob France</span>, founder of OpsDeck and owner of Infascape Ltd — a Sheffield landscaping company. Built OpsDeck after experiencing exactly this problem in his own trades business.
+                <span className="font-semibold text-foreground">Rob France</span>, founder of OpsDeck and owner of Infascape Ltd, a Sheffield landscaping company.
               </p>
             </div>
           </div>
         </section>
 
-        {/* What the generic tools do well */}
+        {/* Criteria table */}
         <section className="bg-background">
-          <div className="container mx-auto px-6 py-16 md:py-24 max-w-4xl">
-            <h2 className="text-3xl md:text-4xl font-bold mb-12">
-              What the generic tools do well
+          <div className="container mx-auto px-6 py-16 md:py-24 max-w-5xl">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              What to compare when choosing field operations software
             </h2>
-            <div className="space-y-6">
-              {tools.map((t) => (
+            <p className="text-muted-foreground leading-relaxed mb-10 max-w-3xl">
+              Seven things that decide whether a platform actually gets used by the office and the lads — and what it really costs as you grow.
+            </p>
+            <div className="rounded-xl border border-border overflow-hidden">
+              <div className="hidden md:grid grid-cols-[1fr_1.4fr_1.4fr] bg-section-alt border-b border-border">
+                <div className="px-5 py-4 text-xs font-bold tracking-widest uppercase text-muted-foreground">
+                  Criteria
+                </div>
+                <div className="px-5 py-4 text-xs font-bold tracking-widest uppercase text-muted-foreground">
+                  Off-the-shelf platforms
+                </div>
+                <div className="px-5 py-4 text-xs font-bold tracking-widest uppercase text-primary">
+                  OpsDeck
+                </div>
+              </div>
+              {criteria.map((c) => (
                 <div
-                  key={t.name}
-                  className="bg-card rounded-xl p-8 border border-border"
+                  key={c.label}
+                  className="grid md:grid-cols-[1fr_1.4fr_1.4fr] border-b border-border last:border-b-0"
                 >
-                  <h3 className="text-xl font-bold mb-1">{t.name}</h3>
-                  <p className="text-sm text-muted-foreground mb-5">{t.description}</p>
-                  <div className="mb-5">
-                    <p className="text-sm font-semibold text-foreground mb-2">What it does well</p>
-                    <p className="text-muted-foreground leading-relaxed text-sm">{t.good}</p>
+                  <div className="px-5 pt-5 md:py-5 font-bold text-foreground text-sm">
+                    {c.label}
                   </div>
-                  <div className="border-l-4 border-accent bg-accent/10 rounded-r-md p-4">
-                    <p className="text-sm font-semibold text-accent-foreground mb-2" style={{ color: "hsl(var(--accent))" }}>
-                      Where it falls short
-                    </p>
-                    <p className="text-foreground/80 leading-relaxed text-sm">{t.short}</p>
+                  <div className="px-5 pt-2 md:py-5 text-sm text-muted-foreground leading-relaxed">
+                    <span className="md:hidden font-semibold text-foreground">Off-the-shelf: </span>
+                    {c.generic}
+                  </div>
+                  <div className="px-5 pt-2 pb-5 md:py-5 text-sm text-foreground font-medium leading-relaxed">
+                    <span className="md:hidden font-semibold text-primary">OpsDeck: </span>
+                    {c.opsdeck}
                   </div>
                 </div>
               ))}
@@ -204,98 +263,52 @@ export default function HonestComparisonPage() {
           </div>
         </section>
 
-        {/* Manual vs automation */}
+        {/* Each platform */}
         <section className="bg-section-alt">
-          <div className="container mx-auto px-6 py-16 md:py-24 max-w-5xl">
-            <p className="text-xs font-bold tracking-widest text-primary uppercase mb-3">
-              The real difference — manual entry vs automation
-            </p>
-            <h2 className="text-3xl md:text-4xl font-bold mb-8">
-              Generic tools save your data. OpsDeck uses it.
-            </h2>
-            <div className="space-y-5 text-muted-foreground leading-relaxed mb-10 max-w-3xl">
-              <p>
-                Every tool on the market will save your materials list. That is table stakes. The difference is what happens when you start a new quote.
-              </p>
-              <p>
-                With Tradify or Jobber — you select your materials, enter the quantities manually, and build the quote line by line. Every time. The tool remembers what you charge for things. It does not work anything out for you.
-              </p>
-              <p>
-                With OpsDeck — you enter the site measurements. The platform calculates the materials required based on your productivity rates, works out the quantities automatically, applies your margins, and generates a complete quote. The intelligence is built in. You provide the numbers from site. The platform does the rest.
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-6">
-              {/* Generic */}
-              <div className="bg-card rounded-xl p-8 border border-border flex flex-col">
-                <span className="inline-block text-xs font-bold uppercase tracking-widest text-destructive mb-5">
-                  Generic tool quoting
-                </span>
-                <ol className="space-y-3 mb-6 flex-1">
-                  {genericSteps.map((s, i) => (
-                    <li key={s} className="flex items-start gap-3 text-sm text-foreground">
-                      <span className="w-6 h-6 rounded-full bg-secondary text-secondary-foreground flex items-center justify-center text-xs font-bold shrink-0">
-                        {i + 1}
-                      </span>
-                      <span className="leading-relaxed pt-0.5">{s}</span>
-                    </li>
-                  ))}
-                </ol>
-                <p className="text-base font-bold text-destructive">
-                  20 to 45 minutes per quote
-                </p>
-              </div>
-
-              {/* OpsDeck */}
-              <div className="bg-card rounded-xl p-8 border-2 border-primary flex flex-col">
-                <span className="inline-block text-xs font-bold uppercase tracking-widest text-primary mb-5">
-                  OpsDeck quoting
-                </span>
-                <ol className="space-y-3 mb-6 flex-1">
-                  {opsDeckSteps.map((s, i) => (
-                    <li key={s} className="flex items-start gap-3 text-sm text-foreground">
-                      <span className="w-6 h-6 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-xs font-bold shrink-0">
-                        {i + 1}
-                      </span>
-                      <span className="leading-relaxed pt-0.5">{s}</span>
-                    </li>
-                  ))}
-                </ol>
-                <p className="text-base font-bold text-primary">
-                  Under 1 minute per quote
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* When generic tools are the right choice */}
-        <section className="bg-background">
           <div className="container mx-auto px-6 py-16 md:py-24 max-w-4xl">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8">
-              When the generic tools are the right choice
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              The platforms, one by one
             </h2>
-            <div className="border border-border rounded-xl p-8 bg-card">
-              <p className="text-xs font-bold tracking-widest text-muted-foreground uppercase mb-3">
-                An honest note
-              </p>
-              <p className="text-foreground leading-relaxed">
-                We will always tell you honestly if OpsDeck is not the right fit. If you do simple, repeatable jobs with standard pricing — an electrician quoting two hours labour and parts, a plumber doing a boiler service — Tradify or Jobber will serve you well at a lower cost. Bespoke automation is most valuable when the quoting is complex and the admin is eating your time. If that is not you, save your money.
-              </p>
+            <p className="text-muted-foreground leading-relaxed mb-12">
+              Pricing models checked {CHECKED} from each vendor&apos;s public pricing page and independent UK comparisons. Prices change — always get the current figure from the vendor.
+            </p>
+            <div className="space-y-6">
+              {tools.map((t) => (
+                <div
+                  key={t.name}
+                  className="bg-card rounded-xl p-8 border border-border"
+                >
+                  <h3 className="text-xl font-bold mb-5">{t.name}</h3>
+                  <div className="space-y-4 text-sm leading-relaxed">
+                    <div>
+                      <p className="font-semibold text-foreground mb-1">How it&apos;s priced</p>
+                      <p className="text-muted-foreground">{t.pricing}</p>
+                    </div>
+                    <div>
+                      <p className="font-semibold text-foreground mb-1">Strongest fit</p>
+                      <p className="text-muted-foreground">{t.fit}</p>
+                    </div>
+                    <div className="border-l-4 border-accent bg-accent/10 rounded-r-md p-4">
+                      <p className="font-semibold text-foreground mb-1">Worth knowing</p>
+                      <p className="text-foreground/80">{t.watch}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </section>
 
-        {/* When OpsDeck is the right call */}
-        <section className="bg-section-alt">
+        {/* Right choice */}
+        <section className="bg-background">
           <div className="container mx-auto px-6 py-16 md:py-24 max-w-5xl">
             <h2 className="text-3xl md:text-4xl font-bold mb-12">
-              When OpsDeck is the right call
+              Which is the right call for you?
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="bg-card rounded-xl p-8 border border-border">
                 <h3 className="text-lg font-bold mb-5">
-                  Stick with generic tools if — your jobs are simple and repeatable
+                  Choose an off-the-shelf platform if…
                 </h3>
                 <ul className="space-y-3">
                   {stickWith.map((item) => (
@@ -308,11 +321,9 @@ export default function HonestComparisonPage() {
               </div>
               <div className="bg-card rounded-xl p-8 border-2 border-primary relative">
                 <span className="absolute -top-3 left-8 inline-block bg-accent text-accent-foreground text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded-full">
-                  Featured
+                  OpsDeck
                 </span>
-                <h3 className="text-lg font-bold mb-5">
-                  Choose OpsDeck if — your jobs are complex and bespoke
-                </h3>
+                <h3 className="text-lg font-bold mb-5">Choose OpsDeck if…</h3>
                 <ul className="space-y-3">
                   {chooseOpsDeck.map((item) => (
                     <li key={item} className="flex items-start gap-3 text-muted-foreground text-sm">
@@ -327,16 +338,17 @@ export default function HonestComparisonPage() {
         </section>
 
         {/* Proof */}
-        <section className="bg-background">
+        <section className="bg-section-alt">
           <div className="container mx-auto px-6 py-16 md:py-24 max-w-5xl">
             <h2 className="text-3xl md:text-4xl font-bold mb-12">
-              What it has meant for real businesses
+              Built around how they already worked
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
               {proofs.map((p) => (
-                <div
+                <Link
                   key={p.client}
-                  className="bg-card rounded-xl p-8 border border-border"
+                  href={p.href}
+                  className="group bg-card rounded-xl p-8 border border-border hover:border-primary transition-colors flex flex-col"
                 >
                   <p className="text-xs font-bold tracking-widest text-primary uppercase mb-4">
                     {p.client}
@@ -345,18 +357,22 @@ export default function HonestComparisonPage() {
                     <p className="text-sm font-semibold text-foreground mb-1">Before</p>
                     <p className="text-muted-foreground leading-relaxed text-sm">{p.before}</p>
                   </div>
-                  <div>
-                    <p className="text-sm font-semibold text-foreground mb-1">Result</p>
+                  <div className="flex-1">
+                    <p className="text-sm font-semibold text-foreground mb-1">Now</p>
                     <p className="text-muted-foreground leading-relaxed text-sm">{p.result}</p>
                   </div>
-                </div>
+                  <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary mt-6">
+                    Read the case study
+                    <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
+                  </span>
+                </Link>
               ))}
             </div>
           </div>
         </section>
 
         {/* FAQ */}
-        <section className="bg-section-alt">
+        <section className="bg-background">
           <div className="container mx-auto px-6 py-16 md:py-24 max-w-3xl">
             <h2 className="text-3xl md:text-4xl font-bold mb-10">Common questions</h2>
             <Accordion type="single" collapsible className="w-full">
@@ -378,16 +394,16 @@ export default function HonestComparisonPage() {
         <section className="bg-cta text-cta-foreground">
           <div className="container mx-auto px-6 py-20 md:py-28 max-w-3xl text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Already tried generic software and found it doesn&apos;t fit?
+              Tried off-the-shelf software and ended up back on WhatsApp?
             </h2>
             <p className="text-cta-muted text-lg leading-relaxed mb-10 max-w-2xl mx-auto">
-              Book a free 30-minute consultation. We will look at your current process and tell you honestly what we can automate — and whether the cost is justified for your business.
+              Book a free 20-minute walkthrough. We&apos;ll look at how your operation runs and tell you honestly whether OpsDeck is the right fit — or whether one of the platforms above would serve you better.
             </p>
             <a
-              href="mailto:rob@opsdeck.co.uk"
+              href={`mailto:rob@opsdeck.co.uk?subject=${encodeURIComponent("20-minute OpsDeck walkthrough")}`}
               className="inline-flex items-center gap-2 bg-background text-foreground font-semibold px-8 py-4 rounded-lg hover:bg-background/90 transition-colors text-base"
             >
-              Book a free consultation
+              Book a free 20-minute walkthrough
               <ArrowRight className="w-4 h-4" />
             </a>
           </div>

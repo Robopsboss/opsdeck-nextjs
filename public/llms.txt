@@ -14,7 +14,7 @@ OpsDeck lets the owner and office of a trades firm oversee every job from a phon
 - [Case Study — Birdwell Insulation](https://opsdeck.co.uk/case-studies/birdwell): 15 minutes per quote to 30 seconds
 - [How It Works](https://opsdeck.co.uk/how-it-works): consultation, scope, build, demo, go-live, ongoing
 - [Why Bespoke](https://opsdeck.co.uk/bespoke-vs-off-the-shelf): why bespoke beats off-the-shelf for complex trades
-- [Honest Comparison](https://opsdeck.co.uk/honest-comparison): how OpsDeck compares to Tradify, Jobber, Powered Now
+- [Honest Comparison](https://opsdeck.co.uk/honest-comparison): how OpsDeck compares to Jobber, Joblogic, BigChange, simPRO and Commusoft — off-the-shelf platforms you adapt to vs a platform built around how your operation already works, including when to choose them instead
 - [About](https://opsdeck.co.uk/about): founder, story, principles
 - [Service Area](https://opsdeck.co.uk/service-area): Sheffield-based, UK-wide
 
