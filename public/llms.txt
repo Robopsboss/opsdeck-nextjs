@@ -1,28 +1,47 @@
 # OpsDeck
 
-> Bespoke AI platform builds and fixed-price done-for-you services for UK trades businesses. One flagship platform product (Platform Build, from £75/month) plus fourteen fixed-price service products covering web, AEO/SEO, reviews, sales, marketing, and commercial compliance (from £97 to £750).
+> Field operations platform for UK trades firms with operatives out in the field. Runs the whole operation from one place — enquiries and quotes, job files, crew and vehicle allocation, job details on operatives' phones, PPE checks and declarations, site handovers, photos and notes to the office, a live calendar and invoice flags. Built in Sheffield. Running Hi-Point Access's scaffolding operation. From £250/month for 1–10 operatives, unlimited users.
 
-OpsDeck builds bespoke AI automation tools for UK trades businesses. We find the admin task costing you the most time and make it disappear. Every client gets a bespoke build configured to how their business already works, then pays a monthly retainer for ongoing support and evolution — or buys one of the fixed-price service products below for a specific job.
+OpsDeck lets the owner and office of a trades firm oversee every job from a phone, tablet or computer — without hiring another ops manager to keep track of the work. Each build is configured to how the firm already operates, then supported monthly by the founder, Rob France. OpsDeck also offers smaller admin and quoting tools and fixed-price done-for-you services for trades businesses.
 
 ## Top-level pages
 
-- [Home](https://opsdeck.co.uk/): overview, what we build, who it's for
-- [Pricing](https://opsdeck.co.uk/pricing): platform tiers, payment structure, 12-month cost comparison
+- [Home](https://opsdeck.co.uk/): what the Field Ops Platform does, who it's for, live screens
+- [Field Ops Platform](https://opsdeck.co.uk/platform-build): full feature list, tiers, build process
+- [Pricing](https://opsdeck.co.uk/pricing): per-operative bands, all tiers, 12-month cost comparison
+- [FAQ](https://opsdeck.co.uk/faq): field operations questions — operatives, PPE checks, WhatsApp, council jobs, pricing
+- [Case Study — Hi-Point Access](https://opsdeck.co.uk/case-studies/hi-point): Sheffield scaffolding firm's whole operation taken off paper, enquiry to completion
+- [Case Study — Birdwell Insulation](https://opsdeck.co.uk/case-studies/birdwell): 15 minutes per quote to 30 seconds
 - [How It Works](https://opsdeck.co.uk/how-it-works): consultation, scope, build, demo, go-live, ongoing
 - [Why Bespoke](https://opsdeck.co.uk/bespoke-vs-off-the-shelf): why bespoke beats off-the-shelf for complex trades
 - [Honest Comparison](https://opsdeck.co.uk/honest-comparison): how OpsDeck compares to Tradify, Jobber, Powered Now
-- [Case Studies](https://opsdeck.co.uk/case-studies/birdwell): Birdwell Insulation — 15 minutes per quote to 30 seconds
 - [About](https://opsdeck.co.uk/about): founder, story, principles
 - [Service Area](https://opsdeck.co.uk/service-area): Sheffield-based, UK-wide
 
-## Platform Build (flagship product)
+## Field Ops Platform (main product)
 
-- [Platform Build](https://opsdeck.co.uk/platform-build): bespoke AI platform built around how your business actually works — quoting, dashboard, team management, automated invoicing and payment reminders. Eliminates the admin that runs through the owner. Four tiers, monthly subscription begins from go-live:
-  - AI Tools and Automation — £75/month, setup from £200. Single-purpose automation, one specific task eliminated. The starting point.
-  - Quote Builder — £100/month, setup from £300. Voice or manual quoting with adaptive memory.
-  - Quote Builder + Dashboard — £150/month, setup from £300. Quoting plus full business dashboard: enquiries, jobs, calendar, sales, profit forecasting.
-  - Full Operations Platform — from £250/month, build fee from £1,500 (fixed after a scoping call). Everything plus team integration, operative management, unlimited users, fully custom workflow. Monthly fee banded by number of field operatives: 1–10 £250, 11–20 £325, 21–30 £400, 31–40 £475, 41–50 £550, 50+ from £550 scoped on call.
-  - Unlimited users included on every tier.
+- [Field Ops Platform](https://opsdeck.co.uk/platform-build) — what it does:
+  - Enquiries and quotes for private, commercial and one-off work; accepted quotes become jobs automatically
+  - Council and framework jobs created alongside private work, with documents attached to the job file
+  - Job file from enquiry to completion, moving through clear stages
+  - Surveys allocated to staff; jobs allocated to operatives and vehicles
+  - Job details sent to operatives' phones as a link
+  - PPE check and signed declaration required before the job opens — timestamped
+  - Handover filled in and signed on site, emailed to the customer automatically
+  - Site photos and notes sent straight to the right job in the office
+  - Live calendar of jobs, crews and vehicles; jobs turn green when completed
+  - Invoice flag when a job is done, showing what to invoice and how much, with records kept
+  - Toolbox talks, RAMS, method statements, training and messages sent to all staff in one click, with signed declarations — replacing WhatsApp groups
+  - Vehicle checks, MOTs and staff holidays tracked
+  - For scaffolding: hire weeks tracked and overrunning hires flagged
+- Pricing: monthly fee banded by number of field operatives, unlimited users — 1–10 £250, 11–20 £325, 21–30 £400, 31–40 £475, 41–50 £550, 50+ from £550 scoped on call. Build fee from £1,500, fixed in writing after a scoping call. Monthly fee starts from go-live. Rolling monthly, 30 days' notice, no annual contract.
+
+## Smaller platform tiers
+
+- AI Tools and Automation — £75/month, setup from £200. One specific admin task automated.
+- Quote Builder — £100/month, setup from £300. Voice or manual quoting with adaptive memory.
+- Quote Builder + Dashboard — £150/month, setup from £300. Quoting plus enquiries, jobs, calendar, sales and profit forecasting.
+- Unlimited users included on every tier.
 
 ## Services — Get Found & Win Work
 
@@ -49,13 +68,13 @@ OpsDeck builds bespoke AI automation tools for UK trades businesses. We find the
 
 ## Who We Serve
 
-Trades businesses across the UK including landscapers, groundworkers, insulation contractors, scaffolding companies, roofers, and fencing contractors. Particularly suited to trades where quoting is complex — where materials need calculating, specifications matter, and a wrong number costs money — and to businesses managing operatives across multiple sites.
+UK trades firms with operatives out in the field and an office keeping track of them: scaffolding, tarmac and surfacing, groundworks, roofing, insulation, fencing and landscaping. Best suited to firms that have outgrown spreadsheets, diaries and WhatsApp groups, where the owner or office spends the day chasing what has been done.
 
 ## Proven Results
 
+- Hi-Point Access Ltd (Sheffield scaffolding and access, council frameworks and private contracts): whole operation runs on the OpsDeck Field Ops Platform — one job file from enquiry to completion, site photos straight onto the right job, handovers signed digitally on site, foremen marking work complete from site, and the full council compliance pack downloading in one click.
 - Birdwell Insulation Ltd: reduced quote turnaround from 15 minutes per quote done in batches to 30 seconds per quote using a bespoke Excel-to-document converter.
-- Hi-Point Access Ltd: Full Operations Platform including custom quoting engine and operative management via WhatsApp job dispatch.
-- Infascape Ltd: Quote Builder and Dashboard used daily in an active landscaping business.
+- Infascape Ltd: OpsDeck used daily in an active Sheffield landscaping business.
 
 ## Founder
 
@@ -64,5 +83,6 @@ Rob France. Based in Sheffield. Runs both OpsDeck and Infascape Ltd, a landscapi
 ## Contact
 
 - Email: rob@opsdeck.co.uk
+- Phone: 07837 698 283
 - Web: https://opsdeck.co.uk
 - Based in Sheffield, working with trades businesses across the UK

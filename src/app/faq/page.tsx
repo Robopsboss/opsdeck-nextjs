@@ -12,7 +12,7 @@ import {
 
 const pageTitle = "Frequently Asked Questions | OpsDeck";
 const pageDescription =
-  "Straight answers about the OpsDeck platform, done-for-you services, pricing, delivery times, contracts, and data ownership — for UK trades businesses.";
+  "Straight answers about OpsDeck's field operations platform — how operatives use it, PPE checks, site handovers, pricing per operative, contracts and data ownership — plus OpsDeck's fixed-price services for UK trades firms.";
 
 export const metadata: Metadata = {
   title: pageTitle,
@@ -35,7 +35,7 @@ const sections: FaqSection[] = [
     entries: [
       {
         q: "What is OpsDeck?",
-        a: "OpsDeck is a Sheffield-based company that builds AI-powered admin tools and delivers done-for-you growth and compliance services for UK trades businesses. There are two sides to it: a bespoke platform (quoting, dashboards, team management, and invoicing built around how your business actually works, from £75/month) and fixed-price services from £97 to £750 — websites, Google Business Profile setup, AEO pages, review systems, compliance documents, and sales and marketing strategy.",
+        a: "OpsDeck is a field operations platform for UK trades firms with operatives out in the field, built in Sheffield. It runs the whole operation from one place — enquiries and quotes, job files, crew and vehicle allocation, job details on operatives' phones, PPE checks and declarations, site handovers, photos and notes back to the office, a live calendar and invoice flags. It runs Hi-Point Access's scaffolding operation in Sheffield. The [Field Ops Platform](/platform-build) starts at £250/month for 1–10 operatives with unlimited users. OpsDeck also offers smaller admin tools from £75/month and fixed-price services from £97 to £750 — websites, Google Business Profile setup, AEO pages, review systems, compliance documents, and sales and marketing strategy.",
       },
       {
         q: "Who is behind OpsDeck?",
@@ -43,7 +43,7 @@ const sections: FaqSection[] = [
       },
       {
         q: "Who is OpsDeck for?",
-        a: "Trades businesses where the quote itself is complicated — where materials need calculating, specifications matter, and a wrong number costs money. Groundworks, landscaping, insulation, roofing, fencing, and similar trades. If you're quoting two hours of labour and a call-out fee, generic tools like Tradify or Jobber will serve you well. If your quotes take time and brainpower to get right, OpsDeck was built for you.",
+        a: "Trades firms with operatives out in the field and an office trying to keep track of them — scaffolding, tarmac and surfacing, groundworks, roofing, insulation, fencing, landscaping and similar trades. It fits best once the business has grown past spreadsheets, diaries and WhatsApp groups, and the owner or office is spending the day chasing what's been done. If you're a sole trader quoting two hours of labour and a call-out fee, generic tools like Tradify or Jobber will serve you well.",
       },
       {
         q: "What area does OpsDeck cover?",
@@ -56,15 +56,56 @@ const sections: FaqSection[] = [
     ],
   },
   {
+    name: "Field Operations",
+    entries: [
+      {
+        q: "What does OpsDeck's field operations platform actually do?",
+        a: "It runs a job from enquiry to completion in one place. Enquiries and quotes come in, and an accepted quote becomes a job automatically. The office allocates surveys to staff and jobs to operatives and vehicles. Operatives get the job details on their phone, complete a PPE check and declaration before the job opens, do the work, sign the handover on site and send photos and notes straight back to the job. The office sees it all on a live calendar, and the job is flagged to invoice as soon as it's done.",
+      },
+      {
+        q: "Can OpsDeck replace the need for another ops manager?",
+        a: "That's what it's built for. It doesn't replace good judgement, but it takes over the tracking an ops manager spends the day doing — who's on which job, what's been completed, what's been signed off and what needs invoicing. The owner or office can oversee every job from a phone, tablet or computer instead of ringing round. See how it runs at [Hi-Point Access](/case-studies/hi-point).",
+      },
+      {
+        q: "How do operatives use it on site?",
+        a: "Operatives receive a link on their phone with today's work. Before they can open a job they complete the PPE check and sign the declaration. On site they add photos and notes, mark the job complete and fill in and sign the handover, which is emailed to the customer automatically.",
+      },
+      {
+        q: "How does the PPE check work?",
+        a: "The job stays locked on the operative's phone until the PPE check is completed and the declaration is signed. Each one is timestamped and saved against the job, so you have a record that the checks were done, every time, without chasing paper sign-off sheets.",
+      },
+      {
+        q: "Does it replace our WhatsApp groups?",
+        a: "Yes. Job details, site photos, notes, toolbox talks and messages to staff all run through OpsDeck, so nothing lives in group chats. Photos land on the right job instead of being matched up by hand, and every toolbox talk, RAMS or method statement sent out has a signed declaration on record.",
+      },
+      {
+        q: "How does the office know when a job is live or finished?",
+        a: "Photos and site notes come straight back to the job, and the calendar shows every job, crew and vehicle for the day. Jobs change colour as they progress and turn green when they're completed, so the office can see the day's progress from anywhere without ringing anyone.",
+      },
+      {
+        q: "Can it send toolbox talks, RAMS and training to the whole team?",
+        a: "Yes. Toolbox talks, RAMS, method statements, training and general messages are sent to all staff in one click. Each operative reads and declares they've done it, and the record is kept.",
+      },
+      {
+        q: "Does it track vehicles, MOTs and holidays?",
+        a: "Yes. Vehicle checks, MOT dates and staff holidays are kept alongside the jobs, so allocations take into account who and what is actually available.",
+      },
+      {
+        q: "Can it handle council and framework jobs?",
+        a: "Yes. Council and framework jobs are created as jobs alongside private and commercial work, with requisitions, drawings and compliance documents attached to the job file. At Hi-Point Access the full council compliance pack downloads in one click. For scaffolding firms it also tracks hire weeks and flags hires running over.",
+      },
+    ],
+  },
+  {
     name: "The OpsDeck Platform",
     entries: [
       {
         q: "How much does the OpsDeck platform cost?",
-        a: "Monthly subscriptions run from £75 to £550 per month depending on tier and team size, with one-off setup fees from £200 to £1,500 or more depending on complexity. All costs are agreed in writing before you pay anything. Full breakdown on the [pricing page](/pricing).",
+        a: "The Field Ops Platform is priced by number of field operatives, with unlimited users: £250/month for 1–10, £325 for 11–20, £400 for 21–30, £475 for 31–40 and £550 for 41–50, with 50+ scoped on a call. The build fee starts from £1,500 and is fixed in writing after a scoping call. Smaller admin and quoting tools run from £75 to £150 per month. Nothing is paid until the costs are agreed in writing. Full breakdown on the [pricing page](/pricing).",
       },
       {
         q: "What are the platform tiers?",
-        a: "Four tiers: AI Tools & Automation (£75/month — single-purpose automation), Quote Builder (£100/month — voice or manual quoting with adaptive price memory), Quote Builder + Dashboard (£150/month — quoting plus full business dashboard, the most popular tier), and Full Operations Platform (from £250/month — everything plus team integration, operative management, and unlimited users, with the monthly fee banded by number of operatives). The right tier is confirmed during a free consultation, not before it.",
+        a: "Four tiers: AI Tools & Automation (£75/month — single-purpose automation), Quote Builder (£100/month — voice or manual quoting with adaptive price memory), Quote Builder + Dashboard (£150/month — quoting plus full business dashboard), and the Full Operations Platform (from £250/month — the main OpsDeck product: jobs, crews, vehicles, PPE checks, site handovers, toolbox talks and invoice flags, with unlimited users and the monthly fee banded by number of operatives). The right tier is confirmed during a free consultation, not before it.",
       },
       {
         q: "How does the build process work?",
@@ -154,11 +195,11 @@ const sections: FaqSection[] = [
       },
       {
         q: "Why should I trust a small company over an established software provider?",
-        a: "Because the established providers sell you their process; OpsDeck builds around yours. Tradify and Jobber are good products for simple, repeatable jobs — OpsDeck says so openly on its [pricing page](/pricing). But they're built for the average trade, priced per seat, and can't be customised without developer day rates. OpsDeck is built by a tradesman who uses it daily in his own business, every build is bespoke, every tier includes unlimited users, and you deal directly with the person who built it. Read how that worked for [Birdwell Insulation](/case-studies/birdwell).",
+        a: "Because the established providers sell you their process; OpsDeck builds around yours. Tradify and Jobber are good products for simple, repeatable jobs — OpsDeck says so openly on its [pricing page](/pricing). But they're built for the average trade, priced per seat, and can't be customised without developer day rates. OpsDeck is built by a tradesman who uses it daily in his own business, every build is bespoke, every tier includes unlimited users, and you deal directly with the person who built it. Read how it runs [Hi-Point Access's scaffolding operation](/case-studies/hi-point) and how it worked for [Birdwell Insulation](/case-studies/birdwell).",
       },
       {
         q: "Can I see it working before I commit?",
-        a: "Yes, three ways: real quote outputs are shown on the [homepage](/), live demos are on the [OpsDeck Facebook page](https://www.facebook.com/opsdeck), and a working demo of your own build is delivered for testing before go-live — with a revision round included and the final payment milestone only due at launch.",
+        a: "Yes, three ways: real screens from the platform are shown on the [homepage](/), live demos are on the [OpsDeck Facebook page](https://www.facebook.com/opsdeck), and a working demo of your own build is delivered for testing before go-live — with a revision round included and the final payment milestone only due at launch.",
       },
       {
         q: "What if my question isn't answered here?",

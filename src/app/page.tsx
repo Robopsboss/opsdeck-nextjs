@@ -46,7 +46,14 @@ const organizationJsonLd = {
   url: "https://opsdeck.co.uk",
   logo: "https://opsdeck.co.uk/favicon.ico",
   description:
-    "Bespoke AI automation tools for UK trades businesses. Built around how your business actually works.",
+    "Field operations platform for UK trades firms with operatives in the field — enquiries, jobs, crews, vehicles, PPE checks, site handovers and invoicing in one place, live on every phone. Built in Sheffield by Rob France.",
+  knowsAbout: [
+    "Field operations software",
+    "Job management for trades businesses",
+    "Scaffolding operations",
+    "Operative and crew management",
+    "Site handovers and PPE checks",
+  ],
   founder: {
     "@type": "Person",
     name: "Rob France",

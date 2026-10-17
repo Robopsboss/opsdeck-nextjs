@@ -12,9 +12,9 @@ import CTABlock from "@/components/product/CTABlock";
 const MAILTO = `mailto:rob@opsdeck.co.uk?subject=${encodeURIComponent("Platform Build")}`;
 
 const pageTitle =
-  "Platform Build — Bespoke AI Platform for Trades Businesses | OpsDeck";
+  "Field Operations Platform for Trades Firms — Jobs, Crews, Site Sign-offs & Invoicing | OpsDeck";
 const pageDescription =
-  "A bespoke AI platform built around how your trades business actually works — quoting, dashboard, team management, and invoicing automated. From £75/month. Free consultation first.";
+  "Run your whole field operation from one platform — enquiries, jobs, crews, vehicles, PPE checks, site handovers and invoicing, live on every phone. Built around how your trades firm already works. From £250/month for 1–10 operatives, unlimited users.";
 
 export const metadata: Metadata = {
   title: pageTitle,
@@ -29,43 +29,59 @@ export const metadata: Metadata = {
 };
 
 const painQuestions = [
-  "How many evenings this week did you spend on admin that should have been done during the day?",
-  "If you took two days off tomorrow with no phone, what would fall through the cracks — and who would it fall on?",
-  "How much work are you turning down or doing badly because the system that is supposed to support you is actually you?",
+  "How many times today did someone ring round to find out whether a job was actually done?",
+  "If you took two days off tomorrow with no phone, which jobs would stall — and who would it all fall on?",
+  "Are you about to hire another ops manager just to keep track of the work you already have?",
 ];
 
 const features = [
   {
-    feature: "Bespoke build from scratch",
-    outcome: "No unused features, no gaps — built around your exact workflow",
+    feature: "Enquiries and quotes in one place",
+    outcome: "Private, commercial and one-off enquiries logged and quoted. Accepted quotes become jobs automatically — nothing typed twice",
   },
   {
-    feature: "Voice or manual quoting",
-    outcome: "Quotes built in minutes, not evenings",
+    feature: "Job file from enquiry to completion",
+    outcome: "Every job moves through clear stages, with documents, drawings and notes attached to the job, not buried in folders",
   },
   {
-    feature: "Adaptive price memory",
-    outcome: "The platform remembers your materials, margins, and prices",
+    feature: "Surveys, crews and vehicles allocated",
+    outcome: "Allocate surveys to staff and jobs to operatives and vehicles from the office, a tablet or your phone",
   },
   {
-    feature: "Business dashboard",
-    outcome: "Enquiries, jobs, calendar, and sales overview on one screen",
+    feature: "Job details sent to every operative's phone",
+    outcome: "Operatives open a link and see today's work — address, job details and what needs doing",
   },
   {
-    feature: "Team and operative management",
-    outcome: "Your team knows their schedule before they arrive on site",
+    feature: "PPE checks and declarations before work starts",
+    outcome: "The job stays locked until the PPE check and declaration are signed — timestamped, every time",
   },
   {
-    feature: "Automated invoicing",
-    outcome: "Triggered at job completion — the payment delay disappears",
+    feature: "Handovers signed on site",
+    outcome: "Handover completed and signed on site, then emailed to the customer automatically",
   },
   {
-    feature: "Automated payment reminders",
-    outcome: "You stop being the accounts department",
+    feature: "Photos and site notes straight to the office",
+    outcome: "Site photos and notes land on the right job, so the office knows when a job is live and when it's finished",
   },
   {
-    feature: "Monthly subscription support",
-    outcome: "Rob maintains and grows the platform as your business grows",
+    feature: "Live calendar that turns green",
+    outcome: "See every job, crew and vehicle for the day — jobs change colour as they're completed, from wherever you are",
+  },
+  {
+    feature: "Invoice flags the moment a job is done",
+    outcome: "Admin sees what to invoice and how much, with a record kept of everything raised",
+  },
+  {
+    feature: "Toolbox talks, RAMS and method statements in one click",
+    outcome: "Sent to every operative to read and declare — every signature on record, no WhatsApp groups",
+  },
+  {
+    feature: "Vehicles, MOTs and holidays tracked",
+    outcome: "Vehicle checks, MOT dates and staff holidays sit alongside the jobs they affect",
+  },
+  {
+    feature: "Built around your operation, supported monthly",
+    outcome: "Configured to your trade and workflow, then maintained and grown by Rob as your business grows",
   },
 ];
 
@@ -90,15 +106,14 @@ const tiers = [
     setup: "£300",
     description:
       "Quoting plus full business dashboard — enquiries, jobs, calendar, sales, profit forecasting.",
-    popular: true,
   },
   {
     name: "Full Operations Platform",
     monthly: "From £250/month",
     setup: "£1,500",
     description:
-      "Everything above plus team integration, operative management, unlimited users, fully custom workflow. Monthly fee banded by operatives — £250 for 1–10 up to £550 for 41–50.",
-    forTeams: true,
+      "The full field operations platform — jobs, crews, vehicles, PPE checks, site handovers, toolbox talks and invoice flags, plus everything above. Unlimited users. Monthly fee banded by operatives — £250 for 1–10 up to £550 for 41–50.",
+    popular: true,
   },
 ];
 
@@ -139,8 +154,8 @@ const comparisonRows = [
     with: "Enquiries logged automatically — nothing falls through the gap",
   },
   {
-    without: "Quotes take hours and rely entirely on you",
-    with: "Quotes built in minutes — the platform remembers your prices, materials, and margins",
+    without: "Ringing round the lads to find out what's done",
+    with: "Live job status on the calendar — jobs turn green as they're completed",
   },
   {
     without: "Jobs get booked but the team finds out on the morning",
@@ -148,11 +163,11 @@ const comparisonRows = [
   },
   {
     without: "Invoices go out days after completion — sometimes weeks",
-    with: "Invoicing triggered at job completion — the delay between finishing and getting paid disappears",
+    with: "Invoice flagged the moment the job is signed off — admin knows what to raise and for how much",
   },
   {
-    without: "Chasing payment is a weekly task you do yourself",
-    with: "Automated payment reminders — you stop being the accounts department",
+    without: "Paper sign-off sheets and toolbox talks chased round WhatsApp",
+    with: "PPE checks, declarations and toolbox talks signed digitally — every record kept",
   },
   {
     without: "You can't take a day off without things going wrong",
@@ -163,9 +178,10 @@ const comparisonRows = [
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Service",
-  name: "OpsDeck Platform Build",
+  name: "OpsDeck Field Operations Platform",
+  serviceType: "Field operations software for trades businesses",
   description:
-    "A bespoke AI platform built around how your trades business actually works — eliminating the admin that runs through the owner. Quoting, dashboard, team management, invoicing, and payment reminders.",
+    "A field operations platform for UK trades firms with operatives on site — enquiries and quotes, job files, crew and vehicle allocation, job details on operatives' phones, PPE checks and declarations, site handovers signed on site, photos and notes to the office, a live calendar, invoice flags, toolbox talks and RAMS, vehicle and holiday tracking. Configured to each firm's workflow. Running Hi-Point Access's scaffolding operation in Sheffield.",
   provider: { "@id": "https://opsdeck.co.uk/#organization" },
   areaServed: "GB",
   url: "https://opsdeck.co.uk/platform-build",
@@ -221,10 +237,10 @@ export default function PlatformBuildPage() {
 
         {/* Section 1 — Hero */}
         <ProductHero
-          eyebrow="Platform Build"
+          eyebrow="Field Ops Platform"
           title="You Are the System. That Is the Problem."
-          lead="A bespoke AI platform that becomes the deck you run your whole operation from — quotes, jobs, team and invoicing in one place, built around how your business actually works, not how a generic tool thinks it should."
-          sub="From £75/month. Setup from £200. Consultation first."
+          lead="Run the whole field operation from your phone — without hiring another ops manager. Enquiries, jobs, crews, vehicles, PPE checks, site handovers and invoicing in one place, built around how your operation already runs. Running Hi-Point Access's scaffolding operation in Sheffield today."
+          sub="From £250/month for 1–10 operatives, unlimited users. Smaller admin tools from £75/month. Consultation first."
           ctaHref={MAILTO}
           ctaVariant="amber"
         />
@@ -292,11 +308,6 @@ export default function PlatformBuildPage() {
                       Most Popular
                     </span>
                   )}
-                  {tier.forTeams && (
-                    <span className="absolute top-4 right-4 bg-tag-bg text-tag-fg text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded">
-                      For Teams
-                    </span>
-                  )}
                   <h3 className="text-lg font-bold text-foreground mb-3">
                     {tier.name}
                   </h3>
@@ -334,7 +345,7 @@ export default function PlatformBuildPage() {
         {/* Section 8 — CTA Block */}
         <CTABlock
           title="Ready to Build the System?"
-          body="From £75/month. Setup from £200. Consultation free, no obligation."
+          body="Field Ops Platform from £250/month for 1–10 operatives, unlimited users. Smaller admin tools from £75/month. Consultation free, no obligation."
           ctaHref={MAILTO}
           ctaVariant="amber"
           note={'Email rob@opsdeck.co.uk with the subject line "Platform Build". Nothing is built and nothing is invoiced until you approve the scope in writing.'}
