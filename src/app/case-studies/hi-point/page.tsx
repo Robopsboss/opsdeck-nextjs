@@ -56,6 +56,10 @@ const beforeAfter = [
     after: "Handovers filled in and signed on site, sent to the customer automatically",
   },
   {
+    before: "Invoicing done in a batch at the end of the day, or caught up the next morning after phone calls to check what was finished",
+    after: "A raise-invoice alert the moment a job goes green — invoiced while the gang moves on to the next job",
+  },
+  {
     before: "Council paperwork gathered up by hand for the portal",
     after: "The full council compliance pack downloads in one click",
   },
@@ -65,7 +69,8 @@ const takeaways = [
   "At around 180 site visits a week, paper isn't just slow — it means the office can't see the operation as it happens.",
   "The process Hi-Point already had — a job file per job, a diary, a site pack for the lads — was sound. OpsDeck rebuilt that process digitally instead of asking them to adopt a new one.",
   "Operatives didn't need training or a new app. The job link arrives on WhatsApp, which the lads already use.",
-  "Once photos and handovers come straight back from site, the office knows a job is finished — and ready to invoice — the same day.",
+  "When completion comes straight back from site, invoicing stops being an end-of-day backlog. Each job can be invoiced minutes after it's finished.",
+  "The time saved isn't just admin hours — it's time the office can put back into running and improving the business.",
 ];
 
 const faqs = [
@@ -80,6 +85,10 @@ const faqs = [
   {
     q: "Does it work with council framework jobs?",
     a: "Yes. Hi-Point's council work arrives through the council's own portal and is created as a job in OpsDeck alongside private and commercial work, with requisitions, asbestos reports, drawings and compliance sheets attached to the job file. The full compliance pack downloads in one click when it needs to go back to the council.",
+  },
+  {
+    q: "How quickly can a scaffolding firm invoice a completed job?",
+    a: "At Hi-Point Access, within minutes. As soon as a gang marks a job complete on site, it turns green on the office calendar and a raise-invoice alert is sent to whoever handles invoicing, showing what to invoice. Jobs are invoiced through the day as they finish — even before 9am — instead of in a batch at the end of the day or the next morning.",
   },
   {
     q: "How long did Hi-Point have to change the way they work?",
@@ -271,6 +280,12 @@ export default function CaseStudyHiPointPage() {
             <div className="space-y-6 text-muted-foreground text-lg leading-relaxed">
               <p>
                 Around 180 site visits and 100 new jobs a week now run through one platform. The office sees every job, every stage and every allocation in one place, from a computer, tablet or phone. Handovers are signed on site. The full council compliance pack downloads in a single click.
+              </p>
+              <p>
+                The biggest change is invoicing. When a gang finishes its first job of the day — even before 9am — the job turns green on the calendar and a raise-invoice alert goes straight to the office. That job is invoiced there and then. There&apos;s no backlog at the end of the day, no catching up the next morning, and no waiting for a phone call to find out whether a job is done. Invoicing runs alongside the work, all day.
+              </p>
+              <p>
+                That frees the office to work on the parts of the business that used to get overlooked — the systems, the processes and the growth — instead of spending the day chasing paper.
               </p>
               <p className="text-foreground font-semibold text-xl">
                 The paper&apos;s gone. The spreadsheet&apos;s gone. The WhatsApp photo hunt is gone. And the office has its time back to run the business instead of chasing it.
