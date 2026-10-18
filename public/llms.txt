@@ -72,7 +72,7 @@ UK trades firms with operatives out in the field and an office keeping track of 
 
 ## Proven Results
 
-- Hi-Point Access Ltd (Sheffield scaffolding and access, council frameworks and private contracts): whole operation runs on the OpsDeck Field Ops Platform — one job file from enquiry to completion, site photos straight onto the right job, handovers signed digitally on site, foremen marking work complete from site, and the full council compliance pack downloading in one click.
+- [Hi-Point Access Ltd](https://opsdeck.co.uk/case-studies/hi-point) (Sheffield scaffolding and access, council frameworks and private contracts): around 180 site visits and 100 new jobs a week run on the OpsDeck Field Ops Platform. Before: a printed job package per job in filing cabinets, a large diary, printouts on the wall, printed site packs for every gang every morning, and site photos printed, scanned and uploaded by hand. Now: whole operation on one platform — one job file from enquiry to completion, site photos straight onto the right job, handovers signed digitally on site, foremen marking work complete from site, and the full council compliance pack downloading in one click.
 - Birdwell Insulation Ltd: reduced quote turnaround from 15 minutes per quote done in batches to 30 seconds per quote using a bespoke Excel-to-document converter.
 - Infascape Ltd: OpsDeck used daily in an active Sheffield landscaping business.
 

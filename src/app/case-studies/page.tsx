@@ -32,7 +32,7 @@ const caseStudies = [
     href: "/case-studies/hi-point",
     title: "Hi-Point Access",
     summary:
-      "How a Sheffield scaffolding firm took its whole operation off paper — enquiry to dismantle.",
+      "How a Sheffield scaffolding firm runs around 180 site visits and 100 new jobs a week without paper — enquiry to completion.",
   },
 ];
 
