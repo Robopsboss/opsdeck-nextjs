@@ -80,7 +80,7 @@ const sections: FaqSection[] = [
       },
       {
         q: "How does the office know when a job is live or finished?",
-        a: "Photos and site notes come straight back to the job, and the calendar shows every job, crew and vehicle for the day. Jobs change colour as they progress and turn green when they're completed, so the office can see the day's progress from anywhere without ringing anyone.",
+        a: "Photos and site notes come straight back to the job, and the calendar shows every job, crew and vehicle for the day. Jobs change colour as they progress and turn green when they're completed, so the office can see the day's progress from anywhere without ringing anyone. As soon as a job turns green, a raise-invoice alert goes to whoever handles invoicing, so jobs are invoiced through the day as they finish instead of in a batch at the end of it.",
       },
       {
         q: "Can it send toolbox talks, RAMS and training to the whole team?",

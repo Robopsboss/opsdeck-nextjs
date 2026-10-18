@@ -5,6 +5,10 @@ const rows = [
   { before: "WhatsApp photo hunts", after: "Photos saved to the right job from site" },
   { before: "Paper handover sheets", after: "Filled in and signed digitally on site" },
   { before: "Ringing round to find out what's done", after: "Live job status on every screen, from every phone" },
+  {
+    before: "Invoices batched at the end of the day — or caught up the next morning",
+    after: "Invoice raised the moment a job goes green — even before 9am",
+  },
   { before: "Paper sign-off sheets", after: "Timestamped PPE checks and time logs" },
   {
     before: "Toolbox talks and RAMS chased round WhatsApp",

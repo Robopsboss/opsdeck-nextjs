@@ -68,8 +68,8 @@ const features = [
     outcome: "See every job, crew and vehicle for the day — jobs change colour as they're completed, from wherever you are",
   },
   {
-    feature: "Invoice flags the moment a job is done",
-    outcome: "Admin sees what to invoice and how much, with a record kept of everything raised",
+    feature: "Invoice the moment a job is done",
+    outcome: "A raise-invoice alert as soon as a job goes green — invoicing runs through the day instead of piling up at the end of it",
   },
   {
     feature: "Toolbox talks, RAMS and method statements in one click",
