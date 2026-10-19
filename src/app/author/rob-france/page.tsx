@@ -7,7 +7,7 @@ import SiteFooter from "@/components/landing/SiteFooter";
 
 const pageTitle = "Rob France — Founder, OpsDeck Ltd";
 const pageDescription =
-  "Rob France spent 4 years running a trades business before building OpsDeck. Founder of OpsDeck Ltd and owner of Infascape, Sheffield.";
+  "Rob France has worked in the trades for over 20 years — building sites, new builds, tarmac, landscaping and joinery — and has run his own trades business for four years. Founder of OpsDeck Ltd and owner of Infascape, Sheffield.";
 
 export const metadata: Metadata = {
   title: pageTitle,
@@ -144,7 +144,7 @@ export default function AuthorRobFrancePage() {
                   Founder, OpsDeck Ltd · Owner, Infascape Ltd
                 </p>
                 <p className="text-hero-muted text-base md:text-lg leading-relaxed max-w-2xl">
-                  Rob France spent four years running a Sheffield landscaping and surfacing business before building the platform he could never find on the market. He is the founder of OpsDeck Ltd — a platform built around real trades workflows, not hypothetical ones — and still runs Infascape Ltd, where OpsDeck is the production system managing every job, quote, and operative.
+                  Rob France has worked in the trades for over 20 years — on building sites and new builds, for a tarmac company, and in landscaping and joinery — and has spent the last four years running his own Sheffield landscaping and surfacing business. That is where he built the platform he could never find on the market. He is the founder of OpsDeck Ltd — a platform built around real trades workflows, not hypothetical ones — and still runs Infascape Ltd, where OpsDeck is the production system managing every job, quote, and operative.
                 </p>
               </div>
               <div className="shrink-0 w-48 md:w-64 lg:w-72 mx-auto md:mx-0">
@@ -167,7 +167,7 @@ export default function AuthorRobFrancePage() {
             <h2 className="text-2xl md:text-3xl font-bold mb-8">Biography</h2>
             <div className="space-y-6 text-muted-foreground leading-relaxed text-base md:text-lg">
               <p>
-                Rob France started in trade in 2022, operating as RCF Property Solutions before incorporating as Infascape Ltd in April 2024 — the same business, formalised. From the outset, Rob ran the company without an admin function, handling quoting, scheduling, job management, and invoicing himself. He used every off-the-shelf tool on the market. None of them handled the complexity of trades quoting — multi-product material calculations, variable margins, live labour rates — without collapsing into spreadsheets.
+                After nearly two decades working in the trades for other people, Rob France started his own business in 2022, operating as RCF Property Solutions before incorporating as Infascape Ltd in April 2024 — the same business, formalised. From the outset, Rob ran the company without an admin function, handling quoting, scheduling, job management, and invoicing himself. He used every off-the-shelf tool on the market. None of them handled the complexity of trades quoting — multi-product material calculations, variable margins, live labour rates — without collapsing into spreadsheets.
               </p>
               <p>
                 In late 2025, Rob started building OpsDeck. Not as a side project, but as the operating system for his own business — built in the evenings and at weekends, logging over 500 hours of development while running Infascape at full capacity. The platform now manages Infascape&apos;s entire workflow: quoting, job tracking, operative allocation, client communications, and reporting. Infascape has been booked to capacity through late 2026. That is the proof of concept.
@@ -212,7 +212,7 @@ export default function AuthorRobFrancePage() {
                 Practitioner credibility
               </p>
               <p className="text-foreground text-base md:text-lg leading-relaxed">
-                Rob holds no formal trade qualifications and no software development certificates. His credibility is grounded in four years of running a trades business, 500+ hours of hands-on platform development, and a live production system that runs a real company with real customers. He does not claim credentials he does not hold.
+                Rob holds no formal trade qualifications and no software development certificates. His credibility is grounded in over 20 years working in the trades, four years of running his own trades business, 500+ hours of hands-on platform development, and a live production system that runs a real company with real customers. He does not claim credentials he does not hold.
               </p>
             </div>
           </div>

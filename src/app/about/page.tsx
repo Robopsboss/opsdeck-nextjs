@@ -48,7 +48,7 @@ const valueCards = [
 
 const pageTitle = "About Rob France — Built by a Tradesman for Trades Businesses | OpsDeck";
 const pageDescription =
-  "Rob France built OpsDeck because he needed it in his own trades business. Today OpsDeck is a field operations platform running Hi-Point Access's scaffolding operation in Sheffield, built around how each firm already works.";
+  "Rob France has worked in the trades for over 20 years and run his own trades business for four. He built OpsDeck because he needed it himself. Today OpsDeck is a field operations platform running Hi-Point Access's scaffolding operation in Sheffield, built around how each firm already works.";
 
 export const metadata: Metadata = {
   title: pageTitle,
@@ -158,7 +158,7 @@ export default function AboutPage() {
           <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="bg-card rounded-xl p-8 border border-border text-center">
               <p className="text-4xl font-black text-primary mb-2">20+</p>
-              <p className="text-muted-foreground text-sm">Years in the trades before founding OpsDeck</p>
+              <p className="text-muted-foreground text-sm">Years working in the trades — and four running his own business</p>
             </div>
             <div className="bg-card rounded-xl p-8 border border-border text-center">
               <p className="text-4xl font-black text-primary mb-2">43</p>
