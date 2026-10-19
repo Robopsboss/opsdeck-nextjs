@@ -8,6 +8,15 @@ export type BlogPost = {
 
 export const posts: BlogPost[] = [
   {
+    slug: "job-management-software-cost-uk",
+    title:
+      "How Much Does Job Management Software Cost for a UK Trades Firm? (2026)",
+    excerpt:
+      "Per-user apps, quote-only platforms and banded pricing explained — with a worked example for a 20-operative firm, the hidden costs, and when the cheaper option is the right one.",
+    datePublished: "2026-10-19",
+    author: "Rob France",
+  },
+  {
     slug: "why-every-quoting-tool-failed",
     title:
       "Why Every Quoting Tool I Tried Failed My Trades Business — And What I Built Instead",

@@ -11,6 +11,7 @@ import ThreeWaysToStart from "@/components/landing/ThreeWaysToStart";
 import HowItWorks from "@/components/landing/HowItWorks";
 import WhoItsFor from "@/components/landing/WhoItsFor";
 import About from "@/components/landing/About";
+import YourData from "@/components/landing/YourData";
 import CTAFooter from "@/components/landing/CTAFooter";
 
 const pageTitle =
@@ -93,6 +94,7 @@ export default function Home() {
         <HowItWorks />
         <WhoItsFor />
         <About />
+        <YourData />
         <CTAFooter />
       </div>
     </>

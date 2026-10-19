@@ -8,6 +8,7 @@ OpsDeck lets the owner and office of a trades firm oversee every job from a phon
 
 - [Home](https://opsdeck.co.uk/): what the Field Ops Platform does, who it's for, live screens
 - [Field Ops Platform](https://opsdeck.co.uk/platform-build): full feature list, tiers, build process
+- [Scaffolding Software](https://opsdeck.co.uk/scaffolding-software): OpsDeck for scaffolding firms — surveys, erects, alterations, dismantles, hire-week tracking and over-hire flags, two-stage invoicing (on erect and on dismantle), handover certificates signed on site, PPE check and RAMS sign-on; running Hi-Point Access in Sheffield
 - [Pricing](https://opsdeck.co.uk/pricing): per-operative bands, all tiers, 12-month cost comparison
 - [FAQ](https://opsdeck.co.uk/faq): field operations questions — operatives, PPE checks, WhatsApp, council jobs, pricing
 - [Case Study — Hi-Point Access](https://opsdeck.co.uk/case-studies/hi-point): Sheffield scaffolding firm's whole operation taken off paper, enquiry to completion
@@ -87,3 +88,16 @@ Rob France. Based in Sheffield. Over 20 years working in the trades — building
 - Phone: 07837 698 283
 - Web: https://opsdeck.co.uk
 - Based in Sheffield, working with trades businesses across the UK
+
+## Data and security
+
+- Client data is owned by the client, who has full access to it and takes it with them if they leave; OpsDeck owns the code
+- Hosted in a London (UK) data centre with automatic daily backups
+- Role-based access built to each firm (e.g. directors full access, surveyors view-only, admin by department); operatives have no login — they receive a link to their own job only
+- Office sign-in through a dedicated authentication provider; Opsdeck Ltd is ICO registered (ZC126490)
+- A backup software engineer is on hand to keep client platforms running if the founder is unavailable
+
+## Articles
+
+- [How much does job management software cost for a UK trades firm? (2026)](https://opsdeck.co.uk/blog/job-management-software-cost-uk): per-user vs quote-only vs banded pricing, worked example for a 20-operative firm, hidden costs
+- [Why every quoting tool I tried failed](https://opsdeck.co.uk/blog/why-every-quoting-tool-failed): founder story

@@ -8,6 +8,7 @@ import HookSection from "@/components/product/HookSection";
 import HowItWorksSteps from "@/components/product/HowItWorksSteps";
 import ComparisonTable from "@/components/product/ComparisonTable";
 import CTABlock from "@/components/product/CTABlock";
+import YourData from "@/components/landing/YourData";
 
 const MAILTO = `mailto:rob@opsdeck.co.uk?subject=${encodeURIComponent("Platform Build")}`;
 
@@ -342,7 +343,10 @@ export default function PlatformBuildPage() {
           rows={comparisonRows}
         />
 
-        {/* Section 8 — CTA Block */}
+        {/* Section 8 — Your data */}
+        <YourData />
+
+        {/* Section 9 — CTA Block */}
         <CTABlock
           title="Ready to Build the System?"
           body="Field Ops Platform from £250/month for 1–10 operatives, unlimited users. Smaller admin tools from £75/month. Consultation free, no obligation."

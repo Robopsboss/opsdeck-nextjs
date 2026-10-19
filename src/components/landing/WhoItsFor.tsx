@@ -1,3 +1,6 @@
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
+
 const trades = ["Scaffolding", "Tarmac & Surfacing", "Groundworks", "Roofing", "Insulation", "Fencing", "Landscaping"];
 
 const WhoItsFor = () => (
@@ -12,9 +15,16 @@ const WhoItsFor = () => (
       <p className="text-hero-muted text-lg mb-6 leading-relaxed max-w-3xl">
         Once a business has grown past diaries, spreadsheets and WhatsApp groups, things start slipping through the cracks — between the office, the lads on site and the people chasing the money. OpsDeck brings the whole operation into one place, without asking anyone to change how the job gets done.
       </p>
-      <p className="text-hero-muted/70 text-sm">
+      <p className="text-hero-muted/70 text-sm mb-4">
         Just some of the trades we work with: {trades.join(" · ")}
       </p>
+      <Link
+        href="/scaffolding-software"
+        className="inline-flex items-center gap-2 text-sm font-semibold text-accent hover:underline underline-offset-4"
+      >
+        Run a scaffolding firm? See OpsDeck for scaffolding
+        <ArrowRight className="w-4 h-4" />
+      </Link>
     </div>
   </section>
 );

@@ -13,6 +13,7 @@ const learnLinks = [
   { label: "Why Bespoke", href: "/bespoke-vs-off-the-shelf" },
   { label: "Honest Comparison", href: "/honest-comparison" },
   { label: "Case Studies", href: "/case-studies" },
+  { label: "Scaffolding Software", href: "/scaffolding-software" },
 ];
 
 const servicesFeatured = {
