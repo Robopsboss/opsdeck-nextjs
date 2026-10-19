@@ -4,6 +4,14 @@ const clients = [
   { name: "Hi-Point Access", src: "/logos/hi-point-access.png", w: 567, h: 750, box: "h-14" },
   { name: "7 Hills Scaffolding", src: "/logos/7-hills-scaffolding.png", w: 978, h: 690, box: "h-14" },
   { name: "Birdwell Insulation", src: "/logos/birdwell-insulation.png", w: 1207, h: 191, box: "h-7" },
+  {
+    name: "Infascape",
+    caption: "Rob's own firm, where OpsDeck started",
+    src: "/logos/infascape.png",
+    w: 608,
+    h: 456,
+    box: "h-14",
+  },
 ];
 
 const ClientStrip = () => (
@@ -12,7 +20,7 @@ const ClientStrip = () => (
       <p className="text-center text-xs font-bold tracking-widest uppercase text-muted-foreground mb-6">
         Running at Sheffield trades firms
       </p>
-      <ul className="flex flex-wrap items-end justify-center gap-x-12 gap-y-6">
+      <ul className="flex flex-wrap items-start justify-center gap-x-12 gap-y-6">
         {clients.map((c) => (
           <li key={c.name} className="flex flex-col items-center gap-2">
             <div className="h-14 flex items-center">
@@ -24,7 +32,12 @@ const ClientStrip = () => (
                 className={`${c.box} w-auto`}
               />
             </div>
-            <span className="text-xs text-muted-foreground">{c.name}</span>
+            <span className="text-xs text-muted-foreground text-center">
+              {c.name}
+              {"caption" in c && c.caption && (
+                <span className="block text-[11px] italic">{c.caption}</span>
+              )}
+            </span>
           </li>
         ))}
       </ul>
