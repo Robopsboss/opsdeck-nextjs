@@ -1,41 +1,55 @@
-import { ArrowRight, Facebook } from "lucide-react";
+import { ArrowRight, Facebook, ShieldCheck } from "lucide-react";
 import SiteFooter from "@/components/landing/SiteFooter";
 
 const CTAFooter = () => (
   <>
     <section className="bg-hero-dark text-hero-foreground">
       <div className="container mx-auto px-6 py-20 md:py-28 max-w-3xl text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-6">
-          Ready to run the whole operation from your phone?
-        </h2>
-        <p className="text-hero-muted text-lg leading-relaxed mb-10 max-w-2xl mx-auto">
-          Book a free 20-minute walkthrough. We&apos;ll look at how your operation runs and show you exactly what OpsDeck would take off your plate. No commitment. No jargon. Just a straight conversation about whether we can help.
+        <p className="text-xs font-bold tracking-widest uppercase text-accent mb-3">
+          The 20-minute walkthrough
         </p>
-        <a
-          href="mailto:rob@opsdeck.co.uk?subject=20-minute%20OpsDeck%20walkthrough"
-          className="inline-flex items-center gap-2 bg-background text-foreground font-semibold px-8 py-4 rounded-lg hover:bg-background/90 transition-colors text-base"
-        >
-          Book a free 20-minute walkthrough
-          <ArrowRight className="w-4 h-4" />
-        </a>
-        <p className="text-hero-muted text-sm mt-5">
+        <h2 className="text-3xl md:text-5xl font-black leading-[1.1] mb-6">
+          Bring one of last week&apos;s jobs.
+        </h2>
+        <p className="text-hero-muted text-lg leading-relaxed mb-8 max-w-2xl mx-auto">
+          In 20 minutes I&apos;ll show you that job running on OpsDeck — booked in, sent to the lads, PPE checked, handover signed on site and flagged to invoice. No slides, no sales script. Just your job, on the system, with the person who built it.
+        </p>
+        <ul className="grid sm:grid-cols-3 gap-3 text-sm text-hero-foreground/90 mb-10 text-left max-w-2xl mx-auto">
+          <li className="rounded-lg bg-hero-foreground/5 border border-hero-foreground/15 px-4 py-3">Phone or video — from the van is fine</li>
+          <li className="rounded-lg bg-hero-foreground/5 border border-hero-foreground/15 px-4 py-3">Built around how you already work</li>
+          <li className="rounded-lg bg-hero-foreground/5 border border-hero-foreground/15 px-4 py-3">Straight answer on whether it fits</li>
+        </ul>
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a
+            href="mailto:rob@opsdeck.co.uk?subject=20-minute%20OpsDeck%20walkthrough"
+            className="inline-flex items-center gap-2 bg-accent text-accent-foreground font-bold px-8 py-4 rounded-lg hover:bg-accent/90 transition-colors text-base"
+          >
+            Book a free 20-minute walkthrough
+            <ArrowRight className="w-4 h-4" />
+          </a>
+          <a
+            href="tel:07837698283"
+            className="inline-flex items-center gap-2 border border-hero-foreground/25 text-hero-foreground font-semibold px-6 py-4 rounded-lg hover:bg-hero-foreground/10 transition-colors text-base"
+          >
+            Call Rob: 07837 698 283
+          </a>
+        </div>
+        <p className="text-hero-muted text-sm mt-6">
           <a
             href="https://healthcheck.opsdeck.co.uk/"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-1.5 text-hero-foreground/90 hover:text-hero-foreground font-medium underline underline-offset-4 hover:no-underline transition-colors"
           >
-            Or take the 3-minute Field Ops Check first
+            Not ready to talk? Take the 3-minute Field Ops Check first
             <ArrowRight className="w-3.5 h-3.5" />
           </a>
         </p>
-        <p className="text-hero-muted text-sm mt-5">
-          Or call Rob directly — the person who built this and uses it every day in his own trades business.
-          <br />
-          <a href="tel:07837698283" className="text-hero-foreground font-medium hover:underline">
-            07837 698 283
-          </a>
-        </p>
+        <div className="mt-10 pt-8 border-t border-hero-foreground/10 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs text-hero-muted">
+          <span className="inline-flex items-center gap-1.5"><ShieldCheck className="w-4 h-4 text-accent" />ICO registered · ZC126490</span>
+          <span>Opsdeck Ltd · Company No. 17075735</span>
+          <span>Built and supported in Sheffield</span>
+        </div>
       </div>
     </section>
 
