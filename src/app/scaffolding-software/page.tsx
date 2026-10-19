@@ -257,7 +257,7 @@ export default function ScaffoldingSoftwarePage() {
               ))}
             </div>
             <p className="text-hero-muted text-lg leading-relaxed mb-8 max-w-3xl">
-              Before OpsDeck, Hi-Point ran on job files in filing cabinets, a big diary, printouts on the wall and a printed site pack for every gang every morning. WhatsApp photos were printed, scanned and uploaded. Now every job — survey to off-hire — runs live on the gang's phone, and invoices go out the moment a job goes green.
+              Before OpsDeck, Hi-Point ran on job files in filing cabinets, a big diary, printouts on the wall and a printed site pack for every gang every morning. WhatsApp photos were printed, scanned and uploaded. Everything&apos;s on the lads&apos; phones now — every job, survey to off-hire — and invoices go out the moment a job goes green.
             </p>
             <Link
               href="/case-studies/hi-point"
