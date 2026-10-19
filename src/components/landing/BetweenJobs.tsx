@@ -1,6 +1,6 @@
 import { ArrowRight, Camera, FileSignature, PhoneCall, Receipt } from "lucide-react";
 
-const FIELD_OPS_CHECK_URL = "https://healthcheck.opsdeck.co.uk/";
+const FIELD_OPS_CHECK_URL = "https://check.opsdeck.co.uk/";
 
 const gaps = [
   {

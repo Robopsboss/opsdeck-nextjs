@@ -36,7 +36,7 @@ const CTAFooter = () => (
         </div>
         <p className="text-hero-muted text-sm mt-6">
           <a
-            href="https://healthcheck.opsdeck.co.uk/"
+            href="https://check.opsdeck.co.uk/"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-1.5 text-hero-foreground/90 hover:text-hero-foreground font-medium underline underline-offset-4 hover:no-underline transition-colors"

@@ -12,7 +12,7 @@ import {
 } from "@/components/ui/accordion";
 
 const MAILTO = `mailto:rob@opsdeck.co.uk?subject=${encodeURIComponent("Question")}`;
-const HEALTH_CHECK_URL = "https://healthcheck.opsdeck.co.uk/";
+const HEALTH_CHECK_URL = "https://check.opsdeck.co.uk/";
 
 const pageTitle = "Policy & Ethics | OpsDeck";
 const pageDescription =

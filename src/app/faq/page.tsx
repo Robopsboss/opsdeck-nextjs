@@ -51,7 +51,7 @@ const sections: FaqSection[] = [
       },
       {
         q: "What is the free Field Ops Check?",
-        a: "A free 3-minute check at healthcheck.opsdeck.co.uk for trades firms with crews on site. Twelve tap-to-answer questions show where your operation sits — from paper and phone calls to running live — and work out two numbers from your answers: roughly how many office hours a week go on chasing job status, and how much finished work is sitting waiting to be invoiced. Your results show on screen straight away, and you can get your three priority fixes and a PDF copy by email.",
+        a: "A free 3-minute check at check.opsdeck.co.uk for trades firms with crews on site. Twelve tap-to-answer questions show where your operation sits — from paper and phone calls to running live — and work out two numbers from your answers: roughly how many office hours a week go on chasing job status, and how much finished work is sitting waiting to be invoiced. Your results show on screen straight away, and you can get your three priority fixes and a PDF copy by email.",
       },
     ],
   },
@@ -203,7 +203,7 @@ const sections: FaqSection[] = [
       },
       {
         q: "What if my question isn't answered here?",
-        a: "Email rob@opsdeck.co.uk or call 07837 698 283 — you'll be speaking to the person who builds the tools, not a sales team. Or start with the free 3-minute Field Ops Check at healthcheck.opsdeck.co.uk.",
+        a: "Email rob@opsdeck.co.uk or call 07837 698 283 — you'll be speaking to the person who builds the tools, not a sales team. Or start with the free 3-minute Field Ops Check at check.opsdeck.co.uk.",
       },
     ],
   },

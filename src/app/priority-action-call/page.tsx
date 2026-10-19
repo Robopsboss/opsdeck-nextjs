@@ -130,7 +130,7 @@ export default function PriorityActionCallPage() {
           ctaLabel={CTA_LABEL}
           ctaHref={STRIPE_URL}
           ctaVariant="amber"
-          note="Run crews on site? Take the free 3-minute Field Ops Check at healthcheck.opsdeck.co.uk first."
+          note="Run crews on site? Take the free 3-minute Field Ops Check at check.opsdeck.co.uk first."
         />
 
         <SiteFooter />
