@@ -3,6 +3,7 @@ import Navbar from "@/components/landing/Navbar";
 import Hero from "@/components/landing/Hero";
 import SocialProof from "@/components/landing/SocialProof";
 import BetweenJobs from "@/components/landing/BetweenJobs";
+import BuiltAroundYou from "@/components/landing/BuiltAroundYou";
 import ThreeViews from "@/components/landing/ThreeViews";
 import JobFlow from "@/components/landing/JobFlow";
 import BeforeAfter from "@/components/landing/BeforeAfter";
@@ -13,9 +14,9 @@ import About from "@/components/landing/About";
 import CTAFooter from "@/components/landing/CTAFooter";
 
 const pageTitle =
-  "OpsDeck — Field Operations Software for Trades Firms";
+  "OpsDeck — Field Operations Software Built Around Your Trades Firm";
 const pageDescription =
-  "OpsDeck runs your whole field operation from one place — jobs, crews, vehicles, site sign-offs and invoicing, live on every phone. Built in Sheffield for trades firms with operatives out in the field.";
+  "Not off-the-shelf software. OpsDeck builds a field operations platform around how your trades firm already works — jobs, crews, vehicles, site sign-offs and invoicing, live on every phone. Built in Sheffield.";
 
 export const metadata: Metadata = {
   title: pageTitle,
@@ -47,7 +48,7 @@ const organizationJsonLd = {
   url: "https://opsdeck.co.uk",
   logo: "https://opsdeck.co.uk/favicon.ico",
   description:
-    "Field operations platform for UK trades firms with operatives in the field — enquiries, jobs, crews, vehicles, PPE checks, site handovers and invoicing in one place, live on every phone. Built in Sheffield by Rob France.",
+    "Field operations platform for UK trades firms with operatives in the field, built around how each firm already works rather than an off-the-shelf app the firm has to adapt to — enquiries, jobs, crews, vehicles, PPE checks, site handovers and invoicing in one place, live on every phone. Built in Sheffield by Rob France.",
   knowsAbout: [
     "Field operations software",
     "Job management for trades businesses",
@@ -84,6 +85,7 @@ export default function Home() {
         <Hero />
         <SocialProof />
         <BetweenJobs />
+        <BuiltAroundYou />
         <ThreeViews />
         <JobFlow />
         <BeforeAfter />

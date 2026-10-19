@@ -3,9 +3,9 @@ import { ArrowRight, Check, Phone } from "lucide-react";
 import HeroRotator from "./HeroRotator";
 
 const proof = [
+  "Not off the shelf — built around how your operation already runs",
   "Running Hi-Point Access's scaffolding operation in Sheffield",
-  "Built by a tradesman with 20+ years on site",
-  "No app for the lads — job links on WhatsApp",
+  "Built by a tradesman with 20+ years on site — no app for the lads",
 ];
 
 const Hero = () => (
@@ -19,11 +19,11 @@ const Hero = () => (
           </p>
 
           <h1 className="text-4xl md:text-5xl xl:text-6xl font-black leading-[1.05] mb-6">
-            Run the whole operation from your phone — without hiring another ops manager.
+            Field ops software built around how you already work.
           </h1>
 
           <p className="text-lg md:text-xl text-hero-muted font-medium mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-            Enquiry in, quote out, job created, handover signed on site, invoice raised the moment it&apos;s done. No more spreadsheets for one thing, diaries for another and forms everywhere else — the whole operation runs live on every phone.
+            Not an app you log into and adapt to. We see how your jobs actually run — enquiry to invoice — and build the platform around it. Then you run the whole operation from your phone, without hiring another ops manager.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center lg:items-start justify-center lg:justify-start gap-4 mb-8">

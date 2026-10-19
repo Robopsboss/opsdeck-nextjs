@@ -239,7 +239,7 @@ export default function PlatformBuildPage() {
         <ProductHero
           eyebrow="Field Ops Platform"
           title="You Are the System. That Is the Problem."
-          lead="Run the whole field operation from your phone — without hiring another ops manager. Enquiries, jobs, crews, vehicles, PPE checks, site handovers and invoicing in one place, built around how your operation already runs. Running Hi-Point Access's scaffolding operation in Sheffield today."
+          lead="Not off-the-shelf software you log into and adapt to. We map how your operation already runs and build the platform around it — enquiries, jobs, crews, vehicles, PPE checks, site handovers and invoicing in one place. Run the whole field operation from your phone, without hiring another ops manager. Running Hi-Point Access's scaffolding operation in Sheffield today."
           sub="From £250/month for 1–10 operatives, unlimited users. Smaller admin tools from £75/month. Consultation first."
           ctaHref={MAILTO}
           ctaVariant="amber"
