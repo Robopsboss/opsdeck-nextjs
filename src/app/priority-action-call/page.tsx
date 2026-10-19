@@ -14,7 +14,7 @@ const CTA_LABEL = "Get Started — £97";
 
 const pageTitle = "Priority Action Call | OpsDeck";
 const pageDescription =
-  "A 30-minute strategy call built around your Business Health Check results. Rob identifies your single highest-priority area and tells you exactly what to fix first. £97.";
+  "A 30-minute strategy call built around your business. Rob reviews how you win and run work before the call, identifies your single highest-priority area and tells you exactly what to fix first. £97.";
 
 export const metadata: Metadata = {
   title: pageTitle,
@@ -35,11 +35,11 @@ const painPoints = [
 ];
 
 const hookBody =
-  "You completed the free Business Health Check. Some areas are green. Some are amber or red. The problem is not motivation — it is clarity. Without someone who has reviewed hundreds of these results telling you which red area is costing you the most, the report is information without direction. That is where most businesses stop. Six months later nothing has changed and the same problems are still running.";
+  "You know some things in the business are working and some aren't. The problem is not motivation — it is clarity. Without someone who has reviewed hundreds of these results telling you which red area is costing you the most, the report is information without direction. That is where most businesses stop. Six months later nothing has changed and the same problems are still running.";
 
 const features = [
   {
-    feature: "Pre-call review of your Health Check results",
+    feature: "Pre-call review of your website, Google profile and how you win work",
     detail:
       "Rob reads your full results before you speak. You don't spend the first ten minutes explaining your situation — the call starts with him already knowing what is broken.",
   },
@@ -62,12 +62,12 @@ const features = [
 
 const steps = [
   {
-    title: "Complete the free Health Check",
-    body: "Go to healthcheck.opsdeck.co.uk. Takes 10–15 minutes. Results emailed immediately.",
+    title: "Pay for your call",
+    body: "Complete payment on this page. It takes a minute.",
   },
   {
-    title: "Pay and forward your results",
-    body: 'Complete payment. Email rob@opsdeck.co.uk with your Health Check results attached. Subject line: "Priority Action Call".',
+    title: "Tell Rob about your business",
+    body: 'Email rob@opsdeck.co.uk with your website address and a couple of lines on what feels stuck. Subject line: "Priority Action Call". Rob reviews it before you speak.',
   },
   {
     title: "Your 30-minute call",
@@ -77,7 +77,7 @@ const steps = [
 
 const comparisonRows = [
   { without: "Read the report and try to figure it out yourself", with: "30 minutes with someone who reviewed your specific results before the call" },
-  { without: "Generic business advice from Google", with: "Specific to your Health Check scores, your business, and your context" },
+  { without: "Generic business advice from Google", with: "Specific to your business and your context" },
   { without: "Try to fix everything at once", with: "One priority identified — the change that creates the most momentum first" },
   { without: "Spend months on the wrong problem", with: "Leave knowing exactly what to fix first and why" },
   { without: "A sales call disguised as advice", with: "A working session — the output is a recommendation, not a pitch" },
@@ -107,7 +107,7 @@ export default function PriorityActionCallPage() {
         <ProductHero
           eyebrow="Priority Action Call"
           title="You Know Something Is Off. You Just Don't Know Which Problem to Fix First."
-          lead="A focused 30-minute strategy call — Rob reviews your Health Check results before the call and tells you exactly what is costing you the most and what to do about it."
+          lead="A focused 30-minute strategy call — Rob reviews your business before the call and tells you exactly what is costing you the most and what to do about it."
           sub="£97. 30 minutes. No fluff."
           ctaLabel={CTA_LABEL}
           ctaHref={STRIPE_URL}
@@ -130,7 +130,7 @@ export default function PriorityActionCallPage() {
           ctaLabel={CTA_LABEL}
           ctaHref={STRIPE_URL}
           ctaVariant="amber"
-          note="Start with the free Health Check at healthcheck.opsdeck.co.uk if you haven't already."
+          note="Run crews on site? Take the free 3-minute Field Ops Check at healthcheck.opsdeck.co.uk first."
         />
 
         <SiteFooter />

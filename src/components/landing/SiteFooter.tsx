@@ -19,7 +19,7 @@ const SiteFooter = () => (
             rel="noopener noreferrer"
             className="text-white/80 hover:text-white transition-colors"
           >
-            Free Business Health Check
+            Free Field Ops Check
           </a>
           <Link
             href="/blog"

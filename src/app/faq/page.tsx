@@ -50,8 +50,8 @@ const sections: FaqSection[] = [
         a: "OpsDeck is based in Sheffield and works with trades businesses across the whole of the UK. The platform and all services are delivered remotely — consultations happen by phone or video call, and documents are delivered digitally.",
       },
       {
-        q: "What is the free Business Health Check?",
-        a: "A free online assessment at healthcheck.opsdeck.co.uk that takes 10–15 minutes and scores the key areas of your business — your results are emailed to you immediately. It's the best starting point if you know something is off but aren't sure what to fix first. If you want an expert read on your results, the [Priority Action Call](/priority-action-call) (£97) is a 30-minute call where Rob reviews your results before you speak and tells you exactly what to fix first.",
+        q: "What is the free Field Ops Check?",
+        a: "A free 3-minute check at healthcheck.opsdeck.co.uk for trades firms with crews on site. Twelve tap-to-answer questions show where your operation sits — from paper and phone calls to running live — and work out two numbers from your answers: roughly how many office hours a week go on chasing job status, and how much finished work is sitting waiting to be invoiced. Your results show on screen straight away, and you can get your three priority fixes and a PDF copy by email.",
       },
     ],
   },
@@ -203,7 +203,7 @@ const sections: FaqSection[] = [
       },
       {
         q: "What if my question isn't answered here?",
-        a: "Email rob@opsdeck.co.uk or call 07837 698 283 — you'll be speaking to the person who builds the tools, not a sales team. Or start with the free Business Health Check at healthcheck.opsdeck.co.uk.",
+        a: "Email rob@opsdeck.co.uk or call 07837 698 283 — you'll be speaking to the person who builds the tools, not a sales team. Or start with the free 3-minute Field Ops Check at healthcheck.opsdeck.co.uk.",
       },
     ],
   },

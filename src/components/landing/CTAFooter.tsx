@@ -25,7 +25,7 @@ const CTAFooter = () => (
             rel="noopener noreferrer"
             className="inline-flex items-center gap-1.5 text-hero-foreground/90 hover:text-hero-foreground font-medium underline underline-offset-4 hover:no-underline transition-colors"
           >
-            Or take the free Business Health Check first
+            Or take the 3-minute Field Ops Check first
             <ArrowRight className="w-3.5 h-3.5" />
           </a>
         </p>

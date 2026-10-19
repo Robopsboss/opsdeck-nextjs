@@ -116,7 +116,7 @@ const ThreeWaysToStart = () => (
         className="group mt-8 inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
       >
         <Activity className="w-4 h-4 text-primary" />
-        Smaller business, not sure where to start? Take the free 10-minute Business Health Check
+        Not ready for a call? Take the 3-minute Field Ops Check — see what chasing and late invoicing are costing you
         <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
       </a>
     </div>

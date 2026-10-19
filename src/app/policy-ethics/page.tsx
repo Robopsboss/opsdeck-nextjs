@@ -278,7 +278,7 @@ export default function PolicyEthicsPage() {
               Questions before you commit?
             </h2>
             <p className="text-cta-muted text-base md:text-lg leading-relaxed mb-10 max-w-2xl mx-auto">
-              The best place to start if you&apos;re not sure is the free Business Health Check, or a straight conversation.
+              The best place to start if you&apos;re not sure is the free 3-minute Field Ops Check, or a straight conversation.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a
@@ -287,7 +287,7 @@ export default function PolicyEthicsPage() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-background text-foreground font-semibold px-6 py-3 rounded-lg hover:bg-background/90 transition-colors text-base"
               >
-                Take the Health Check
+                Take the Field Ops Check
                 <ArrowRight className="w-4 h-4" />
               </a>
               <a
