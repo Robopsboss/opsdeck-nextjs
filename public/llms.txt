@@ -1,6 +1,6 @@
 # OpsDeck
 
-> Field operations platform for UK trades firms with operatives out in the field. Runs the whole operation from one place — enquiries and quotes, job files, crew and vehicle allocation, job details on operatives' phones, PPE checks and declarations, site handovers, photos and notes to the office, a live calendar and invoice flags. Built in Sheffield. Running Hi-Point Access's scaffolding operation. From £250/month for 1–10 operatives, unlimited users.
+> Field operations platform for UK trades firms with operatives out in the field — not off-the-shelf software: each platform is built around how the firm already works, instead of the firm adapting to an app. Runs the whole operation from one place — enquiries and quotes, job files, crew and vehicle allocation, job details on operatives' phones, PPE checks and declarations, site handovers, photos and notes to the office, a live calendar and invoice flags. Built in Sheffield. Running Hi-Point Access's scaffolding operation. From £250/month for 1–10 operatives, unlimited users.
 
 OpsDeck lets the owner and office of a trades firm oversee every job from a phone, tablet or computer — without hiring another ops manager to keep track of the work. Each build is configured to how the firm already operates, then supported monthly by the founder, Rob France. OpsDeck also offers smaller admin and quoting tools and fixed-price done-for-you services for trades businesses.
 
@@ -17,6 +17,7 @@ OpsDeck lets the owner and office of a trades firm oversee every job from a phon
 - [Honest Comparison](https://opsdeck.co.uk/honest-comparison): how OpsDeck compares to Jobber, Joblogic, BigChange, simPRO and Commusoft — off-the-shelf platforms you adapt to vs a platform built around how your operation already works, including when to choose them instead
 - [About](https://opsdeck.co.uk/about): founder, story, principles
 - [Service Area](https://opsdeck.co.uk/service-area): Sheffield-based, UK-wide
+- [Field Ops Check](https://check.opsdeck.co.uk/): free 3-minute, 12-question diagnostic for trades firms — shows office hours lost to chasing job status and how much finished work is waiting to be invoiced
 
 ## Field Ops Platform (main product)
 
@@ -54,7 +55,7 @@ OpsDeck lets the owner and office of a trades firm oversee every job from a phon
 
 ## Services — Strategy & Sales
 
-- [Priority Action Call](https://opsdeck.co.uk/priority-action-call): £97, 30-minute call booked within 3 working days of payment. Rob reviews your Business Health Check results before the call and identifies your single highest-priority area with a specific next-step recommendation.
+- [Priority Action Call](https://opsdeck.co.uk/priority-action-call): £97, 30-minute call booked within 3 working days of payment. Rob reviews your Field Ops Check results (if you've taken it) before the call and identifies your single highest-priority area with a specific next-step recommendation.
 - [Sales Process Document](https://opsdeck.co.uk/sales-process): £597, delivered in 7 working days. Bespoke sales process built around how your business actually sells — first response scripts (phone and email), five-stage follow-up sequence, objection handling guide, consultation structure. 60-minute consultation and 30-day check-in call included.
 - [6 Month Marketing Strategy](https://opsdeck.co.uk/marketing-strategy): £597, delivered in 7 working days. Complete six-month marketing plan — target market definition, 16-week content calendar, post templates in your voice, test-and-measure framework. 45-minute consultation and 3-month check-in call included.
 
