@@ -6,7 +6,7 @@ import Navbar from "@/components/landing/Navbar";
 import SiteFooter from "@/components/landing/SiteFooter";
 
 const pageTitle =
-  "Scaffolding Operations Software in Sheffield: How Hi-Point Access Runs 180 Site Visits a Week Without Paper | OpsDeck";
+  "Scaffolding Operations Software in Sheffield: How Hi-Point Access Runs 180 Site Visits a Week From the Lads' Phones | OpsDeck";
 const pageDescription =
   "Hi-Point Access, a Sheffield scaffolding firm on council frameworks and private contracts, runs around 180 site visits and 100 new jobs a week through OpsDeck — no filing cabinets, no printed site packs, no WhatsApp photo hunts.";
 
@@ -75,7 +75,7 @@ const takeaways = [
 
 const faqs = [
   {
-    q: "How does a scaffolding firm manage 180 site visits a week without paper?",
+    q: "How does a scaffolding firm manage 180 site visits a week without printed site packs?",
     a: "At Hi-Point Access, every job has one digital job file in OpsDeck holding its documents, drawings, photos and notes. Jobs are allocated to gangs and vehicles on a live calendar, each operative receives their job link on their phone, and photos, notes and signed handovers come straight back to the job from site. The office sees the whole week's work in one place instead of in a diary, filing cabinets and printouts.",
   },
   {
@@ -101,7 +101,7 @@ const jsonLd = [
     "@context": "https://schema.org",
     "@type": "Article",
     headline:
-      "How Hi-Point Access runs around 180 scaffolding site visits a week without paper",
+      "How Hi-Point Access runs around 180 scaffolding site visits a week from the lads' phones",
     description: pageDescription,
     url: "https://opsdeck.co.uk/case-studies/hi-point",
     author: { "@id": "https://opsdeck.co.uk/author/rob-france#person" },
@@ -158,7 +158,7 @@ export default function CaseStudyHiPointPage() {
               Case Study · Scaffolding · Sheffield
             </p>
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-black leading-[1.1] mb-6">
-              How Hi-Point Access runs around 180 site visits a week without paper
+              How Hi-Point Access runs around 180 site visits a week from the lads&apos; phones
             </h1>
             <p className="text-lg md:text-xl text-hero-muted font-medium max-w-2xl leading-relaxed">
               From filing cabinets, a wall of printouts and a stack of site packs every morning — to one job file per job, live on every phone. Enquiry to completion.
