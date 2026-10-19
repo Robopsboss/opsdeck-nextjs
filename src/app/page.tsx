@@ -47,7 +47,7 @@ const organizationJsonLd = {
   "@id": "https://opsdeck.co.uk/#organization",
   name: "OpsDeck",
   url: "https://opsdeck.co.uk",
-  logo: "https://opsdeck.co.uk/favicon.ico",
+  logo: "https://opsdeck.co.uk/opsdeck-icon.png",
   description:
     "Field operations platform for UK trades firms with operatives in the field, built around how each firm already works rather than an off-the-shelf app the firm has to adapt to — enquiries, jobs, crews, vehicles, PPE checks, site handovers and invoicing in one place, live on every phone. Built in Sheffield by Rob France.",
   knowsAbout: [
