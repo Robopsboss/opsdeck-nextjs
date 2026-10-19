@@ -5,13 +5,13 @@ const steps = [
     num: "01",
     icon: MessageSquare,
     title: "We come to you",
-    body: "We start with a free consultation to understand your business, your quoting process, and where you're losing time.",
+    body: "We start with a free consultation to walk through how your operation runs today — enquiries, jobs, crews, paperwork — and where the office is losing time.",
   },
   {
     num: "02",
     icon: Wrench,
     title: "We build around you",
-    body: "No off-the-shelf software. We build a custom tool configured to your exact pricing rules, job types, and materials. You don't change your process — we automate it.",
+    body: "No off-the-shelf software. We build the platform around the way your operation already works — your job stages, your paperwork, your trade. You don't change your process — we take it off paper.",
   },
   {
     num: "03",

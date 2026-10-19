@@ -4,13 +4,13 @@ const WhoItsFor = () => (
   <section className="bg-hero-dark text-hero-foreground">
     <div className="container mx-auto px-6 py-20 md:py-28 max-w-4xl">
       <h2 className="text-3xl md:text-4xl font-bold mb-4 leading-tight">
-        Built for trades businesses with real operations to run
+        Built for trades firms with teams out on site
       </h2>
       <p className="text-hero-muted text-lg mb-3 leading-relaxed max-w-3xl">
-        OpsDeck isn&apos;t for simple, repeatable work. It&apos;s for firms where the work is genuinely complex — materials and specifications that have to be calculated right, more than one person involved in pricing and delivery, and jobs that move between the office and the sites.
+        OpsDeck is for firms running multiple gangs or crews across multiple sites every day — where the office has to know who&apos;s where, what&apos;s done, what&apos;s been signed off and what&apos;s ready to invoice.
       </p>
       <p className="text-hero-muted text-lg mb-6 leading-relaxed max-w-3xl">
-        Once a business has grown past spreadsheets and informal systems, things start slipping through the cracks — between the people quoting, the people running the jobs, and the people chasing the money. OpsDeck brings the whole operation into one place.
+        Once a business has grown past diaries, spreadsheets and WhatsApp groups, things start slipping through the cracks — between the office, the lads on site and the people chasing the money. OpsDeck brings the whole operation into one place, without asking anyone to change how the job gets done.
       </p>
       <p className="text-hero-muted/70 text-sm">
         Just some of the trades we work with: {trades.join(" · ")}

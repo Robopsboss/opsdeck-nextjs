@@ -16,9 +16,9 @@ const learnLinks = [
 ];
 
 const servicesFeatured = {
-  label: "Platform Build",
+  label: "Field Ops Platform",
   href: "/platform-build",
-  blurb: "Bespoke AI platform built around your business",
+  blurb: "Run your whole field operation from one place",
 };
 
 const servicesGroups = [

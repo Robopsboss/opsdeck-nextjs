@@ -23,6 +23,10 @@ export const metadata: Metadata = {
 
 const expertise = [
   {
+    title: "Field operations for trades firms",
+    body: "Running multiple crews across multiple sites from one platform — job files, crew and vehicle allocation, PPE checks, site handovers and live job status. Live at Hi-Point Access, a Sheffield scaffolding firm.",
+  },
+  {
     title: "Trades quoting systems",
     body: "Complex material calculations, margin logic, and automated job reference generation for landscaping and surfacing workflows.",
   },
@@ -82,6 +86,8 @@ const timeline = [
 ];
 
 const topics = [
+  "Field operations software",
+  "Running crews and operatives on site",
   "Trades quoting software",
   "Admin automation for tradespeople",
   "SaaS for SME trades businesses",
@@ -104,6 +110,8 @@ const jsonLd = {
   image: "https://opsdeck.co.uk/rob-france.jpg",
   sameAs: ["https://www.linkedin.com/in/robert-france-391bb4269/"],
   knowsAbout: [
+    "field operations software for trades businesses",
+    "operative and crew management",
     "trades business automation",
     "quoting systems for tradespeople",
     "landscaping business management",

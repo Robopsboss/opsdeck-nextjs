@@ -6,7 +6,7 @@ const CTAFooter = () => (
     <section className="bg-hero-dark text-hero-foreground">
       <div className="container mx-auto px-6 py-20 md:py-28 max-w-3xl text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-6">
-          Ready to save hours every week?
+          Ready to run the whole operation from your phone?
         </h2>
         <p className="text-hero-muted text-lg leading-relaxed mb-10 max-w-2xl mx-auto">
           Book a free 20-minute walkthrough. We&apos;ll look at how your operation runs and show you exactly what OpsDeck would take off your plate. No commitment. No jargon. Just a straight conversation about whether we can help.

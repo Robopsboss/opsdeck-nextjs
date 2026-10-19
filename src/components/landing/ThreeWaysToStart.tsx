@@ -18,7 +18,7 @@ const doors: Door[] = [
   {
     title: "Field Ops Platform",
     body: "Jobs, crews, vehicles, site sign-offs and invoicing in one place — built around how your operation already runs. From £250/month, unlimited users.",
-    cta: "Explore Platform Build",
+    cta: "Explore the Field Ops Platform",
     href: "/platform-build",
     icon: Cog,
     featured: true,
@@ -102,39 +102,23 @@ const ThreeWaysToStart = () => (
     <div className="container mx-auto px-6 py-20 md:py-28 max-w-6xl">
       <h2 className="text-3xl md:text-4xl font-bold mb-10">Where to Start</h2>
 
-      {/* Front door — full-width Health Check banner */}
-      <a
-        href={HEALTH_CHECK_URL}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="group block bg-primary/5 border border-primary/20 hover:bg-primary/10 rounded-xl p-6 md:p-8 transition-colors"
-      >
-        <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-6">
-          <div className="w-12 h-12 rounded-lg bg-primary text-primary-foreground flex items-center justify-center shrink-0">
-            <Activity className="w-5 h-5" />
-          </div>
-          <div className="flex-1">
-            <h3 className="text-lg md:text-xl font-bold mb-2 leading-snug">
-              Start here: the free Business Health Check
-            </h3>
-            <p className="text-muted-foreground text-sm md:text-base leading-relaxed">
-              A 10-minute scorecard that shows you exactly where you&apos;re
-              losing time and what to fix first.
-            </p>
-          </div>
-          <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary whitespace-nowrap">
-            Take the Health Check
-            <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
-          </span>
-        </div>
-      </a>
-
       {/* Three ways to act on what it finds — platform featured */}
-      <div className="grid md:grid-cols-3 gap-6 mt-10 md:mt-12">
+      <div className="grid md:grid-cols-3 gap-6 mt-4">
         {doors.map((door) => (
           <DoorCard key={door.title} door={door} />
         ))}
       </div>
+
+      <a
+        href={HEALTH_CHECK_URL}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="group mt-8 inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
+      >
+        <Activity className="w-4 h-4 text-primary" />
+        Smaller business, not sure where to start? Take the free 10-minute Business Health Check
+        <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
+      </a>
     </div>
   </section>
 );

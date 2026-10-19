@@ -19,7 +19,7 @@ const timelineSteps = [
   },
   {
     label: "OpsDeck 2026",
-    text: "Building bespoke automation platforms for trades businesses across the UK. Still using it every day in my own business.",
+    text: "Building field operations platforms for trades firms with teams on site — now running Hi-Point Access's scaffolding operation. Still using OpsDeck every day in my own business.",
   },
 ];
 
@@ -48,7 +48,7 @@ const valueCards = [
 
 const pageTitle = "About Rob France — Built by a Tradesman for Trades Businesses | OpsDeck";
 const pageDescription =
-  "Rob France spent 20 years in the trades before building OpsDeck. Built by a tradesman, used every day in his own landscaping business, now building bespoke automation for trades businesses across the UK.";
+  "Rob France built OpsDeck because he needed it in his own trades business. Today OpsDeck is a field operations platform running Hi-Point Access's scaffolding operation in Sheffield, built around how each firm already works.";
 
 export const metadata: Metadata = {
   title: pageTitle,

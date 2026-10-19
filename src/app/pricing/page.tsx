@@ -235,9 +235,9 @@ const jsonLd = {
   ],
 };
 
-const pageTitle = "How Much Does OpsDeck Cost? Honest Pricing for Trades Businesses";
+const pageTitle = "How Much Does OpsDeck Cost? Field Ops Platform Pricing per Operative";
 const pageDescription =
-  "OpsDeck monthly subscriptions from £75 to £550 per month, unlimited users. Setup fees from £200 to £1,500. All costs agreed in writing before you pay anything. Honest pricing for trades businesses.";
+  "OpsDeck's Field Ops Platform costs £250/month for 1–10 field operatives up to £550 for 41–50, with unlimited users and a build fee from £1,500. Smaller tools from £75/month. All costs agreed in writing before you pay anything.";
 
 export const metadata: Metadata = {
   title: pageTitle,
@@ -273,7 +273,7 @@ export default function PricingPage() {
             </h1>
             <div className="bg-card/10 border-l-4 border-accent rounded-r-lg p-6 mb-8 backdrop-blur-sm">
               <p className="text-hero-foreground text-base md:text-lg leading-relaxed">
-                Monthly platform subscriptions from <strong>£75 to £550 per month</strong> with unlimited users, plus one-off setup fees from <strong>£200 to £1,500 or more</strong> depending on complexity. Done-for-you services — websites, Google setup, compliance documents, sales and marketing strategy — from <strong>£97 to £750</strong> as one-off fixed prices. All costs are agreed in writing before you pay anything — no surprises, no hidden escalations.
+                The <strong>Field Ops Platform</strong> is priced by the number of operatives you have in the field: <strong>£250/month for 1–10</strong>, rising in published steps to <strong>£550/month for 41–50</strong>, with <strong>unlimited users</strong> — office staff, managers and admin never add to the bill. The build fee starts from <strong>£1,500</strong>, fixed in writing after a scoping call. Smaller admin and quoting tools run from <strong>£75 to £150 per month</strong>. Done-for-you services — websites, Google setup, compliance documents, sales and marketing strategy — from <strong>£97 to £750</strong> as one-off fixed prices. All costs are agreed in writing before you pay anything — no surprises, no hidden escalations.
               </p>
             </div>
             <p className="text-hero-muted text-base md:text-lg leading-relaxed max-w-3xl">
