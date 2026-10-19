@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Navbar from "@/components/landing/Navbar";
 import Hero from "@/components/landing/Hero";
+import ClientStrip from "@/components/landing/ClientStrip";
 import SocialProof from "@/components/landing/SocialProof";
 import BetweenJobs from "@/components/landing/BetweenJobs";
 import BuiltAroundYou from "@/components/landing/BuiltAroundYou";
@@ -83,6 +84,7 @@ export default function Home() {
       <div className="min-h-screen">
         <Navbar />
         <Hero />
+        <ClientStrip />
         <SocialProof />
         <BetweenJobs />
         <BuiltAroundYou />
