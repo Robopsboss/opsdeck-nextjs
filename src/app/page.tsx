@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Navbar from "@/components/landing/Navbar";
 import Hero from "@/components/landing/Hero";
 import SocialProof from "@/components/landing/SocialProof";
+import BetweenJobs from "@/components/landing/BetweenJobs";
 import ThreeViews from "@/components/landing/ThreeViews";
 import JobFlow from "@/components/landing/JobFlow";
 import BeforeAfter from "@/components/landing/BeforeAfter";
@@ -82,6 +83,7 @@ export default function Home() {
         <Navbar />
         <Hero />
         <SocialProof />
+        <BetweenJobs />
         <ThreeViews />
         <JobFlow />
         <BeforeAfter />

@@ -485,7 +485,7 @@ export default function PricingPage() {
               ))}
             </div>
             <p className="text-sm text-muted-foreground text-center max-w-3xl mx-auto mt-10 leading-relaxed">
-              Every service has its own page with exactly what you get, how it works, and how it compares. Free 3-minute Field Ops Check available at healthcheck.opsdeck.co.uk if you&apos;re not sure where to start.
+              Every service has its own page with exactly what you get, how it works, and how it compares. Free 3-minute Field Ops Check available at check.opsdeck.co.uk if you&apos;re not sure where to start.
             </p>
           </div>
         </section>

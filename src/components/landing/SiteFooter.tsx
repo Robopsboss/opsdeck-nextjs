@@ -14,7 +14,7 @@ const SiteFooter = () => (
         </div>
         <nav className="flex flex-col sm:flex-row flex-wrap gap-x-6 gap-y-2">
           <a
-            href="https://healthcheck.opsdeck.co.uk/"
+            href="https://check.opsdeck.co.uk/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white/80 hover:text-white transition-colors"

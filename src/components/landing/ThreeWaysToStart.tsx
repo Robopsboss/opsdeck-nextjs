@@ -1,8 +1,7 @@
 import type { LucideIcon } from "lucide-react";
 import Link from "next/link";
-import { Activity, ArrowRight, Cog, FileSpreadsheet, Package } from "lucide-react";
+import { ArrowRight, Cog, FileSpreadsheet, Package } from "lucide-react";
 
-const HEALTH_CHECK_URL = "https://healthcheck.opsdeck.co.uk/";
 
 type Door = {
   title: string;
@@ -108,17 +107,6 @@ const ThreeWaysToStart = () => (
           <DoorCard key={door.title} door={door} />
         ))}
       </div>
-
-      <a
-        href={HEALTH_CHECK_URL}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="group mt-8 inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
-      >
-        <Activity className="w-4 h-4 text-primary" />
-        Not ready for a call? Take the 3-minute Field Ops Check — see what chasing and late invoicing are costing you
-        <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
-      </a>
     </div>
   </section>
 );
