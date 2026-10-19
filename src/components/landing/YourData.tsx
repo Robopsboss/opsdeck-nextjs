@@ -4,12 +4,12 @@ const points = [
   {
     icon: KeyRound,
     title: "Your data is yours",
-    body: "Everything your firm puts into OpsDeck belongs to you. You have full access to it at all times, and if you ever leave, it goes with you. We own the code — never your data.",
+    body: "Everything your firm puts into OpsDeck belongs to you — it says so in the contract. You can have a full export whenever you ask. If you ever leave, we hold it for 30 days so you can take it with you, then delete it. We own the code — never your data.",
   },
   {
     icon: MapPin,
     title: "Stored in London",
-    body: "Your data is held in a London data centre, inside the UK — not shipped off to the other side of the world.",
+    body: "Your data is held in a London data centre, encrypted in transit and at rest, and walled off from every other firm on the platform.",
   },
   {
     icon: DatabaseBackup,
@@ -23,8 +23,8 @@ const points = [
   },
   {
     icon: ShieldCheck,
-    title: "Secure sign-in, ICO registered",
-    body: "Office logins run through a dedicated, industry-standard authentication provider. Opsdeck Ltd is registered with the ICO (ZC126490).",
+    title: "UK GDPR in the contract",
+    body: "Every contract sets out the data processing terms: you're the controller, we're the processor, we only use your data to run your platform, and we'd tell you within 72 hours of a breach. Office sign-in runs through a SOC 2 Type II certified provider. ICO registered (ZC126490).",
   },
   {
     icon: LifeBuoy,

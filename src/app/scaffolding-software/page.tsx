@@ -72,7 +72,7 @@ const features = [
 const faqs = [
   {
     q: "What is the best software for a scaffolding company in the UK?",
-    a: "It depends how your firm runs. Generic field service apps such as Jobber or BigChange suit firms happy to adapt their process to the software. Scaffolding has its own job flow — surveys, erects, alterations, dismantles, hire weeks and handover certificates — that generic tools don't model out of the box. OpsDeck builds the platform around how your scaffolding firm already works, and runs Hi-Point Access in Sheffield, which handles around 180 site visits a week through it.",
+    a: "It depends how your firm runs. Generic field service apps such as Jobber or BigChange suit firms happy to adapt their process to the software. Scaffolding has its own job flow — surveys, erects, alterations, dismantles, hire weeks and handover certificates — that generic tools don't model out of the box. OpsDeck builds the platform around how your scaffolding firm already works, and runs Hi-Point Access in Sheffield, which handles around 180 site visits a week through it. Seven Hills Scaffolding has also started on the platform.",
   },
   {
     q: "Does OpsDeck track scaffold hire weeks?",
@@ -173,7 +173,7 @@ export default function ScaffoldingSoftwarePage() {
                   </a>
                 </div>
                 <p className="text-sm text-hero-muted">
-                  Running Hi-Point Access in Sheffield — around 180 site visits and 100 new jobs a week.
+                  Running Hi-Point Access in Sheffield — around 180 site visits and 100 new jobs a week. Seven Hills Scaffolding has just come on board too.
                 </p>
               </div>
               <div>
@@ -266,6 +266,9 @@ export default function ScaffoldingSoftwarePage() {
               Read the Hi-Point case study
               <ArrowRight className="w-4 h-4" />
             </Link>
+            <p className="text-hero-muted mt-8 pt-8 border-t border-hero-foreground/10">
+              <span className="text-hero-foreground font-semibold">Seven Hills Scaffolding</span> has just started on OpsDeck too — their platform built around how their yard runs, not Hi-Point&apos;s.
+            </p>
           </div>
         </section>
 
