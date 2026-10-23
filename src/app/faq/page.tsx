@@ -101,11 +101,11 @@ const sections: FaqSection[] = [
     entries: [
       {
         q: "How much does the OpsDeck platform cost?",
-        a: "The Field Ops Platform is priced by number of field operatives, with unlimited users: £250/month for 1–10, £325 for 11–20, £400 for 21–30, £475 for 31–40 and £550 for 41–50, with 50+ scoped on a call. The build fee starts from £1,500 and is fixed in writing after a scoping call. Smaller admin and quoting tools run from £75 to £150 per month. Nothing is paid until the costs are agreed in writing. Full breakdown on the [pricing page](/pricing).",
+        a: "The Field Ops Platform is priced by number of field operatives, with unlimited users: £250/month for 1–10, £325 for 11–20, £400 for 21–30, £475 for 31–40 and £550 for 41–50, with 50+ scoped on a call. The build fee starts from £1,500 and is fixed in writing after a scoping call. For teams of up to 10 operatives, the Job Management Platform is £150/month with a £500 setup. Smaller admin and quoting tools run from £75 to £150 per month. Nothing is paid until the costs are agreed in writing. Full breakdown on the [pricing page](/pricing).",
       },
       {
         q: "What are the platform tiers?",
-        a: "Four tiers: AI Tools & Automation (£75/month — single-purpose automation), Quote Builder (£100/month — voice or manual quoting with adaptive price memory), Quote Builder + Dashboard (£150/month — quoting plus full business dashboard), and the Full Operations Platform (from £250/month — the main OpsDeck product: jobs, crews, vehicles, PPE checks, site handovers, toolbox talks and invoice flags, with unlimited users and the monthly fee banded by number of operatives). The right tier is confirmed during a free consultation, not before it.",
+        a: "Five tiers in two groups. For the office: AI Tools & Automation (£75/month — single-purpose automation), Quote Builder (£100/month — voice or manual quoting with adaptive price memory) and Quote Builder + Dashboard (£150/month — quoting plus full business dashboard). For firms with teams in the field: the Job Management Platform (£150/month for up to 10 operatives, £500 setup — standard job management with WhatsApp job links and site photos) and the Full Operations Platform (from £250/month — the main OpsDeck product: jobs, crews, vehicles, PPE checks, site handovers, toolbox talks and invoice flags, with unlimited users and the monthly fee banded by number of operatives). The right tier is confirmed during a free consultation, not before it.",
       },
       {
         q: "How does the build process work?",

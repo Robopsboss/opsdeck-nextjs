@@ -89,7 +89,7 @@ const tiers = [
   {
     name: "AI Tools & Automation",
     monthly: "£75/month",
-    setup: "£200",
+    setup: "£250",
     description:
       "Single-purpose automation — one specific task eliminated. The starting point.",
   },
@@ -106,6 +106,13 @@ const tiers = [
     setup: "£300",
     description:
       "Quoting plus full business dashboard — enquiries, jobs, calendar, sales, profit forecasting.",
+  },
+  {
+    name: "Job Management Platform",
+    monthly: "£150/month",
+    setup: "£500",
+    description:
+      "For teams of up to 10 operatives. The proven OpsDeck setup with your branding, live within a week — shared calendar by crew and van, jobs sent to operatives by WhatsApp link, photos and notes back live, and a ready-to-invoice flag.",
   },
   {
     name: "Full Operations Platform",
@@ -195,7 +202,7 @@ const jsonLd = {
         price: "75",
         priceCurrency: "GBP",
         description:
-          "Single-purpose automation — one specific task eliminated. £75/month, setup from £200.",
+          "Single-purpose automation — one specific task eliminated. £75/month, setup from £250.",
       },
       {
         "@type": "Offer",
@@ -212,6 +219,14 @@ const jsonLd = {
         priceCurrency: "GBP",
         description:
           "Quoting plus full business dashboard — enquiries, jobs, calendar, sales, profit forecasting. £150/month, setup from £300.",
+      },
+      {
+        "@type": "Offer",
+        name: "Job Management Platform",
+        price: "150",
+        priceCurrency: "GBP",
+        description:
+          "Standard job management for teams of up to 10 field operatives — shared calendar, WhatsApp job links, site photos and a ready-to-invoice flag. £150/month, £500 setup.",
       },
       {
         "@type": "Offer",
