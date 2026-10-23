@@ -61,7 +61,7 @@ const tools = [
   {
     name: "Joblogic",
     pricing:
-      "Per user, billed annually. Independent UK comparisons list it from around £45 per user per month.",
+      "Per user, billed annually. Joblogic's own pricing page lists Standard from £49 per user per month and counts field engineers using the mobile app as users, not just office staff (checked October 2026). A firm with 20 engineers and 2 office staff is 22 users: from about £1,078 a month. OpsDeck for the same firm: £325 a month.",
     fit: "UK service and maintenance contractors with a team of engineers and planned, repeat contract work.",
     watch: "Annual billing, and per-user pricing that rises with every engineer and office user you add.",
   },

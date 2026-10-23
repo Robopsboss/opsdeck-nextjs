@@ -39,9 +39,10 @@ OpsDeck lets the owner and office of a trades firm oversee every job from a phon
 
 ## Smaller platform tiers
 
-- AI Tools and Automation — £75/month, setup from £200. One specific admin task automated.
+- AI Tools and Automation — £75/month, setup from £250. One specific admin task automated.
 - Quote Builder — £100/month, setup from £300. Voice or manual quoting with adaptive memory.
 - Quote Builder + Dashboard — £150/month, setup from £300. Quoting plus enquiries, jobs, calendar, sales and profit forecasting.
+- Job Management Platform — £150/month for up to 10 field operatives, £500 setup. Standard OpsDeck setup with your branding: shared calendar by crew and van, jobs sent to operatives by WhatsApp link, arrival times, site photos and notes, ready-to-invoice flag. Upgrade to the Full Operations Platform within six months and the £500 setup comes off the build fee.
 - Unlimited users included on every tier.
 
 ## Services — Get Found & Win Work

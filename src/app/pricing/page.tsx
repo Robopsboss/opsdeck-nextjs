@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Check, ChevronDown, Minus } from "lucide-react";
 import Navbar from "@/components/landing/Navbar";
 import SiteFooter from "@/components/landing/SiteFooter";
 import {
@@ -27,11 +27,11 @@ const priceDown = [
   "Smaller team with straightforward workflows",
 ];
 
-const tiers = [
+const officeTiers = [
   {
     name: "AI Tools and Automation",
     monthly: "£75/month",
-    setup: "From £200",
+    setup: "From £250",
     features:
       "Single-purpose automators, Excel to document converters, AI utilities. Ideal for one specific task costing you time.",
   },
@@ -47,15 +47,91 @@ const tiers = [
     monthly: "£150/month",
     setup: "From £300",
     features:
-      "Everything in Tier 2 plus enquiries management, jobs tab, calendar view, sales overview, and profit forecasting.",
+      "Everything in Quote Builder plus enquiries management, jobs tab, calendar view, sales overview, and profit forecasting. For the office: no operative job links.",
+  },
+];
+
+const fieldTiers = [
+  {
+    name: "Job Management Platform",
+    monthly: "£150/month",
+    setup: "£500",
+    features:
+      "For teams of up to 10 operatives. A standard setup, not a bespoke build: the proven OpsDeck platform with your branding, live within a week. Shared calendar by crew and van, jobs sent to operatives by WhatsApp link (no app, no training), arrival and completion times, site photos and notes back to the office live, and a ready-to-invoice flag when a job is done.",
+    popular: false,
   },
   {
     name: "Full Operations Platform",
     monthly: "From £250/month",
     setup: "From £1,500",
     features:
-      "Everything in Tier 3 plus team and operative integration, job links sent to operatives by WhatsApp (no app to install, no training), unlimited users, and a fully bespoke build configured to your exact trade and workflow. Monthly fee set by number of operatives — see bands below.",
+      "Fully bespoke. Everything in the Job Management Platform and Quote Builder and Dashboard, built around how your firm already works, plus signed site handovers, PPE and RAMS declarations, permits, a document library, hire tracking, invoice tracking and enquiries that become booked jobs. Unlimited users. Monthly fee set by number of operatives — see bands below.",
     popular: true,
+  },
+];
+
+type Cell = boolean | string;
+const comparison: { group: string; rows: { feature: string; jm: Cell; full: Cell }[] }[] = [
+  {
+    group: "Running the jobs",
+    rows: [
+      { feature: "Job list, booking from the office or a phone", jm: true, full: true },
+      { feature: "Shared calendar by crew and van", jm: true, full: true },
+      { feature: "Crew and van allocation, double-booking warnings", jm: true, full: true },
+      { feature: "Holidays, sickness and MOT days blocked out", jm: true, full: true },
+      { feature: "Saved contractors and contacts", jm: true, full: true },
+      { feature: "Job stages through to complete", jm: "Standard", full: "Built around you" },
+    ],
+  },
+  {
+    group: "Out on site",
+    rows: [
+      { feature: "Jobs sent to operatives as a WhatsApp link: no app, no login", jm: true, full: true },
+      { feature: "Next job unlocks only when the current one is done or marked “not done” with a reason and photo", jm: true, full: true },
+      { feature: "Arrival and completion times recorded", jm: true, full: true },
+      { feature: "Site photos and notes back to the office live", jm: true, full: true },
+      { feature: "Dashboard: today’s jobs, live status, who’s off", jm: true, full: true },
+    ],
+  },
+  {
+    group: "Compliance and safety",
+    rows: [
+      { feature: "Handover certificate signed on site, branded PDF emailed to the customer", jm: false, full: true },
+      { feature: "Each operative’s PPE, RAMS and drink-and-drugs declaration before the job opens, locked as evidence", jm: false, full: true },
+      { feature: "Permit tracking (needed, applied, granted) with alerts", jm: false, full: true },
+      { feature: "Document library: RAMS, method statements and permits, added to any job and opened on site", jm: false, full: true },
+    ],
+  },
+  {
+    group: "Money",
+    rows: [
+      { feature: "Ready-to-invoice flag when a job is done", jm: true, full: true },
+      { feature: "Invoice tracking: mark invoiced with number, full history", jm: false, full: true },
+      { feature: "Hire tracking: hires ending soon, running over, extra weeks worked out", jm: false, full: true },
+      { feature: "Dashboard: to invoice, permits, handovers sent", jm: false, full: true },
+    ],
+  },
+  {
+    group: "Sales",
+    rows: [
+      { feature: "Enquiries list, accepted quote becomes a booked job", jm: false, full: true },
+    ],
+  },
+  {
+    group: "Your firm",
+    rows: [
+      { feature: "Setup", jm: "Standard, your branding", full: "Bespoke to your workflow" },
+      { feature: "Field operatives", jm: "Up to 10", full: "Banded, unlimited" },
+      { feature: "Office users", jm: "Unlimited", full: "Unlimited" },
+    ],
+  },
+  {
+    group: "Coming soon",
+    rows: [
+      { feature: "Daily vehicle checks", jm: false, full: "Coming soon" },
+      { feature: "Safety record pack (one-click PDF)", jm: false, full: "Coming soon" },
+      { feature: "Xero and QuickBooks invoicing", jm: false, full: "Coming soon" },
+    ],
   },
 ];
 
@@ -147,7 +223,7 @@ const hidden = [
 const faqs = [
   {
     q: "How much does OpsDeck cost?",
-    a: "Monthly subscriptions range from £75 to £550 per month depending on your tier and, for the Full Operations Platform, your number of field operatives. One-off setup fees range from £200 to £1,500 or more depending on complexity. All costs are agreed in writing before any payment is committed.",
+    a: "Monthly subscriptions range from £75 to £550 per month depending on your tier and, for the Full Operations Platform, your number of field operatives. One-off setup fees range from £250 to £1,500 or more depending on complexity. All costs are agreed in writing before any payment is committed.",
   },
   {
     q: "Do you offer one-off services as well as the platform?",
@@ -155,7 +231,7 @@ const faqs = [
   },
   {
     q: "Is the setup fee a one-off cost?",
-    a: "Yes. You pay the setup fee once, split across three staged payments tied to delivery milestones. After that you pay only the monthly subscription.",
+    a: "Yes. You pay the setup fee once. On the Full Operations Platform it is split across three staged payments tied to delivery milestones. On the Job Management Platform it is half on signing and half at go-live. After that you pay only the monthly subscription.",
   },
   {
     q: "Are there annual contracts?",
@@ -167,7 +243,7 @@ const faqs = [
   },
   {
     q: "Can I upgrade my tier later?",
-    a: "Yes. Moving from a lower tier to a higher tier is quoted as an add-on. The additional build cost covers the new features — the monthly subscription adjusts to the new tier from that point.",
+    a: "Yes. Moving from a lower tier to a higher tier is quoted as an add-on. The additional build cost covers the new features — the monthly subscription adjusts to the new tier from that point. If you move from the Job Management Platform to the Full Operations Platform within six months, your £500 setup comes off the build fee.",
   },
   {
     q: "What happens if I need a new job type added?",
@@ -192,7 +268,7 @@ const jsonLd = {
       applicationCategory: "BusinessApplication",
       operatingSystem: "Web",
       description:
-        "Bespoke business automation software for UK trades businesses. Includes AI tools, quote builders, job dashboards, and full field operations platforms.",
+        "Bespoke business automation software for UK trades businesses. Includes AI tools, quote builders, job dashboards, a job management platform, and full field operations platforms.",
       url: "https://opsdeck.co.uk",
       provider: {
         "@type": "Organization",
@@ -207,6 +283,7 @@ const jsonLd = {
         { "@type": "Offer", name: "AI Tools and Automation", price: "75", priceCurrency: "GBP", priceSpecification: { "@type": "UnitPriceSpecification", price: "75", priceCurrency: "GBP", unitText: "MONTH" } },
         { "@type": "Offer", name: "Quote Builder", price: "100", priceCurrency: "GBP", priceSpecification: { "@type": "UnitPriceSpecification", price: "100", priceCurrency: "GBP", unitText: "MONTH" } },
         { "@type": "Offer", name: "Quote Builder and Dashboard", price: "150", priceCurrency: "GBP", priceSpecification: { "@type": "UnitPriceSpecification", price: "150", priceCurrency: "GBP", unitText: "MONTH" } },
+        { "@type": "Offer", name: "Job Management Platform", description: "Standard job management for teams of up to 10 field operatives. £500 setup.", price: "150", priceCurrency: "GBP", priceSpecification: { "@type": "UnitPriceSpecification", price: "150", priceCurrency: "GBP", unitText: "MONTH", eligibleQuantity: { "@type": "QuantitativeValue", minValue: 1, maxValue: 10, unitText: "operatives" } } },
         {
           "@type": "Offer",
           name: "Full Operations Platform",
@@ -226,7 +303,7 @@ const jsonLd = {
     {
       "@type": "FAQPage",
       mainEntity: [
-        { "@type": "Question", name: "How much does OpsDeck cost?", acceptedAnswer: { "@type": "Answer", text: "OpsDeck monthly subscriptions range from £75 to £550 per month. One-off setup fees range from £200 to £1,500 or more depending on complexity. All costs are agreed in writing before any payment is committed." } },
+        { "@type": "Question", name: "How much does OpsDeck cost?", acceptedAnswer: { "@type": "Answer", text: "OpsDeck monthly subscriptions range from £75 to £550 per month. One-off setup fees range from £250 to £1,500 or more depending on complexity. All costs are agreed in writing before any payment is committed." } },
         { "@type": "Question", name: "Do you offer one-off services as well as the platform?", acceptedAnswer: { "@type": "Answer", text: "Yes. OpsDeck delivers done-for-you services at fixed prices from £97 to £750 — websites, Google Business Profile setup, AEO pages, review systems, compliance documents, and sales and marketing strategy. Every price is published above and every service has its own page. No quotes needed except the Website Build, which is fixed-quoted before work starts." } },
         { "@type": "Question", name: "Does OpsDeck charge per user?", acceptedAnswer: { "@type": "Answer", text: "No. Every OpsDeck tier includes unlimited users. The Full Operations Platform is priced in published bands by number of field operatives, from £250 per month for 1–10 operatives to £550 per month for 41–50." } },
         { "@type": "Question", name: "Are there annual contracts?", acceptedAnswer: { "@type": "Answer", text: "No. OpsDeck subscriptions are rolling monthly with 30 days notice. No annual lock-ins and no early exit fees." } },
@@ -237,7 +314,7 @@ const jsonLd = {
 
 const pageTitle = "How Much Does OpsDeck Cost? Field Ops Platform Pricing per Operative";
 const pageDescription =
-  "OpsDeck's Field Ops Platform costs £250/month for 1–10 field operatives up to £550 for 41–50, with unlimited users and a build fee from £1,500. Smaller tools from £75/month. All costs agreed in writing before you pay anything.";
+  "OpsDeck's Field Ops Platform costs £250/month for 1–10 field operatives up to £550 for 41–50, with unlimited users and a build fee from £1,500. Job Management Platform £150/month. Smaller tools from £75/month. All costs agreed in writing before you pay anything.";
 
 export const metadata: Metadata = {
   title: pageTitle,
@@ -247,10 +324,65 @@ export const metadata: Metadata = {
     url: "https://opsdeck.co.uk/pricing",
     title: pageTitle,
     description:
-      "OpsDeck monthly subscriptions from £75 to £550 per month, unlimited users. Setup fees from £200 to £1,500. All costs agreed in writing before you pay anything.",
+      "OpsDeck monthly subscriptions from £75 to £550 per month, unlimited users. Setup fees from £250 to £1,500. All costs agreed in writing before you pay anything.",
     images: ["/og-image.png"],
   },
 };
+
+function TierCard({
+  tier,
+}: {
+  tier: { name: string; monthly: string; setup: string; features: string; popular?: boolean };
+}) {
+  return (
+    <div
+      className={`relative rounded-2xl border p-6 flex flex-col ${
+        tier.popular
+          ? "bg-primary text-primary-foreground border-primary shadow-lg"
+          : "bg-card text-foreground border-border"
+      }`}
+    >
+      {tier.popular && (
+        <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-accent text-accent-foreground text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full">
+          Most Popular
+        </span>
+      )}
+      <h4 className={`font-bold text-lg mb-3 ${tier.popular ? "" : "text-foreground"}`}>{tier.name}</h4>
+      <div className="text-3xl font-black mb-1">{tier.monthly}</div>
+      <div
+        className={`text-sm mb-5 ${tier.popular ? "text-primary-foreground/80" : "text-muted-foreground"}`}
+      >
+        Setup {tier.setup}
+      </div>
+      <p
+        className={`text-sm leading-relaxed mb-6 flex-1 ${
+          tier.popular ? "text-primary-foreground/90" : "text-muted-foreground"
+        }`}
+      >
+        {tier.features}
+      </p>
+      <a
+        href="mailto:rob@opsdeck.co.uk"
+        className={`inline-flex items-center justify-center gap-2 w-full font-semibold px-3 py-2.5 rounded-lg transition-colors text-sm ${
+          tier.popular
+            ? "bg-background text-foreground hover:bg-background/90"
+            : "bg-foreground text-background hover:bg-foreground/90"
+        }`}
+      >
+        Book a Free Consultation
+        <ArrowRight className="w-3.5 h-3.5" />
+      </a>
+    </div>
+  );
+}
+
+function CompareCell({ value, strong }: { value: boolean | string; strong?: boolean }) {
+  if (value === true)
+    return <Check className={`w-5 h-5 mx-auto ${strong ? "text-primary" : "text-foreground"}`} aria-label="Included" />;
+  if (value === false)
+    return <Minus className="w-4 h-4 mx-auto text-muted-foreground/50" aria-label="Not included" />;
+  return <span className={strong ? "text-primary" : "text-muted-foreground"}>{value}</span>;
+}
 
 export default function PricingPage() {
   return (
@@ -273,7 +405,7 @@ export default function PricingPage() {
             </h1>
             <div className="bg-card/10 border-l-4 border-accent rounded-r-lg p-6 mb-8 backdrop-blur-sm">
               <p className="text-hero-foreground text-base md:text-lg leading-relaxed">
-                The <strong>Field Ops Platform</strong> is priced by the number of operatives you have in the field: <strong>£250/month for 1–10</strong>, rising in published steps to <strong>£550/month for 41–50</strong>, with <strong>unlimited users</strong> — office staff, managers and admin never add to the bill. The build fee starts from <strong>£1,500</strong>, fixed in writing after a scoping call. Smaller admin and quoting tools run from <strong>£75 to £150 per month</strong>. Done-for-you services — websites, Google setup, compliance documents, sales and marketing strategy — from <strong>£97 to £750</strong> as one-off fixed prices. All costs are agreed in writing before you pay anything — no surprises, no hidden escalations.
+                The <strong>Field Ops Platform</strong> is priced by the number of operatives you have in the field: <strong>£250/month for 1–10</strong>, rising in published steps to <strong>£550/month for 41–50</strong>, with <strong>unlimited users</strong> — office staff, managers and admin never add to the bill. The build fee starts from <strong>£1,500</strong>, fixed in writing after a scoping call. For smaller teams, the <strong>Job Management Platform</strong> is <strong>£150/month for up to 10 operatives</strong> with a <strong>£500 setup</strong>. Admin and quoting tools for the office run from <strong>£75 to £150 per month</strong>. Done-for-you services — websites, Google setup, compliance documents, sales and marketing strategy — from <strong>£97 to £750</strong> as one-off fixed prices. All costs are agreed in writing before you pay anything — no surprises, no hidden escalations.
               </p>
             </div>
             <p className="text-hero-muted text-base md:text-lg leading-relaxed max-w-3xl">
@@ -345,55 +477,69 @@ export default function PricingPage() {
               Pricing
             </h2>
             <p className="text-muted-foreground text-center max-w-3xl mx-auto mb-12 leading-relaxed">
-              Every tier includes a bespoke build configured to your business. Setup fees are one-off. Monthly fees are rolling with no annual contract.
+              Two ways in: tools for the office, and platforms for firms with teams on site. Setup fees are one-off. Monthly fees are rolling with no annual contract.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {tiers.map((tier) => (
-                <div
-                  key={tier.name}
-                  className={`relative rounded-2xl border p-6 flex flex-col ${
-                    tier.popular
-                      ? "bg-primary text-primary-foreground border-primary shadow-lg"
-                      : "bg-card text-foreground border-border"
-                  }`}
-                >
-                  {tier.popular && (
-                    <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-accent text-accent-foreground text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full">
-                      Most Popular
-                    </span>
-                  )}
-                  <h3 className={`font-bold text-lg mb-3 ${tier.popular ? "" : "text-foreground"}`}>
-                    {tier.name}
-                  </h3>
-                  <div className="text-3xl font-black mb-1">{tier.monthly}</div>
-                  <div
-                    className={`text-sm mb-5 ${
-                      tier.popular ? "text-primary-foreground/80" : "text-muted-foreground"
-                    }`}
-                  >
-                    Setup {tier.setup}
-                  </div>
-                  <p
-                    className={`text-sm leading-relaxed mb-6 flex-1 ${
-                      tier.popular ? "text-primary-foreground/90" : "text-muted-foreground"
-                    }`}
-                  >
-                    {tier.features}
-                  </p>
-                  <a
-                    href="mailto:rob@opsdeck.co.uk"
-                    className={`inline-flex items-center justify-center gap-2 w-full font-semibold px-3 py-2.5 rounded-lg transition-colors text-sm ${
-                      tier.popular
-                        ? "bg-background text-foreground hover:bg-background/90"
-                        : "bg-foreground text-background hover:bg-foreground/90"
-                    }`}
-                  >
-                    Book a Free Consultation
-                    <ArrowRight className="w-3.5 h-3.5" />
-                  </a>
-                </div>
+            <h3 className="text-xs font-bold tracking-widest text-primary uppercase mb-4">
+              For the office: quoting and admin
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {officeTiers.map((tier) => (
+                <TierCard key={tier.name} tier={tier} />
               ))}
             </div>
+
+            <h3 className="text-xs font-bold tracking-widest text-primary uppercase mt-16 mb-4 max-w-5xl mx-auto">
+              For firms with teams in the field
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+              {fieldTiers.map((tier) => (
+                <TierCard key={tier.name} tier={tier} />
+              ))}
+            </div>
+            <p className="text-sm text-muted-foreground leading-relaxed mt-6 max-w-5xl mx-auto">
+              Start on the Job Management Platform and upgrade to the Full Operations Platform within six months, and your £500 setup comes off the build fee.
+            </p>
+
+            {/* Job Management vs Full Operations comparison */}
+            <details className="group mt-8 max-w-5xl mx-auto bg-card rounded-2xl border border-border overflow-hidden">
+              <summary className="cursor-pointer list-none flex items-center justify-between gap-4 px-6 py-5 font-bold text-foreground hover:bg-section-alt transition-colors">
+                <span>Compare the Job Management Platform with the Full Operations Platform</span>
+                <ChevronDown className="w-5 h-5 shrink-0 transition-transform group-open:rotate-180" />
+              </summary>
+              <div className="overflow-x-auto border-t border-border">
+                <table className="w-full text-left text-sm">
+                  <thead>
+                    <tr className="bg-section-alt">
+                      <th scope="col" className="px-6 py-4 font-bold text-foreground min-w-[220px]">What you get</th>
+                      <th scope="col" className="px-4 py-4 text-center min-w-[140px]">
+                        <span className="block font-bold text-foreground">Job Management</span>
+                        <span className="block text-xs font-normal text-muted-foreground">£150/month · £500 setup</span>
+                      </th>
+                      <th scope="col" className="px-4 py-4 text-center min-w-[160px] bg-primary text-primary-foreground">
+                        <span className="block font-bold">Full Operations</span>
+                        <span className="block text-xs font-normal text-primary-foreground/80">From £250/month · £1,500+ build</span>
+                      </th>
+                    </tr>
+                  </thead>
+                  {comparison.map((section) => (
+                    <tbody key={section.group} className="divide-y divide-border border-t border-border">
+                      <tr>
+                        <th colSpan={3} scope="colgroup" className="px-6 pt-5 pb-2 text-xs font-bold uppercase tracking-widest text-muted-foreground">
+                          {section.group}
+                        </th>
+                      </tr>
+                      {section.rows.map((row) => (
+                        <tr key={row.feature}>
+                          <td className="px-6 py-3 text-foreground">{row.feature}</td>
+                          <td className="px-4 py-3 text-center"><CompareCell value={row.jm} /></td>
+                          <td className="px-4 py-3 text-center bg-primary/5 font-semibold"><CompareCell value={row.full} strong /></td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  ))}
+                </table>
+              </div>
+            </details>
 
             {/* Full Operations Platform — operative bands */}
             <div className="mt-16 max-w-3xl mx-auto">
@@ -537,7 +683,7 @@ export default function PricingPage() {
               How payments work
             </h2>
             <p className="text-muted-foreground text-center max-w-3xl mx-auto mb-12 leading-relaxed">
-              No large upfront payment. The build fee is split across three milestones — you only pay when you are satisfied with what has been delivered.
+              No large upfront payment. The Full Operations Platform build fee is split across three milestones — you only pay when you are satisfied with what has been delivered. The Job Management Platform setup is paid half on signing and half at go-live.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {stages.map((s) => (
