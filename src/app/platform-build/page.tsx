@@ -112,7 +112,7 @@ const tiers = [
     monthly: "£150/month",
     setup: "£500",
     description:
-      "For teams of up to 10 operatives. The proven OpsDeck setup with your branding, live within a week — shared calendar by crew and van, jobs sent to operatives by WhatsApp link, photos and notes back live, and a ready-to-invoice flag.",
+      "For teams of up to 10 operatives. A standard setup, not a bespoke build: the proven OpsDeck platform with your branding, live within a week — shared calendar by crew and van, jobs sent to operatives by WhatsApp link, photos and notes back live, and a ready-to-invoice flag.",
   },
   {
     name: "Full Operations Platform",

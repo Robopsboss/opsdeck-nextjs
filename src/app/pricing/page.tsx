@@ -57,7 +57,7 @@ const fieldTiers = [
     monthly: "£150/month",
     setup: "£500",
     features:
-      "For teams of up to 10 operatives. The proven OpsDeck setup with your branding, live within a week. Shared calendar by crew and van, jobs sent to operatives by WhatsApp link (no app, no training), arrival and completion times, site photos and notes back to the office live, and a ready-to-invoice flag when a job is done.",
+      "For teams of up to 10 operatives. A standard setup, not a bespoke build: the proven OpsDeck platform with your branding, live within a week. Shared calendar by crew and van, jobs sent to operatives by WhatsApp link (no app, no training), arrival and completion times, site photos and notes back to the office live, and a ready-to-invoice flag when a job is done.",
     popular: false,
   },
   {
